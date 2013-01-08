@@ -1,0 +1,6 @@
+.DS_Store
+app/wp-config-local.php
+app/wp-config-playground.php
+app/wp-config-production.php
+app/wp-content/uploads
+*~
