@@ -15,9 +15,7 @@
  */
 
 
-
 if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
-
     // Local Environment
     define('WP_ENV', 'local');
     define('WP_DEBUG', true);
@@ -41,6 +39,8 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
     require( 'wp-config-production.php' );
 }
 
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
