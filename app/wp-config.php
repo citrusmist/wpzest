@@ -24,13 +24,13 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
 
     require( 'wp-config-local.php' );
 
-} elseif ( file_exists( dirname( __FILE__ ) . '/wp-config-playground.php' ) ) {
+} elseif ( file_exists( dirname( __FILE__ ) . '/wp-config-staging.php' ) ) {
 
     // Playground Environment
-    define('WP_ENV', 'playground');
+    define('WP_ENV', 'staging');
     define('WP_DEBUG', true);
 
-    require( 'wp-config-playground.php' );
+    require( 'wp-config-staging.php' );
 
 } elseif ( file_exists( dirname( __FILE__ ) . '/wp-config-production.php' ) ) {
 
