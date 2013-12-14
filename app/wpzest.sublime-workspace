@@ -1,0 +1,2419 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ce",
+				"center"
+			],
+			[
+				"lu-n",
+				"lu-nav-button"
+			],
+			[
+				"ab",
+				"absolute-center--h"
+			],
+			[
+				"bs-",
+				"bs-green"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"modal",
+				"modal--addlanguage"
+			],
+			[
+				"is",
+				"isCurrentUserPremium"
+			],
+			[
+				"has",
+				"hasRegisteredTriggers"
+			],
+			[
+				"block",
+				"blockHiding"
+			],
+			[
+				"mouse",
+				"mouseenter	mouseenter"
+			],
+			[
+				"fil",
+				"filter	.filter function"
+			],
+			[
+				"default",
+				"defaultCourses"
+			],
+			[
+				"tim",
+				"timeline"
+			],
+			[
+				"$b",
+				"$busuuGlobals"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"di",
+				"directive"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"conte",
+				"content-block"
+			],
+			[
+				"content-",
+				"content-block"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"ng-c",
+				"ng-controller	AngularJS"
+			],
+			[
+				"dataD",
+				"$scope.dataDumps.user.data.uid"
+			],
+			[
+				"b",
+				"busuuGlobals"
+			],
+			[
+				"dash",
+				"dashboard"
+			],
+			[
+				"sidepan",
+				"sidepanel-widget-stat-caption"
+			],
+			[
+				"rec",
+				"recalculateWidgetHeight"
+			],
+			[
+				"colla",
+				"collapsedEls"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"current",
+				"currentElement"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"po",
+				"positionIndicator"
+			],
+			[
+				"dashbo",
+				"dashboard-tab"
+			],
+			[
+				"timeline",
+				"timeline-objective"
+			],
+			[
+				"bx",
+				"bxsh	box-shadow"
+			],
+			[
+				"bs",
+				"bs-close"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"title",
+				"timeline-objective-title"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"time",
+				"timeline-component"
+			],
+			[
+				"tri",
+				"triangle--w"
+			],
+			[
+				"border",
+				"border-radius-base"
+			],
+			[
+				"border-top",
+				"border-top-radius"
+			],
+			[
+				"fl",
+				"fl:l	float:left"
+			],
+			[
+				"is-c",
+				"is-current"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"in",
+				"include	@include"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"cont",
+				"content-block"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"secure",
+				"secure_token"
+			],
+			[
+				"retur",
+				"return_data"
+			],
+			[
+				"retu",
+				"return_data"
+			],
+			[
+				"vendor",
+				"vendor_params"
+			],
+			[
+				"btn",
+				"btn-menu"
+			],
+			[
+				"co",
+				"contact"
+			],
+			[
+				"cl",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"outer",
+				"outerHeight	.outerHeight"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"html",
+				"htmlIsScrollEl"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"get_post_th",
+				"get_the_post_thumbnail"
+			],
+			[
+				"get_pos",
+				"get_post_type"
+			],
+			[
+				"tweet",
+				"tweet_list"
+			],
+			[
+				"ar",
+				"array	$… = array (…)"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"get_ter",
+				"get_term_link"
+			],
+			[
+				"c",
+				"c	color: #${1:000};"
+			],
+			[
+				"h",
+				"h	height"
+			],
+			[
+				"get_the",
+				"get_the_ID"
+			],
+			[
+				"get_post",
+				"get_post_meta"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"get_the_ti",
+				"get_the_title"
+			],
+			[
+				"get_defa",
+				"get_default_thumbnail"
+			],
+			[
+				"get_you",
+				"get_youtube_thumbnail"
+			],
+			[
+				"stri",
+				"stripos"
+			],
+			[
+				"get_video_",
+				"get_video_thumbnail"
+			],
+			[
+				"featured",
+				"featured-small"
+			],
+			[
+				"strrep",
+				"str_replace"
+			],
+			[
+				"add_the",
+				"add_theme_page"
+			],
+			[
+				"fir",
+				"first_date"
+			],
+			[
+				"gmti",
+				"gmmktime"
+			],
+			[
+				"CM_Pos",
+				"CM_Post_Chart"
+			],
+			[
+				"recalculate",
+				"recalculate_charts"
+			],
+			[
+				"wp_",
+				"wp_query"
+			],
+			[
+				"chart",
+				"chart-item"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"tabs",
+				"tabs-content"
+			],
+			[
+				"esc",
+				"esc_attr_e"
+			],
+			[
+				"view",
+				"view_data"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"log_",
+				"log_me"
+			],
+			[
+				"array_r",
+				"array_replace"
+			],
+			[
+				"debug",
+				"debug_print_backtrace"
+			],
+			[
+				"array_FI",
+				"array_fill_keys"
+			],
+			[
+				"post",
+				"post_type"
+			],
+			[
+				"array_fi",
+				"array_fill_keys"
+			],
+			[
+				"plug",
+				"plugins_url"
+			],
+			[
+				"is_acti",
+				"is_active_sidebar"
+			],
+			[
+				"widget",
+				"widget_title"
+			],
+			[
+				"cm_post_",
+				"cm_post_charts_widget"
+			],
+			[
+				"wi",
+				"widget	Widget Template"
+			],
+			[
+				"pre",
+				"pre-line"
+			],
+			[
+				"tex",
+				"text-rendering"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"the_post",
+				"the_post_thumbnail"
+			],
+			[
+				"order",
+				"orderby"
+			],
+			[
+				"wp_par",
+				"wp_parse_args"
+			],
+			[
+				"CM_Post_Charts",
+				"CM_Post_Charts_Module"
+			],
+			[
+				"per",
+				"persist"
+			],
+			[
+				"is_i",
+				"is_int"
+			],
+			[
+				"is_",
+				"is_a"
+			],
+			[
+				"get_cur",
+				"get_current_screen"
+			],
+			[
+				"CM_Post_view",
+				"CM_Post_Views_Module"
+			],
+			[
+				"is_sin",
+				"is_singular"
+			],
+			[
+				"view_",
+				"view_data"
+			],
+			[
+				"wp_pa",
+				"wp_parse_args"
+			],
+			[
+				"the",
+				"the_query"
+			],
+			[
+				"is_tr",
+				"is_tracked_post_type"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"result",
+				"result2"
+			],
+			[
+				"get_qu",
+				"get_queried_object"
+			],
+			[
+				"tracked",
+				"tracked_post_types"
+			],
+			[
+				"is_si",
+				"is_singular"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "angular/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 9087,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular/app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular/app/styles/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Unix",
+				"name": "$green = #06c298;"
+			}
+		},
+		{
+			"file": "angular/app/styles/_helpers.scss",
+			"settings":
+			{
+				"buffer_size": 1518,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular/app/styles/_base.scss",
+			"settings":
+			{
+				"buffer_size": 1657,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular/app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular/app/styles/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 562,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 308.0,
+		"selected_items":
+		[
+			[
+				"rail",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jas",
+				"Jasmine: Switch between code and spec"
+			],
+			[
+				"jq",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sft",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"git: ad",
+				"Git: Add..."
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"istal",
+				"Package Control: Install Package"
+			],
+			[
+				"pag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/milossoskic/Sites/testwp/app/angular/app/styles/_layoutmq.scss",
+		"/Users/milossoskic/Sites/testwp/app/angular/app/styles/layoutmq.scss",
+		"/Users/milossoskic/Sites/testwp/app/angular/app/styles/main.scss",
+		"/Users/milossoskic/Sites/testwp/app/angular/app/styles/_layout.scss",
+		"/Users/milossoskic/Sites/testwp/app/angular/app/styles/_print.scss",
+		"/Users/milossoskic/Sites/krrrunch/angular/package.json",
+		"/Users/milossoskic/Sites/krrrunch/angular/bower.json",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/directives/bsLu.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/LuframeCtrl.js",
+		"/Users/milossoskic/Sites/krrrunch/db/migrate/20130901180614_create_users.rb",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuuvocab.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/_mixins.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/views/vocab.html",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/_learningunit.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/bsLuResources.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/directives/luResources.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/main.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/headerNotifications.html",
+		"/Users/milossoskic/Sites/ng-wc/app/index.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuuexercises.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_header.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/addLanguageModal.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuuheader.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuugoals.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/directives/bsSidepanel.js",
+		"/Users/milossoskic/Sites/ng-wc/app/views/dashboard.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuuaddlanguage.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/_variables.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/bower_components/bootstrap-sass/lib/_buttons.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/bower_components/bootstrap-sass/lib/_variables.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/dashboard/busuudashboard.js",
+		"/Users/milossoskic/Sites/ng-wc/.tmp/styles/main.css",
+		"/Users/milossoskic/Sites/ng-wc/app/views/exercises.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/directives/bsTooltip.js",
+		"/Users/milossoskic/Sites/ng-wc/app/template/sidepanelRight.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/directives.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/filters.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_sidepanel.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/communityListUser.html",
+		"/Users/milossoskic/Sites/ng-wc/app/template/sidepanelLeft.html",
+		"/Users/milossoskic/Sites/ng-wc/app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/app.js",
+		"/Users/milossoskic/Sites/ng-wc/package.json",
+		"/Users/milossoskic/Sites/ng-wc/app/template/bsProgressBar.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/dashboard/excercises.js",
+		"/Users/milossoskic/Sites/ng-wc/app/views/vocabulary.html",
+		"/Users/milossoskic/Sites/ng-wc/app/template/rating/rating.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuupool.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuucorrections.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_vocabulary.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/services/poolService.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/dashboard/vocabulary.js",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_sprites.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/pagination/pagination.html",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_exercises.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/controllers/busuudashboard.js",
+		"/Users/milossoskic/Sites/ng-wc/app/bower_components/es5-shim/es5-sham.js",
+		"/Users/milossoskic/Sites/ng-wc/.sass-cache/4f30fb73b6801c5de8dc8076b32c85a4eddf2413/busuu_vocab.scssc",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_dashboard.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/bower_components/bootstrap-sass/lib/_mixins.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_vocab.scss",
+		"/Users/milossoskic/Sites/ng-wc/app/template/dashboardTabMenu.html",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/services/correctionsService.js",
+		"/Users/milossoskic/Sites/ng-wc/app/scripts/services/userService.js",
+		"/Users/milossoskic/Sites/ng-wc/app/webservices/testtimelinefeatures.json",
+		"/Users/milossoskic/Sites/ng-wc/app/template/progressComponent.html",
+		"/Users/milossoskic/Sites/ng-wc/app/template/progressCircle.html",
+		"/Users/milossoskic/Sites/ng-wc/app/template/tooltip/tooltip-user-popup.html",
+		"/Users/milossoskic/Sites/ng-wc/.tmp/styles/busuu_sprites.css",
+		"/Users/milossoskic/Sites/ng-wc/app/styles/busuu_sidebarnav.scss",
+		"/Users/milossoskic/Sites/krrrunch/spec/models/user_spec.rb",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/user.js",
+		"/Users/milossoskic/Sites/krrrunch/Gemfile",
+		"/Users/milossoskic/Sites/krrrunch/.gitignore",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/:id.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/vendors.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/add.js",
+		"/Users/milossoskic/Sites/krrrunch/app/views/vendors/add.html.erb",
+		"/Users/milossoskic/Sites/krrrunch/app/views/layouts/application.html.haml",
+		"/Users/milossoskic/Sites/krrrunch/app/models/vendor.rb",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/vendors.js.coffee",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/vendors/:id.html",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/application.js",
+		"/Users/milossoskic/Sites/krrrunch/app/views/layouts/application.html.erb",
+		"/Users/milossoskic/Sites/krrrunch/app/controllers/vendors_controller.rb",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/stylesheets/layout.css.scss",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/stylesheets/application.css.scss",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/stylesheets/vendors.css.scss",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/stylesheets/application.css",
+		"/Users/milossoskic/Sites/krrrunch/config/routes.rb",
+		"/Users/milossoskic/Sites/krrrunch/.rvmrc",
+		"/Users/milossoskic/Sites/krrrunch/.powenv",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/services/vendors/api.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/main.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/create.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/location.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/controllers/vendors/old_vendors.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/directives/vendors/location/map.js",
+		"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular/services/vendorSearchService.js",
+		"/Users/milossoskic/Sites/krrrunch/app/views/home/index.html.erb",
+		"/Users/milossoskic/Sites/krrrunch/db/migrate/20130831163957_create_vendors.rb",
+		"/Users/milossoskic/Sites/testangle/app/vendors/vendors.json",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/assets/css/slider.css",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/assets/scripts/vendor/modernizr-2.6.2.custom.min.js",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/mixture.json",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/templates/includes/footer.liquid",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/assets/css/main.css",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/assets/scripts/plugins.js",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/templates/layouts/layout.liquid",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/assets/css/style.mix.css",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/templates/index.liquid",
+		"/Users/milossoskic/Sites/testangle/Gruntfile.js",
+		"/Users/milossoskic/Sites/testangle/dist/scripts/76c21dca.plugins.js",
+		"/Users/milossoskic/Sites/krunch/app/models/vendors.rb",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/models/.gitignore",
+		"/Users/milossoskic/Sites/kvalvaagbyrne/collections/projects/goodboy.liquid",
+		"/Users/milossoskic/CitrusCloud/Resources/Code/JS/cm-curtain.js/Gruntfile.js",
+		"/Users/milossoskic/CitrusCloud/Resources/Code/JS/cm-curtain.js/spec/CurtainSpec.js",
+		"/Users/milossoskic/CitrusCloud/Resources/Code/JS/cm-curtain.js/lib/curtain.js",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-post-charts/CM_Post_Views_Module.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew/index-mainbackup.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew/custom.css",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew/loop-archivevideo.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/debug.log",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew/page-show.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-post-charts/models/CM_Post_Chart.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew/post-content.php",
+		"/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-video-post/cm-video-post.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/milossoskic/Sites/ng-wc/app/views,/Users/milossoskic/Sites/ng-wc/app/template",
+			"-*.css,-*.scss,-app/bower_components/",
+			"/Users/milossoskic/Sites/ng-wc/app/bower_components/bootstrap-sass",
+			"",
+			"/Users/milossoskic/Sites/krrrunch/app/assets/javascripts/angular",
+			"<open folders>",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-post-charts",
+			"is/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-post-charts",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/plugins/cm-post-charts",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content/themes/grimedailynew",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content",
+			"/Users/milossoskic/Sites/grmwp/app/",
+			"/Users/milossoskic/Sites/grmwp/app/wp-content"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"user",
+			"tool",
+			"defaultCourses",
+			"a11",
+			"_tl",
+			"dataDumps.timeline",
+			"defaultCourses",
+			"top",
+			"disableLayoutOnScroll",
+			"vocab",
+			"index",
+			"h3",
+			"h4",
+			"container",
+			"courseLanguages",
+			"current",
+			"userObject",
+			"\";\n",
+			"triang",
+			"trinagle",
+			"timelineNavActiveCourse",
+			"timelineActiveCourse",
+			"complete",
+			"brand-info",
+			"busuuGlobals.courseLanguages.available",
+			".is-complete",
+			"angletestApp",
+			"screencasts",
+			"clear",
+			"nav",
+			"background-s",
+			"border-rad",
+			"controls.png",
+			"openClose",
+			"active",
+			"  ",
+			"goodboy",
+			"xx",
+			"console",
+			"lib",
+			"visi",
+			"is_admin",
+			"disqus_embed",
+			"disqus",
+			"catch",
+			"get_template_part(",
+			"get_template_part('post'",
+			"#footer-inner",
+			"sliderimg",
+			"log_me",
+			"rel",
+			"next",
+			"adjacent_posts_rel_link",
+			"log_me('video')",
+			"get_header",
+			"get_video_thumbnail",
+			"shoo",
+			"sho",
+			"get_you",
+			"youtube",
+			"post_type",
+			"id=\"wrap\"",
+			"widget",
+			"widger",
+			"search",
+			"DIN",
+			"clearfix",
+			"log",
+			"plugin-name",
+			"admin.js",
+			"LIMI",
+			"pre_get_posts",
+			"filter",
+			"cm_view",
+			"filter",
+			"cmpost",
+			"chart",
+			"init",
+			"__",
+			"filter",
+			"action",
+			"class WP_Query {\n\n	/**\n	 * Query vars set by the user\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var array\n	 */\n	var $query;\n\n	/**\n	 * Query vars, after parsing\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var array\n	 */\n	var $query_vars = array();\n\n	/**\n	 * Taxonomy query, as passed to get_tax_sql()\n	 *\n	 * @since 3.1.0\n	 * @access public\n	 * @var object WP_Tax_Query\n	 */\n	var $tax_query;\n\n	/**\n	 * Metadata query container\n	 *\n	 * @since 3.2.0\n	 * @access public\n	 * @var object WP_Meta_Query\n	 */\n	var $meta_query = false;\n\n	/**\n	 * Holds the data for a single object that is queried.\n	 *\n	 * Holds the contents of a post, page, category, attachment.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var object|array\n	 */\n	var $queried_object;\n\n	/**\n	 * The ID of the queried object.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var int\n	 */\n	var $queried_object_id;\n\n	/**\n	 * Get post database query.\n	 *\n	 * @since 2.0.1\n	 * @access public\n	 * @var string\n	 */\n	var $request;\n\n	/**\n	 * List of posts.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var array\n	 */\n	var $posts;\n\n	/**\n	 * The amount of posts for the current query.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var int\n	 */\n	var $post_count = 0;\n\n	/**\n	 * Index of the current item in the loop.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var int\n	 */\n	var $current_post = -1;\n\n	/**\n	 * Whether the loop has started and the caller is in the loop.\n	 *\n	 * @since 2.0.0\n	 * @access public\n	 * @var bool\n	 */\n	var $in_the_loop = false;\n\n	/**\n	 * The current post ID.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var object\n	 */\n	var $post;\n\n	/**\n	 * The list of comments for current post.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @var array\n	 */\n	var $comments;\n\n	/**\n	 * The amount of comments for the posts.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @var int\n	 */\n	var $comment_count = 0;\n\n	/**\n	 * The index of the comment in the comment loop.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @var int\n	 */\n	var $current_comment = -1;\n\n	/**\n	 * Current comment ID.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @var int\n	 */\n	var $comment;\n\n	/**\n	 * The amount of found posts for the current query.\n	 *\n	 * If limit clause was not used, equals $post_count.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 * @var int\n	 */\n	var $found_posts = 0;\n\n	/**\n	 * The amount of pages.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 * @var int\n	 */\n	var $max_num_pages = 0;\n\n	/**\n	 * The amount of comment pages.\n	 *\n	 * @since 2.7.0\n	 * @access public\n	 * @var int\n	 */\n	var $max_num_comment_pages = 0;\n\n	/**\n	 * Set if query is single post.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_single = false;\n\n	/**\n	 * Set if query is preview of blog.\n	 *\n	 * @since 2.0.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_preview = false;\n\n	/**\n	 * Set if query returns a page.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_page = false;\n\n	/**\n	 * Set if query is an archive list.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_archive = false;\n\n	/**\n	 * Set if query is part of a date.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_date = false;\n\n	/**\n	 * Set if query contains a year.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_year = false;\n\n	/**\n	 * Set if query contains a month.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_month = false;\n\n	/**\n	 * Set if query contains a day.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_day = false;\n\n	/**\n	 * Set if query contains time.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_time = false;\n\n	/**\n	 * Set if query contains an author.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_author = false;\n\n	/**\n	 * Set if query contains category.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_category = false;\n\n	/**\n	 * Set if query contains tag.\n	 *\n	 * @since 2.3.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_tag = false;\n\n	/**\n	 * Set if query contains taxonomy.\n	 *\n	 * @since 2.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_tax = false;\n\n	/**\n	 * Set if query was part of a search result.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_search = false;\n\n	/**\n	 * Set if query is feed display.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_feed = false;\n\n	/**\n	 * Set if query is comment feed display.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_comment_feed = false;\n\n	/**\n	 * Set if query is trackback.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_trackback = false;\n\n	/**\n	 * Set if query is blog homepage.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_home = false;\n\n	/**\n	 * Set if query couldn't found anything.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_404 = false;\n\n	/**\n	 * Set if query is within comments popup window.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_comments_popup = false;\n\n	/**\n	 * Set if query is paged\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_paged = false;\n\n	/**\n	 * Set if query is part of administration page.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_admin = false;\n\n	/**\n	 * Set if query is an attachment.\n	 *\n	 * @since 2.0.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_attachment = false;\n\n	/**\n	 * Set if is single, is a page, or is an attachment.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_singular = false;\n\n	/**\n	 * Set if query is for robots.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_robots = false;\n\n	/**\n	 * Set if query contains posts.\n	 *\n	 * Basically, the homepage if the option isn't set for the static homepage.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_posts_page = false;\n\n	/**\n	 * Set if query is for a post type archive.\n	 *\n	 * @since 3.1.0\n	 * @access public\n	 * @var bool\n	 */\n	var $is_post_type_archive = false;\n\n	/**\n	 * Stores the ->query_vars state like md5(serialize( $this->query_vars ) ) so we know\n	 * whether we have to re-parse because something has changed\n	 *\n	 * @since 3.1.0\n	 * @access private\n	 */\n	var $query_vars_hash = false;\n\n	/**\n	 * Whether query vars have changed since the initial parse_query() call. Used to catch modifications to query vars made\n	 * via pre_get_posts hooks.\n	 *\n	 * @since 3.1.1\n	 * @access private\n	 */\n	var $query_vars_changed = true;\n\n	/**\n	 * Set if post thumbnails are cached\n	 *\n	 * @since 3.2.0\n	 * @access public\n	 * @var bool\n	 */\n	 var $thumbnails_cached = false;\n\n	/**\n	 * Resets query flags to false.\n	 *\n	 * The query flags are what page info WordPress was able to figure out.\n	 *\n	 * @since 2.0.0\n	 * @access private\n	 */\n	function init_query_flags() {\n		$this->is_single = false;\n		$this->is_preview = false;\n		$this->is_page = false;\n		$this->is_archive = false;\n		$this->is_date = false;\n		$this->is_year = false;\n		$this->is_month = false;\n		$this->is_day = false;\n		$this->is_time = false;\n		$this->is_author = false;\n		$this->is_category = false;\n		$this->is_tag = false;\n		$this->is_tax = false;\n		$this->is_search = false;\n		$this->is_feed = false;\n		$this->is_comment_feed = false;\n		$this->is_trackback = false;\n		$this->is_home = false;\n		$this->is_404 = false;\n		$this->is_comments_popup = false;\n		$this->is_paged = false;\n		$this->is_admin = false;\n		$this->is_attachment = false;\n		$this->is_singular = false;\n		$this->is_robots = false;\n		$this->is_posts_page = false;\n		$this->is_post_type_archive = false;\n	}\n\n	/**\n	 * Initiates object properties and sets default values.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 */\n	function init() {\n		unset($this->posts);\n		unset($this->query);\n		$this->query_vars = array();\n		unset($this->queried_object);\n		unset($this->queried_object_id);\n		$this->post_count = 0;\n		$this->current_post = -1;\n		$this->in_the_loop = false;\n		unset( $this->request );\n		unset( $this->post );\n		unset( $this->comments );\n		unset( $this->comment );\n		$this->comment_count = 0;\n		$this->current_comment = -1;\n		$this->found_posts = 0;\n		$this->max_num_pages = 0;\n		$this->max_num_comment_pages = 0;\n\n		$this->init_query_flags();\n	}\n\n	/**\n	 * Reparse the query vars.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 */\n	function parse_query_vars() {\n		$this->parse_query();\n	}\n\n	/**\n	 * Fills in the query variables, which do not exist within the parameter.\n	 *\n	 * @since 2.1.0\n	 * @access public\n	 *\n	 * @param array $array Defined query variables.\n	 * @return array Complete query variables with undefined ones filled in empty.\n	 */\n	function fill_query_vars($array) {\n		$keys = array(\n			'error'\n			, 'm'\n			, 'p'\n			, 'post_parent'\n			, 'subpost'\n			, 'subpost_id'\n			, 'attachment'\n			, 'attachment_id'\n			, 'name'\n			, 'static'\n			, 'pagename'\n			, 'page_id'\n			, 'second'\n			, 'minute'\n			, 'hour'\n			, 'day'\n			, 'monthnum'\n			, 'year'\n			, 'w'\n			, 'category_name'\n			, 'tag'\n			, 'cat'\n			, 'tag_id'\n			, 'author_name'\n			, 'feed'\n			, 'tb'\n			, 'paged'\n			, 'comments_popup'\n			, 'meta_key'\n			, 'meta_value'\n			, 'preview'\n			, 's'\n			, 'sentence'\n			, 'fields'\n			, 'menu_order'\n		);\n\n		foreach ( $keys as $key ) {\n			if ( !isset($array[$key]) )\n				$array[$key] = '';\n		}\n\n		$array_keys = array('category__in', 'category__not_in', 'category__and', 'post__in', 'post__not_in',\n			'tag__in', 'tag__not_in', 'tag__and', 'tag_slug__in', 'tag_slug__and');\n\n		foreach ( $array_keys as $key ) {\n			if ( !isset($array[$key]) )\n				$array[$key] = array();\n		}\n		return $array;\n	}\n\n	/**\n	 * Parse a query string and set query type booleans.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @param string|array $query Optional query.\n	 */\n	function parse_query( $query =  '' ) {\n		if ( ! empty( $query ) ) {\n			$this->init();\n			$this->query = $this->query_vars = wp_parse_args( $query );\n		} elseif ( ! isset( $this->query ) ) {\n			$this->query = $this->query_vars;\n		}\n\n		$this->query_vars = $this->fill_query_vars($this->query_vars);\n		$qv = &$this->query_vars;\n		$this->query_vars_changed = true;\n\n		if ( ! empty($qv['robots']) )\n			$this->is_robots = true;\n\n		$qv['p'] =  absint($qv['p']);\n		$qv['page_id'] =  absint($qv['page_id']);\n		$qv['year'] = absint($qv['year']);\n		$qv['monthnum'] = absint($qv['monthnum']);\n		$qv['day'] = absint($qv['day']);\n		$qv['w'] = absint($qv['w']);\n		$qv['m'] = absint($qv['m']);\n		$qv['paged'] = absint($qv['paged']);\n		$qv['cat'] = preg_replace( '|[^0-9,-]|', '', $qv['cat'] ); // comma separated list of positive or negative integers\n		$qv['pagename'] = trim( $qv['pagename'] );\n		$qv['name'] = trim( $qv['name'] );\n		if ( '' !== $qv['hour'] ) $qv['hour'] = absint($qv['hour']);\n		if ( '' !== $qv['minute'] ) $qv['minute'] = absint($qv['minute']);\n		if ( '' !== $qv['second'] ) $qv['second'] = absint($qv['second']);\n		if ( '' !== $qv['menu_order'] ) $qv['menu_order'] = absint($qv['menu_order']);\n\n		// Compat. Map subpost to attachment.\n		if ( '' != $qv['subpost'] )\n			$qv['attachment'] = $qv['subpost'];\n		if ( '' != $qv['subpost_id'] )\n			$qv['attachment_id'] = $qv['subpost_id'];\n\n		$qv['attachment_id'] = absint($qv['attachment_id']);\n\n		if ( ('' != $qv['attachment']) || !empty($qv['attachment_id']) ) {\n			$this->is_single = true;\n			$this->is_attachment = true;\n		} elseif ( '' != $qv['name'] ) {\n			$this->is_single = true;\n		} elseif ( $qv['p'] ) {\n			$this->is_single = true;\n		} elseif ( ('' !== $qv['hour']) && ('' !== $qv['minute']) &&('' !== $qv['second']) && ('' != $qv['year']) && ('' != $qv['monthnum']) && ('' != $qv['day']) ) {\n			// If year, month, day, hour, minute, and second are set, a single\n			// post is being queried.\n			$this->is_single = true;\n		} elseif ( '' != $qv['static'] || '' != $qv['pagename'] || !empty($qv['page_id']) ) {\n			$this->is_page = true;\n			$this->is_single = false;\n		} else {\n		// Look for archive queries. Dates, categories, authors, search, post type archives.\n\n			if ( !empty($qv['s']) ) {\n				$this->is_search = true;\n			}\n\n			if ( '' !== $qv['second'] ) {\n				$this->is_time = true;\n				$this->is_date = true;\n			}\n\n			if ( '' !== $qv['minute'] ) {\n				$this->is_time = true;\n				$this->is_date = true;\n			}\n\n			if ( '' !== $qv['hour'] ) {\n				$this->is_time = true;\n				$this->is_date = true;\n			}\n\n			if ( $qv['day'] ) {\n				if ( ! $this->is_date ) {\n					$this->is_day = true;\n					$this->is_date = true;\n				}\n			}\n\n			if ( $qv['monthnum'] ) {\n				if ( ! $this->is_date ) {\n					$this->is_month = true;\n					$this->is_date = true;\n				}\n			}\n\n			if ( $qv['year'] ) {\n				if ( ! $this->is_date ) {\n					$this->is_year = true;\n					$this->is_date = true;\n				}\n			}\n\n			if ( $qv['m'] ) {\n				$this->is_date = true;\n				if ( strlen($qv['m']) > 9 ) {\n					$this->is_time = true;\n				} else if ( strlen($qv['m']) > 7 ) {\n					$this->is_day = true;\n				} else if ( strlen($qv['m']) > 5 ) {\n					$this->is_month = true;\n				} else {\n					$this->is_year = true;\n				}\n			}\n\n			if ( '' != $qv['w'] ) {\n				$this->is_date = true;\n			}\n\n			$this->query_vars_hash = false;\n			$this->parse_tax_query( $qv );\n\n			foreach ( $this->tax_query->queries as $tax_query ) {\n				if ( 'NOT IN' != $tax_query['operator'] ) {\n					switch ( $tax_query['taxonomy'] ) {\n						case 'category':\n							$this->is_category = true;\n							break;\n						case 'post_tag':\n							$this->is_tag = true;\n							break;\n						default:\n							$this->is_tax = true;\n					}\n				}\n			}\n			unset( $tax_query );\n\n			if ( empty($qv['author']) || ($qv['author'] == '0') ) {\n				$this->is_author = false;\n			} else {\n				$this->is_author = true;\n			}\n\n			if ( '' != $qv['author_name'] )\n				$this->is_author = true;\n\n			if ( !empty( $qv['post_type'] ) && ! is_array( $qv['post_type'] ) ) {\n				$post_type_obj = get_post_type_object( $qv['post_type'] );\n				if ( ! empty( $post_type_obj->has_archive ) )\n					$this->is_post_type_archive = true;\n			}\n\n			if ( $this->is_post_type_archive || $this->is_date || $this->is_author || $this->is_category || $this->is_tag || $this->is_tax )\n				$this->is_archive = true;\n		}\n\n		if ( '' != $qv['feed'] )\n			$this->is_feed = true;\n\n		if ( '' != $qv['tb'] )\n			$this->is_trackback = true;\n\n		if ( '' != $qv['paged'] && ( intval($qv['paged']) > 1 ) )\n			$this->is_paged = true;\n\n		if ( '' != $qv['comments_popup'] )\n			$this->is_comments_popup = true;\n\n		// if we're previewing inside the write screen\n		if ( '' != $qv['preview'] )\n			$this->is_preview = true;\n\n		if ( is_admin() )\n			$this->is_admin = true;\n\n		if ( false !== strpos($qv['feed'], 'comments-') ) {\n			$qv['feed'] = str_replace('comments-', '', $qv['feed']);\n			$qv['withcomments'] = 1;\n		}\n\n		$this->is_singular = $this->is_single || $this->is_page || $this->is_attachment;\n\n		if ( $this->is_feed && ( !empty($qv['withcomments']) || ( empty($qv['withoutcomments']) && $this->is_singular ) ) )\n			$this->is_comment_feed = true;\n\n		if ( !( $this->is_singular || $this->is_archive || $this->is_search || $this->is_feed || $this->is_trackback || $this->is_404 || $this->is_admin || $this->is_comments_popup || $this->is_robots ) )\n			$this->is_home = true;\n\n		// Correct is_* for page_on_front and page_for_posts\n		if ( $this->is_home && 'page' == get_option('show_on_front') && get_option('page_on_front') ) {\n			$_query = wp_parse_args($this->query);\n			// pagename can be set and empty depending on matched rewrite rules. Ignore an empty pagename.\n			if ( isset($_query['pagename']) && '' == $_query['pagename'] )\n				unset($_query['pagename']);\n			if ( empty($_query) || !array_diff( array_keys($_query), array('preview', 'page', 'paged', 'cpage') ) ) {\n				$this->is_page = true;\n				$this->is_home = false;\n				$qv['page_id'] = get_option('page_on_front');\n				// Correct <!--nextpage--> for page_on_front\n				if ( !empty($qv['paged']) ) {\n					$qv['page'] = $qv['paged'];\n					unset($qv['paged']);\n				}\n			}\n		}\n\n		if ( '' != $qv['pagename'] ) {\n			$this->queried_object = get_page_by_path($qv['pagename']);\n			if ( !empty($this->queried_object) )\n				$this->queried_object_id = (int) $this->queried_object->ID;\n			else\n				unset($this->queried_object);\n\n			if  ( 'page' == get_option('show_on_front') && isset($this->queried_object_id) && $this->queried_object_id == get_option('page_for_posts') ) {\n				$this->is_page = false;\n				$this->is_home = true;\n				$this->is_posts_page = true;\n			}\n		}\n\n		if ( $qv['page_id'] ) {\n			if  ( 'page' == get_option('show_on_front') && $qv['page_id'] == get_option('page_for_posts') ) {\n				$this->is_page = false;\n				$this->is_home = true;\n				$this->is_posts_page = true;\n			}\n		}\n\n		if ( !empty($qv['post_type']) ) {\n			if ( is_array($qv['post_type']) )\n				$qv['post_type'] = array_map('sanitize_key', $qv['post_type']);\n			else\n				$qv['post_type'] = sanitize_key($qv['post_type']);\n		}\n\n		if ( ! empty( $qv['post_status'] ) ) {\n			if ( is_array( $qv['post_status'] ) )\n				$qv['post_status'] = array_map('sanitize_key', $qv['post_status']);\n			else\n				$qv['post_status'] = preg_replace('|[^a-z0-9_,-]|', '', $qv['post_status']);\n		}\n\n		if ( $this->is_posts_page && ( ! isset($qv['withcomments']) || ! $qv['withcomments'] ) )\n			$this->is_comment_feed = false;\n\n		$this->is_singular = $this->is_single || $this->is_page || $this->is_attachment;\n		// Done correcting is_* for page_on_front and page_for_posts\n\n		if ( '404' == $qv['error'] )\n			$this->set_404();\n\n		$this->query_vars_hash = md5( serialize( $this->query_vars ) );\n		$this->query_vars_changed = false;\n\n		do_action_ref_array('parse_query', array(&$this));\n	}\n\n	/*\n	 * Parses various taxonomy related query vars.\n	 *\n	 * @access protected\n	 * @since 3.1.0\n	 *\n	 * @param array &$q The query variables\n	 */\n	function parse_tax_query( &$q ) {\n		if ( ! empty( $q['tax_query'] ) && is_array( $q['tax_query'] ) ) {\n			$tax_query = $q['tax_query'];\n		} else {\n			$tax_query = array();\n		}\n\n		if ( !empty($q['taxonomy']) && !empty($q['term']) ) {\n			$tax_query[] = array(\n				'taxonomy' => $q['taxonomy'],\n				'terms' => array( $q['term'] ),\n				'field' => 'slug',\n			);\n		}\n\n		foreach ( $GLOBALS['wp_taxonomies'] as $taxonomy => $t ) {\n			if ( 'post_tag' == $taxonomy )\n				continue;	// Handled further down in the $q['tag'] block\n\n			if ( $t->query_var && !empty( $q[$t->query_var] ) ) {\n				$tax_query_defaults = array(\n					'taxonomy' => $taxonomy,\n					'field' => 'slug',\n				);\n\n 				if ( isset( $t->rewrite['hierarchical'] ) && $t->rewrite['hierarchical'] ) {\n					$q[$t->query_var] = wp_basename( $q[$t->query_var] );\n				}\n\n				$term = $q[$t->query_var];\n\n				if ( strpos($term, '+') !== false ) {\n					$terms = preg_split( '/[+]+/', $term );\n					foreach ( $terms as $term ) {\n						$tax_query[] = array_merge( $tax_query_defaults, array(\n							'terms' => array( $term )\n						) );\n					}\n				} else {\n					$tax_query[] = array_merge( $tax_query_defaults, array(\n						'terms' => preg_split( '/[,]+/', $term )\n					) );\n				}\n			}\n		}\n\n		// Category stuff\n		if ( !empty($q['cat']) && '0' != $q['cat'] && !$this->is_singular && $this->query_vars_changed ) {\n			$q['cat'] = ''.urldecode($q['cat']).'';\n			$q['cat'] = addslashes_gpc($q['cat']);\n			$cat_array = preg_split('/[,\\s]+/', $q['cat']);\n			$q['cat'] = '';\n			$req_cats = array();\n			foreach ( (array) $cat_array as $cat ) {\n				$cat = intval($cat);\n				$req_cats[] = $cat;\n				$in = ($cat > 0);\n				$cat = abs($cat);\n				if ( $in ) {\n					$q['category__in'][] = $cat;\n					$q['category__in'] = array_merge( $q['category__in'], get_term_children($cat, 'category') );\n				} else {\n					$q['category__not_in'][] = $cat;\n					$q['category__not_in'] = array_merge( $q['category__not_in'], get_term_children($cat, 'category') );\n				}\n			}\n			$q['cat'] = implode(',', $req_cats);\n		}\n\n		if ( !empty($q['category__in']) ) {\n			$q['category__in'] = array_map('absint', array_unique( (array) $q['category__in'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'category',\n				'terms' => $q['category__in'],\n				'field' => 'term_id',\n				'include_children' => false\n			);\n		}\n\n		if ( !empty($q['category__not_in']) ) {\n			$q['category__not_in'] = array_map('absint', array_unique( (array) $q['category__not_in'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'category',\n				'terms' => $q['category__not_in'],\n				'operator' => 'NOT IN',\n				'include_children' => false\n			);\n		}\n\n		if ( !empty($q['category__and']) ) {\n			$q['category__and'] = array_map('absint', array_unique( (array) $q['category__and'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'category',\n				'terms' => $q['category__and'],\n				'field' => 'term_id',\n				'operator' => 'AND',\n				'include_children' => false\n			);\n		}\n\n		// Tag stuff\n		if ( '' != $q['tag'] && !$this->is_singular && $this->query_vars_changed ) {\n			if ( strpos($q['tag'], ',') !== false ) {\n				$tags = preg_split('/[,\\r\\n\\t ]+/', $q['tag']);\n				foreach ( (array) $tags as $tag ) {\n					$tag = sanitize_term_field('slug', $tag, 0, 'post_tag', 'db');\n					$q['tag_slug__in'][] = $tag;\n				}\n			} else if ( preg_match('/[+\\r\\n\\t ]+/', $q['tag']) || !empty($q['cat']) ) {\n				$tags = preg_split('/[+\\r\\n\\t ]+/', $q['tag']);\n				foreach ( (array) $tags as $tag ) {\n					$tag = sanitize_term_field('slug', $tag, 0, 'post_tag', 'db');\n					$q['tag_slug__and'][] = $tag;\n				}\n			} else {\n				$q['tag'] = sanitize_term_field('slug', $q['tag'], 0, 'post_tag', 'db');\n				$q['tag_slug__in'][] = $q['tag'];\n			}\n		}\n\n		if ( !empty($q['tag_id']) ) {\n			$q['tag_id'] = absint( $q['tag_id'] );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag_id']\n			);\n		}\n\n		if ( !empty($q['tag__in']) ) {\n			$q['tag__in'] = array_map('absint', array_unique( (array) $q['tag__in'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag__in']\n			);\n		}\n\n		if ( !empty($q['tag__not_in']) ) {\n			$q['tag__not_in'] = array_map('absint', array_unique( (array) $q['tag__not_in'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag__not_in'],\n				'operator' => 'NOT IN'\n			);\n		}\n\n		if ( !empty($q['tag__and']) ) {\n			$q['tag__and'] = array_map('absint', array_unique( (array) $q['tag__and'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag__and'],\n				'operator' => 'AND'\n			);\n		}\n\n		if ( !empty($q['tag_slug__in']) ) {\n			$q['tag_slug__in'] = array_map('sanitize_title_for_query', array_unique( (array) $q['tag_slug__in'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag_slug__in'],\n				'field' => 'slug'\n			);\n		}\n\n		if ( !empty($q['tag_slug__and']) ) {\n			$q['tag_slug__and'] = array_map('sanitize_title_for_query', array_unique( (array) $q['tag_slug__and'] ) );\n			$tax_query[] = array(\n				'taxonomy' => 'post_tag',\n				'terms' => $q['tag_slug__and'],\n				'field' => 'slug',\n				'operator' => 'AND'\n			);\n		}\n\n		$this->tax_query = new WP_Tax_Query( $tax_query );\n	}\n\n	/**\n	 * Sets the 404 property and saves whether query is feed.\n	 *\n	 * @since 2.0.0\n	 * @access public\n	 */\n	function set_404() {\n		$is_feed = $this->is_feed;\n\n		$this->init_query_flags();\n		$this->is_404 = true;\n\n		$this->is_feed = $is_feed;\n	}\n\n	/**\n	 * Retrieve query variable.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @param string $query_var Query variable key.\n	 * @return mixed\n	 */\n	function get($query_var) {\n		if ( isset($this->query_vars[$query_var]) )\n			return $this->query_vars[$query_var];\n\n		return '';\n	}\n\n	/**\n	 * Set query variable.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @param string $query_var Query variable key.\n	 * @param mixed $value Query variable value.\n	 */\n	function set($query_var, $value) {\n		$this->query_vars[$query_var] = $value;\n	}\n\n	/**\n	 * Retrieve the posts based on query variables.\n	 *\n	 * There are a few filters and actions that can be used to modify the post\n	 * database query.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @uses do_action_ref_array() Calls 'pre_get_posts' hook before retrieving posts.\n	 *\n	 * @return array List of posts.\n	 */\n	function get_posts() {\n		global $wpdb, $user_ID, $_wp_using_ext_object_cache;\n\n		$this->parse_query();\n\n		do_action_ref_array('pre_get_posts', array(&$this));\n\n		// Shorthand.\n		$q = &$this->query_vars;\n\n		// Fill again in case pre_get_posts unset some vars.\n		$q = $this->fill_query_vars($q);\n\n		// Parse meta query\n		$this->meta_query = new WP_Meta_Query();\n		$this->meta_query->parse_query_vars( $q );\n\n		// Set a flag if a pre_get_posts hook changed the query vars.\n		$hash = md5( serialize( $this->query_vars ) );\n		if ( $hash != $this->query_vars_hash ) {\n			$this->query_vars_changed = true;\n			$this->query_vars_hash = $hash;\n		}\n		unset($hash);\n\n		// First let's clear some variables\n		$distinct = '';\n		$whichauthor = '';\n		$whichmimetype = '';\n		$where = '';\n		$limits = '';\n		$join = '';\n		$search = '';\n		$groupby = '';\n		$fields = '';\n		$post_status_join = false;\n		$page = 1;\n\n		if ( isset( $q['caller_get_posts'] ) ) {\n			_deprecated_argument( 'WP_Query', '3.1', __( '\"caller_get_posts\" is deprecated. Use \"ignore_sticky_posts\" instead.' ) );\n			if ( !isset( $q['ignore_sticky_posts'] ) )\n				$q['ignore_sticky_posts'] = $q['caller_get_posts'];\n		}\n\n		if ( !isset( $q['ignore_sticky_posts'] ) )\n			$q['ignore_sticky_posts'] = false;\n\n		if ( !isset($q['suppress_filters']) )\n			$q['suppress_filters'] = false;\n\n		if ( !isset($q['cache_results']) ) {\n			if ( $_wp_using_ext_object_cache )\n				$q['cache_results'] = false;\n			else\n				$q['cache_results'] = true;\n		}\n\n		if ( !isset($q['update_post_term_cache']) )\n			$q['update_post_term_cache'] = true;\n\n		if ( !isset($q['update_post_meta_cache']) )\n			$q['update_post_meta_cache'] = true;\n\n		if ( !isset($q['post_type']) ) {\n			if ( $this->is_search )\n				$q['post_type'] = 'any';\n			else\n				$q['post_type'] = '';\n		}\n		$post_type = $q['post_type'];\n		if ( !isset($q['posts_per_page']) || $q['posts_per_page'] == 0 )\n			$q['posts_per_page'] = get_option('posts_per_page');\n		if ( isset($q['showposts']) && $q['showposts'] ) {\n			$q['showposts'] = (int) $q['showposts'];\n			$q['posts_per_page'] = $q['showposts'];\n		}\n		if ( (isset($q['posts_per_archive_page']) && $q['posts_per_archive_page'] != 0) && ($this->is_archive || $this->is_search) )\n			$q['posts_per_page'] = $q['posts_per_archive_page'];\n		if ( !isset($q['nopaging']) ) {\n			if ( $q['posts_per_page'] == -1 ) {\n				$q['nopaging'] = true;\n			} else {\n				$q['nopaging'] = false;\n			}\n		}\n		if ( $this->is_feed ) {\n			$q['posts_per_page'] = get_option('posts_per_rss');\n			$q['nopaging'] = false;\n		}\n		$q['posts_per_page'] = (int) $q['posts_per_page'];\n		if ( $q['posts_per_page'] < -1 )\n			$q['posts_per_page'] = abs($q['posts_per_page']);\n		else if ( $q['posts_per_page'] == 0 )\n			$q['posts_per_page'] = 1;\n\n		if ( !isset($q['comments_per_page']) || $q['comments_per_page'] == 0 )\n			$q['comments_per_page'] = get_option('comments_per_page');\n\n		if ( $this->is_home && (empty($this->query) || $q['preview'] == 'true') && ( 'page' == get_option('show_on_front') ) && get_option('page_on_front') ) {\n			$this->is_page = true;\n			$this->is_home = false;\n			$q['page_id'] = get_option('page_on_front');\n		}\n\n		if ( isset($q['page']) ) {\n			$q['page'] = trim($q['page'], '/');\n			$q['page'] = absint($q['page']);\n		}\n\n		// If true, forcibly turns off SQL_CALC_FOUND_ROWS even when limits are present.\n		if ( isset($q['no_found_rows']) )\n			$q['no_found_rows'] = (bool) $q['no_found_rows'];\n		else\n			$q['no_found_rows'] = false;\n\n		switch ( $q['fields'] ) {\n			case 'ids':\n				$fields = \"$wpdb->posts.ID\";\n				break;\n			case 'id=>parent':\n				$fields = \"$wpdb->posts.ID, $wpdb->posts.post_parent\";\n				break;\n			default:\n				$fields = \"$wpdb->posts.*\";\n		}\n\n		if ( '' !== $q['menu_order'] )\n			$where .= \" AND $wpdb->posts.menu_order = \" . $q['menu_order'];\n\n		// If a month is specified in the querystring, load that month\n		if ( $q['m'] ) {\n			$q['m'] = '' . preg_replace('|[^0-9]|', '', $q['m']);\n			$where .= \" AND YEAR($wpdb->posts.post_date)=\" . substr($q['m'], 0, 4);\n			if ( strlen($q['m']) > 5 )\n				$where .= \" AND MONTH($wpdb->posts.post_date)=\" . substr($q['m'], 4, 2);\n			if ( strlen($q['m']) > 7 )\n				$where .= \" AND DAYOFMONTH($wpdb->posts.post_date)=\" . substr($q['m'], 6, 2);\n			if ( strlen($q['m']) > 9 )\n				$where .= \" AND HOUR($wpdb->posts.post_date)=\" . substr($q['m'], 8, 2);\n			if ( strlen($q['m']) > 11 )\n				$where .= \" AND MINUTE($wpdb->posts.post_date)=\" . substr($q['m'], 10, 2);\n			if ( strlen($q['m']) > 13 )\n				$where .= \" AND SECOND($wpdb->posts.post_date)=\" . substr($q['m'], 12, 2);\n		}\n\n		if ( '' !== $q['hour'] )\n			$where .= \" AND HOUR($wpdb->posts.post_date)='\" . $q['hour'] . \"'\";\n\n		if ( '' !== $q['minute'] )\n			$where .= \" AND MINUTE($wpdb->posts.post_date)='\" . $q['minute'] . \"'\";\n\n		if ( '' !== $q['second'] )\n			$where .= \" AND SECOND($wpdb->posts.post_date)='\" . $q['second'] . \"'\";\n\n		if ( $q['year'] )\n			$where .= \" AND YEAR($wpdb->posts.post_date)='\" . $q['year'] . \"'\";\n\n		if ( $q['monthnum'] )\n			$where .= \" AND MONTH($wpdb->posts.post_date)='\" . $q['monthnum'] . \"'\";\n\n		if ( $q['day'] )\n			$where .= \" AND DAYOFMONTH($wpdb->posts.post_date)='\" . $q['day'] . \"'\";\n\n		// If we've got a post_type AND its not \"any\" post_type.\n		if ( !empty($q['post_type']) && 'any' != $q['post_type'] ) {\n			foreach ( (array)$q['post_type'] as $_post_type ) {\n				$ptype_obj = get_post_type_object($_post_type);\n				if ( !$ptype_obj || !$ptype_obj->query_var || empty($q[ $ptype_obj->query_var ]) )\n					continue;\n\n				if ( ! $ptype_obj->hierarchical || strpos($q[ $ptype_obj->query_var ], '/') === false ) {\n					// Non-hierarchical post_types & parent-level-hierarchical post_types can directly use 'name'\n					$q['name'] = $q[ $ptype_obj->query_var ];\n				} else {\n					// Hierarchical post_types will operate through the\n					$q['pagename'] = $q[ $ptype_obj->query_var ];\n					$q['name'] = '';\n				}\n\n				// Only one request for a slug is possible, this is why name & pagename are overwritten above.\n				break;\n			} //end foreach\n			unset($ptype_obj);\n		}\n\n		if ( '' != $q['name'] ) {\n			$q['name'] = sanitize_title_for_query( $q['name'] );\n			$where .= \" AND $wpdb->posts.post_name = '\" . $q['name'] . \"'\";\n		} elseif ( '' != $q['pagename'] ) {\n			if ( isset($this->queried_object_id) ) {\n				$reqpage = $this->queried_object_id;\n			} else {\n				if ( 'page' != $q['post_type'] ) {\n					foreach ( (array)$q['post_type'] as $_post_type ) {\n						$ptype_obj = get_post_type_object($_post_type);\n						if ( !$ptype_obj || !$ptype_obj->hierarchical )\n							continue;\n\n						$reqpage = get_page_by_path($q['pagename'], OBJECT, $_post_type);\n						if ( $reqpage )\n							break;\n					}\n					unset($ptype_obj);\n				} else {\n					$reqpage = get_page_by_path($q['pagename']);\n				}\n				if ( !empty($reqpage) )\n					$reqpage = $reqpage->ID;\n				else\n					$reqpage = 0;\n			}\n\n			$page_for_posts = get_option('page_for_posts');\n			if  ( ('page' != get_option('show_on_front') ) || empty($page_for_posts) || ( $reqpage != $page_for_posts ) ) {\n				$q['pagename'] = sanitize_title_for_query( wp_basename( $q['pagename'] ) );\n				$q['name'] = $q['pagename'];\n				$where .= \" AND ($wpdb->posts.ID = '$reqpage')\";\n				$reqpage_obj = get_post( $reqpage );\n				if ( is_object($reqpage_obj) && 'attachment' == $reqpage_obj->post_type ) {\n					$this->is_attachment = true;\n					$post_type = $q['post_type'] = 'attachment';\n					$this->is_page = true;\n					$q['attachment_id'] = $reqpage;\n				}\n			}\n		} elseif ( '' != $q['attachment'] ) {\n			$q['attachment'] = sanitize_title_for_query( wp_basename( $q['attachment'] ) );\n			$q['name'] = $q['attachment'];\n			$where .= \" AND $wpdb->posts.post_name = '\" . $q['attachment'] . \"'\";\n		}\n\n		if ( $q['w'] )\n			$where .= ' AND ' . _wp_mysql_week( \"`$wpdb->posts`.`post_date`\" ) . \" = '\" . $q['w'] . \"'\";\n\n		if ( intval($q['comments_popup']) )\n			$q['p'] = absint($q['comments_popup']);\n\n		// If an attachment is requested by number, let it supersede any post number.\n		if ( $q['attachment_id'] )\n			$q['p'] = absint($q['attachment_id']);\n\n		// If a post number is specified, load that post\n		if ( $q['p'] ) {\n			$where .= \" AND {$wpdb->posts}.ID = \" . $q['p'];\n		} elseif ( $q['post__in'] ) {\n			$post__in = implode(',', array_map( 'absint', $q['post__in'] ));\n			$where .= \" AND {$wpdb->posts}.ID IN ($post__in)\";\n		} elseif ( $q['post__not_in'] ) {\n			$post__not_in = implode(',',  array_map( 'absint', $q['post__not_in'] ));\n			$where .= \" AND {$wpdb->posts}.ID NOT IN ($post__not_in)\";\n		}\n\n		if ( is_numeric($q['post_parent']) )\n			$where .= $wpdb->prepare( \" AND $wpdb->posts.post_parent = %d \", $q['post_parent'] );\n\n		if ( $q['page_id'] ) {\n			if  ( ('page' != get_option('show_on_front') ) || ( $q['page_id'] != get_option('page_for_posts') ) ) {\n				$q['p'] = $q['page_id'];\n				$where = \" AND {$wpdb->posts}.ID = \" . $q['page_id'];\n			}\n		}\n\n		// If a search pattern is specified, load the posts that match\n		if ( !empty($q['s']) ) {\n			// added slashes screw with quote grouping when done early, so done later\n			$q['s'] = stripslashes($q['s']);\n			if ( empty( $_GET['s'] ) && $this->is_main_query() )\n				$q['s'] = urldecode($q['s']);\n			if ( !empty($q['sentence']) ) {\n				$q['search_terms'] = array($q['s']);\n			} else {\n				preg_match_all('/\".*?(\"|$)|((?<=[\\r\\n\\t \",+])|^)[^\\r\\n\\t \",+]+/', $q['s'], $matches);\n				$q['search_terms'] = array_map('_search_terms_tidy', $matches[0]);\n			}\n			$n = !empty($q['exact']) ? '' : '%';\n			$searchand = '';\n			foreach( (array) $q['search_terms'] as $term ) {\n				$term = esc_sql( like_escape( $term ) );\n				$search .= \"{$searchand}(($wpdb->posts.post_title LIKE '{$n}{$term}{$n}') OR ($wpdb->posts.post_content LIKE '{$n}{$term}{$n}'))\";\n				$searchand = ' AND ';\n			}\n\n			if ( !empty($search) ) {\n				$search = \" AND ({$search}) \";\n				if ( !is_user_logged_in() )\n					$search .= \" AND ($wpdb->posts.post_password = '') \";\n			}\n		}\n\n		// Allow plugins to contextually add/remove/modify the search section of the database query\n		$search = apply_filters_ref_array('posts_search', array( $search, &$this ) );\n\n		// Taxonomies\n		if ( !$this->is_singular ) {\n			$this->parse_tax_query( $q );\n\n			$clauses = $this->tax_query->get_sql( $wpdb->posts, 'ID' );\n\n			$join .= $clauses['join'];\n			$where .= $clauses['where'];\n		}\n\n		if ( $this->is_tax ) {\n			if ( empty($post_type) ) {\n				// Do a fully inclusive search for currently registered post types of queried taxonomies\n				$post_type = array();\n				$taxonomies = wp_list_pluck( $this->tax_query->queries, 'taxonomy' );\n				foreach ( get_post_types( array( 'exclude_from_search' => false ) ) as $pt ) {\n					$object_taxonomies = $pt === 'attachment' ? get_taxonomies_for_attachments() : get_object_taxonomies( $pt );\n					if ( array_intersect( $taxonomies, $object_taxonomies ) )\n						$post_type[] = $pt;\n				}\n				if ( ! $post_type )\n					$post_type = 'any';\n\n				$post_status_join = true;\n			} elseif ( in_array('attachment', (array) $post_type) ) {\n				$post_status_join = true;\n			}\n		}\n\n		// Back-compat\n		if ( !empty($this->tax_query->queries) ) {\n			$tax_query_in_and = wp_list_filter( $this->tax_query->queries, array( 'operator' => 'NOT IN' ), 'NOT' );\n			if ( !empty( $tax_query_in_and ) ) {\n				if ( !isset( $q['taxonomy'] ) ) {\n					foreach ( $tax_query_in_and as $a_tax_query ) {\n						if ( !in_array( $a_tax_query['taxonomy'], array( 'category', 'post_tag' ) ) ) {\n							$q['taxonomy'] = $a_tax_query['taxonomy'];\n							if ( 'slug' == $a_tax_query['field'] )\n								$q['term'] = $a_tax_query['terms'][0];\n							else\n								$q['term_id'] = $a_tax_query['terms'][0];\n\n							break;\n						}\n					}\n				}\n\n				$cat_query = wp_list_filter( $tax_query_in_and, array( 'taxonomy' => 'category' ) );\n				if ( !empty( $cat_query ) ) {\n					$cat_query = reset( $cat_query );\n					$the_cat = get_term_by( $cat_query['field'], $cat_query['terms'][0], 'category' );\n					if ( $the_cat ) {\n						$this->set( 'cat', $the_cat->term_id );\n						$this->set( 'category_name', $the_cat->slug );\n					}\n					unset( $the_cat );\n				}\n				unset( $cat_query );\n\n				$tag_query = wp_list_filter( $tax_query_in_and, array( 'taxonomy' => 'post_tag' ) );\n				if ( !empty( $tag_query ) ) {\n					$tag_query = reset( $tag_query );\n					$the_tag = get_term_by( $tag_query['field'], $tag_query['terms'][0], 'post_tag' );\n					if ( $the_tag ) {\n						$this->set( 'tag_id', $the_tag->term_id );\n					}\n					unset( $the_tag );\n				}\n				unset( $tag_query );\n			}\n		}\n\n		if ( !empty( $this->tax_query->queries ) || !empty( $this->meta_query->queries ) ) {\n			$groupby = \"{$wpdb->posts}.ID\";\n		}\n\n		// Author/user stuff\n\n		if ( empty($q['author']) || ($q['author'] == '0') ) {\n			$whichauthor = '';\n		} else {\n			$q['author'] = (string)urldecode($q['author']);\n			$q['author'] = addslashes_gpc($q['author']);\n			if ( strpos($q['author'], '-') !== false ) {\n				$eq = '!=';\n				$andor = 'AND';\n				$q['author'] = explode('-', $q['author']);\n				$q['author'] = (string)absint($q['author'][1]);\n			} else {\n				$eq = '=';\n				$andor = 'OR';\n			}\n			$author_array = preg_split('/[,\\s]+/', $q['author']);\n			$_author_array = array();\n			foreach ( $author_array as $key => $_author )\n				$_author_array[] = \"$wpdb->posts.post_author \" . $eq . ' ' . absint($_author);\n			$whichauthor .= ' AND (' . implode(\" $andor \", $_author_array) . ')';\n			unset($author_array, $_author_array);\n		}\n\n		// Author stuff for nice URLs\n\n		if ( '' != $q['author_name'] ) {\n			if ( strpos($q['author_name'], '/') !== false ) {\n				$q['author_name'] = explode('/', $q['author_name']);\n				if ( $q['author_name'][ count($q['author_name'])-1 ] ) {\n					$q['author_name'] = $q['author_name'][count($q['author_name'])-1]; // no trailing slash\n				} else {\n					$q['author_name'] = $q['author_name'][count($q['author_name'])-2]; // there was a trailing slash\n				}\n			}\n			$q['author_name'] = sanitize_title_for_query( $q['author_name'] );\n			$q['author'] = get_user_by('slug', $q['author_name']);\n			if ( $q['author'] )\n				$q['author'] = $q['author']->ID;\n			$whichauthor .= \" AND ($wpdb->posts.post_author = \" . absint($q['author']) . ')';\n		}\n\n		// MIME-Type stuff for attachment browsing\n\n		if ( isset( $q['post_mime_type'] ) && '' != $q['post_mime_type'] )\n			$whichmimetype = wp_post_mime_type_where( $q['post_mime_type'], $wpdb->posts );\n\n		$where .= $search . $whichauthor . $whichmimetype;\n\n		if ( empty($q['order']) || ((strtoupper($q['order']) != 'ASC') && (strtoupper($q['order']) != 'DESC')) )\n			$q['order'] = 'DESC';\n\n		// Order by\n		if ( empty($q['orderby']) ) {\n			$orderby = \"$wpdb->posts.post_date \" . $q['order'];\n		} elseif ( 'none' == $q['orderby'] ) {\n			$orderby = '';\n		} elseif ( $q['orderby'] == 'post__in' && ! empty( $post__in ) ) {\n			$orderby = \"FIELD( {$wpdb->posts}.ID, $post__in )\";\n		} else {\n			// Used to filter values\n			$allowed_keys = array('name', 'author', 'date', 'title', 'modified', 'menu_order', 'parent', 'ID', 'rand', 'comment_count');\n			if ( !empty($q['meta_key']) ) {\n				$allowed_keys[] = $q['meta_key'];\n				$allowed_keys[] = 'meta_value';\n				$allowed_keys[] = 'meta_value_num';\n			}\n			$q['orderby'] = urldecode($q['orderby']);\n			$q['orderby'] = addslashes_gpc($q['orderby']);\n\n			$orderby_array = array();\n			foreach ( explode( ' ', $q['orderby'] ) as $i => $orderby ) {\n				// Only allow certain values for safety\n				if ( ! in_array($orderby, $allowed_keys) )\n					continue;\n\n				switch ( $orderby ) {\n					case 'menu_order':\n						$orderby = \"$wpdb->posts.menu_order\";\n						break;\n					case 'ID':\n						$orderby = \"$wpdb->posts.ID\";\n						break;\n					case 'rand':\n						$orderby = 'RAND()';\n						break;\n					case $q['meta_key']:\n					case 'meta_value':\n						$orderby = \"$wpdb->postmeta.meta_value\";\n						break;\n					case 'meta_value_num':\n						$orderby = \"$wpdb->postmeta.meta_value+0\";\n						break;\n					case 'comment_count':\n						$orderby = \"$wpdb->posts.comment_count\";\n						break;\n					default:\n						$orderby = \"$wpdb->posts.post_\" . $orderby;\n				}\n\n				$orderby_array[] = $orderby;\n			}\n			$orderby = implode( ',', $orderby_array );\n\n			if ( empty( $orderby ) )\n				$orderby = \"$wpdb->posts.post_date \".$q['order'];\n			else\n				$orderby .= \" {$q['order']}\";\n		}\n\n		if ( is_array( $post_type ) ) {\n			$post_type_cap = 'multiple_post_type';\n		} else {\n			$post_type_object = get_post_type_object( $post_type );\n			if ( empty( $post_type_object ) )\n				$post_type_cap = $post_type;\n		}\n\n		if ( 'any' == $post_type ) {\n			$in_search_post_types = get_post_types( array('exclude_from_search' => false) );\n			if ( ! empty( $in_search_post_types ) )\n				$where .= \" AND $wpdb->posts.post_type IN ('\" . join(\"', '\", $in_search_post_types ) . \"')\";\n		} elseif ( !empty( $post_type ) && is_array( $post_type ) ) {\n			$where .= \" AND $wpdb->posts.post_type IN ('\" . join(\"', '\", $post_type) . \"')\";\n		} elseif ( ! empty( $post_type ) ) {\n			$where .= \" AND $wpdb->posts.post_type = '$post_type'\";\n			$post_type_object = get_post_type_object ( $post_type );\n		} elseif ( $this->is_attachment ) {\n			$where .= \" AND $wpdb->posts.post_type = 'attachment'\";\n			$post_type_object = get_post_type_object ( 'attachment' );\n		} elseif ( $this->is_page ) {\n			$where .= \" AND $wpdb->posts.post_type = 'page'\";\n			$post_type_object = get_post_type_object ( 'page' );\n		} else {\n			$where .= \" AND $wpdb->posts.post_type = 'post'\";\n			$post_type_object = get_post_type_object ( 'post' );\n		}\n\n		if ( ! empty( $post_type_object ) ) {\n			$edit_cap = $post_type_object->cap->edit_post;\n			$read_cap = $post_type_object->cap->read_post;\n			$edit_others_cap = $post_type_object->cap->edit_others_posts;\n			$read_private_cap = $post_type_object->cap->read_private_posts;\n		} else {\n			$edit_cap = 'edit_' . $post_type_cap;\n			$read_cap = 'read_' . $post_type_cap;\n			$edit_others_cap = 'edit_others_' . $post_type_cap . 's';\n			$read_private_cap = 'read_private_' . $post_type_cap . 's';\n		}\n\n		if ( ! empty( $q['post_status'] ) ) {\n			$statuswheres = array();\n			$q_status = $q['post_status'];\n			if ( ! is_array( $q_status ) )\n				$q_status = explode(',', $q_status);\n			$r_status = array();\n			$p_status = array();\n			$e_status = array();\n			if ( in_array('any', $q_status) ) {\n				foreach ( get_post_stati( array('exclude_from_search' => true) ) as $status )\n					$e_status[] = \"$wpdb->posts.post_status <> '$status'\";\n			} else {\n				foreach ( get_post_stati() as $status ) {\n					if ( in_array( $status, $q_status ) ) {\n						if ( 'private' == $status )\n							$p_status[] = \"$wpdb->posts.post_status = '$status'\";\n						else\n							$r_status[] = \"$wpdb->posts.post_status = '$status'\";\n					}\n				}\n			}\n\n			if ( empty($q['perm'] ) || 'readable' != $q['perm'] ) {\n				$r_status = array_merge($r_status, $p_status);\n				unset($p_status);\n			}\n\n			if ( !empty($e_status) ) {\n				$statuswheres[] = \"(\" . join( ' AND ', $e_status ) . \")\";\n			}\n			if ( !empty($r_status) ) {\n				if ( !empty($q['perm'] ) && 'editable' == $q['perm'] && !current_user_can($edit_others_cap) )\n					$statuswheres[] = \"($wpdb->posts.post_author = $user_ID \" . \"AND (\" . join( ' OR ', $r_status ) . \"))\";\n				else\n					$statuswheres[] = \"(\" . join( ' OR ', $r_status ) . \")\";\n			}\n			if ( !empty($p_status) ) {\n				if ( !empty($q['perm'] ) && 'readable' == $q['perm'] && !current_user_can($read_private_cap) )\n					$statuswheres[] = \"($wpdb->posts.post_author = $user_ID \" . \"AND (\" . join( ' OR ', $p_status ) . \"))\";\n				else\n					$statuswheres[] = \"(\" . join( ' OR ', $p_status ) . \")\";\n			}\n			if ( $post_status_join ) {\n				$join .= \" LEFT JOIN $wpdb->posts AS p2 ON ($wpdb->posts.post_parent = p2.ID) \";\n				foreach ( $statuswheres as $index => $statuswhere )\n					$statuswheres[$index] = \"($statuswhere OR ($wpdb->posts.post_status = 'inherit' AND \" . str_replace($wpdb->posts, 'p2', $statuswhere) . \"))\";\n			}\n			foreach ( $statuswheres as $statuswhere )\n				$where .= \" AND $statuswhere\";\n		} elseif ( !$this->is_singular ) {\n			$where .= \" AND ($wpdb->posts.post_status = 'publish'\";\n\n			// Add public states.\n			$public_states = get_post_stati( array('public' => true) );\n			foreach ( (array) $public_states as $state ) {\n				if ( 'publish' == $state ) // Publish is hard-coded above.\n					continue;\n				$where .= \" OR $wpdb->posts.post_status = '$state'\";\n			}\n\n			if ( $this->is_admin ) {\n				// Add protected states that should show in the admin all list.\n				$admin_all_states = get_post_stati( array('protected' => true, 'show_in_admin_all_list' => true) );\n				foreach ( (array) $admin_all_states as $state )\n					$where .= \" OR $wpdb->posts.post_status = '$state'\";\n			}\n\n			if ( is_user_logged_in() ) {\n				// Add private states that are limited to viewing by the author of a post or someone who has caps to read private states.\n				$private_states = get_post_stati( array('private' => true) );\n				foreach ( (array) $private_states as $state )\n					$where .= current_user_can( $read_private_cap ) ? \" OR $wpdb->posts.post_status = '$state'\" : \" OR $wpdb->posts.post_author = $user_ID AND $wpdb->posts.post_status = '$state'\";\n			}\n\n			$where .= ')';\n		}\n\n		if ( !empty( $this->meta_query->queries ) ) {\n			$clauses = $this->meta_query->get_sql( 'post', $wpdb->posts, 'ID', $this );\n			$join .= $clauses['join'];\n			$where .= $clauses['where'];\n		}\n\n		// Apply filters on where and join prior to paging so that any\n		// manipulations to them are reflected in the paging by day queries.\n		if ( !$q['suppress_filters'] ) {\n			$where = apply_filters_ref_array('posts_where', array( $where, &$this ) );\n			$join = apply_filters_ref_array('posts_join', array( $join, &$this ) );\n		}\n\n		// Paging\n		if ( empty($q['nopaging']) && !$this->is_singular ) {\n			$page = absint($q['paged']);\n			if ( !$page )\n				$page = 1;\n\n			if ( empty($q['offset']) ) {\n				$pgstrt = ($page - 1) * $q['posts_per_page'] . ', ';\n			} else { // we're ignoring $page and using 'offset'\n				$q['offset'] = absint($q['offset']);\n				$pgstrt = $q['offset'] . ', ';\n			}\n			$limits = 'LIMIT ' . $pgstrt . $q['posts_per_page'];\n		}\n\n		// Comments feeds\n		if ( $this->is_comment_feed && ( $this->is_archive || $this->is_search || !$this->is_singular ) ) {\n			if ( $this->is_archive || $this->is_search ) {\n				$cjoin = \"JOIN $wpdb->posts ON ($wpdb->comments.comment_post_ID = $wpdb->posts.ID) $join \";\n				$cwhere = \"WHERE comment_approved = '1' $where\";\n				$cgroupby = \"$wpdb->comments.comment_id\";\n			} else { // Other non singular e.g. front\n				$cjoin = \"JOIN $wpdb->posts ON ( $wpdb->comments.comment_post_ID = $wpdb->posts.ID )\";\n				$cwhere = \"WHERE post_status = 'publish' AND comment_approved = '1'\";\n				$cgroupby = '';\n			}\n\n			if ( !$q['suppress_filters'] ) {\n				$cjoin = apply_filters_ref_array('comment_feed_join', array( $cjoin, &$this ) );\n				$cwhere = apply_filters_ref_array('comment_feed_where', array( $cwhere, &$this ) );\n				$cgroupby = apply_filters_ref_array('comment_feed_groupby', array( $cgroupby, &$this ) );\n				$corderby = apply_filters_ref_array('comment_feed_orderby', array( 'comment_date_gmt DESC', &$this ) );\n				$climits = apply_filters_ref_array('comment_feed_limits', array( 'LIMIT ' . get_option('posts_per_rss'), &$this ) );\n			}\n			$cgroupby = ( ! empty( $cgroupby ) ) ? 'GROUP BY ' . $cgroupby : '';\n			$corderby = ( ! empty( $corderby ) ) ? 'ORDER BY ' . $corderby : '';\n\n			$this->comments = (array) $wpdb->get_results(\"SELECT $distinct $wpdb->comments.* FROM $wpdb->comments $cjoin $cwhere $cgroupby $corderby $climits\");\n			$this->comment_count = count($this->comments);\n\n			$post_ids = array();\n\n			foreach ( $this->comments as $comment )\n				$post_ids[] = (int) $comment->comment_post_ID;\n\n			$post_ids = join(',', $post_ids);\n			$join = '';\n			if ( $post_ids )\n				$where = \"AND $wpdb->posts.ID IN ($post_ids) \";\n			else\n				$where = \"AND 0\";\n		}\n\n		$pieces = array( 'where', 'groupby', 'join', 'orderby', 'distinct', 'fields', 'limits' );\n\n		// Apply post-paging filters on where and join. Only plugins that\n		// manipulate paging queries should use these hooks.\n		if ( !$q['suppress_filters'] ) {\n			$where		= apply_filters_ref_array( 'posts_where_paged',	array( $where, &$this ) );\n			$groupby	= apply_filters_ref_array( 'posts_groupby',		array( $groupby, &$this ) );\n			$join		= apply_filters_ref_array( 'posts_join_paged',	array( $join, &$this ) );\n			$orderby	= apply_filters_ref_array( 'posts_orderby',		array( $orderby, &$this ) );\n			$distinct	= apply_filters_ref_array( 'posts_distinct',	array( $distinct, &$this ) );\n			$limits		= apply_filters_ref_array( 'post_limits',		array( $limits, &$this ) );\n			$fields		= apply_filters_ref_array( 'posts_fields',		array( $fields, &$this ) );\n\n			// Filter all clauses at once, for convenience\n			$clauses = (array) apply_filters_ref_array( 'posts_clauses', array( compact( $pieces ), &$this ) );\n			foreach ( $pieces as $piece )\n				$$piece = isset( $clauses[ $piece ] ) ? $clauses[ $piece ] : '';\n		}\n\n		// Announce current selection parameters. For use by caching plugins.\n		do_action( 'posts_selection', $where . $groupby . $orderby . $limits . $join );\n\n		// Filter again for the benefit of caching plugins. Regular plugins should use the hooks above.\n		if ( !$q['suppress_filters'] ) {\n			$where		= apply_filters_ref_array( 'posts_where_request',		array( $where, &$this ) );\n			$groupby	= apply_filters_ref_array( 'posts_groupby_request',		array( $groupby, &$this ) );\n			$join		= apply_filters_ref_array( 'posts_join_request',		array( $join, &$this ) );\n			$orderby	= apply_filters_ref_array( 'posts_orderby_request',		array( $orderby, &$this ) );\n			$distinct	= apply_filters_ref_array( 'posts_distinct_request',	array( $distinct, &$this ) );\n			$fields		= apply_filters_ref_array( 'posts_fields_request',		array( $fields, &$this ) );\n			$limits		= apply_filters_ref_array( 'post_limits_request',		array( $limits, &$this ) );\n\n			// Filter all clauses at once, for convenience\n			$clauses = (array) apply_filters_ref_array( 'posts_clauses_request', array( compact( $pieces ), &$this ) );\n			foreach ( $pieces as $piece )\n				$$piece = isset( $clauses[ $piece ] ) ? $clauses[ $piece ] : '';\n		}\n\n		if ( ! empty($groupby) )\n			$groupby = 'GROUP BY ' . $groupby;\n		if ( !empty( $orderby ) )\n			$orderby = 'ORDER BY ' . $orderby;\n\n		$found_rows = '';\n		if ( !$q['no_found_rows'] && !empty($limits) )\n			$found_rows = 'SQL_CALC_FOUND_ROWS';\n\n		$this->request = $old_request = \"SELECT $found_rows $distinct $fields FROM $wpdb->posts $join WHERE 1=1 $where $groupby $orderby $limits\";\n\n		if ( !$q['suppress_filters'] ) {\n			$this->request = apply_filters_ref_array( 'posts_request', array( $this->request, &$this ) );\n		}\n\n		if ( 'ids' == $q['fields'] ) {\n			$this->posts = $wpdb->get_col( $this->request );\n			$this->post_count = count( $this->posts );\n			$this->set_found_posts( $q, $limits );\n\n			return $this->posts;\n		}\n\n		if ( 'id=>parent' == $q['fields'] ) {\n			$this->posts = $wpdb->get_results( $this->request );\n			$this->post_count = count( $this->posts );\n			$this->set_found_posts( $q, $limits );\n\n			$r = array();\n			foreach ( $this->posts as $post )\n				$r[ $post->ID ] = $post->post_parent;\n\n			return $r;\n		}\n\n		$split_the_query = ( $old_request == $this->request && \"$wpdb->posts.*\" == $fields && !empty( $limits ) && $q['posts_per_page'] < 500 );\n		$split_the_query = apply_filters( 'split_the_query', $split_the_query, $this );\n\n		if ( $split_the_query ) {\n			// First get the IDs and then fill in the objects\n\n			$this->request = \"SELECT $found_rows $distinct $wpdb->posts.ID FROM $wpdb->posts $join WHERE 1=1 $where $groupby $orderby $limits\";\n\n			$this->request = apply_filters( 'posts_request_ids', $this->request, $this );\n\n			$ids = $wpdb->get_col( $this->request );\n\n			if ( $ids ) {\n				$this->posts = $ids;\n				$this->set_found_posts( $q, $limits );\n				_prime_post_caches( $ids, $q['update_post_term_cache'], $q['update_post_meta_cache'] );\n			} else {\n				$this->posts = array();\n			}\n		} else {\n			$this->posts = $wpdb->get_results( $this->request );\n			$this->set_found_posts( $q, $limits );\n		}\n\n		// Convert to WP_Post objects\n		if ( $this->posts )\n			$this->posts = array_map( 'get_post', $this->posts );\n\n		// Raw results filter. Prior to status checks.\n		if ( !$q['suppress_filters'] )\n			$this->posts = apply_filters_ref_array('posts_results', array( $this->posts, &$this ) );\n\n		if ( !empty($this->posts) && $this->is_comment_feed && $this->is_singular ) {\n			$cjoin = apply_filters_ref_array('comment_feed_join', array( '', &$this ) );\n			$cwhere = apply_filters_ref_array('comment_feed_where', array( \"WHERE comment_post_ID = '{$this->posts[0]->ID}' AND comment_approved = '1'\", &$this ) );\n			$cgroupby = apply_filters_ref_array('comment_feed_groupby', array( '', &$this ) );\n			$cgroupby = ( ! empty( $cgroupby ) ) ? 'GROUP BY ' . $cgroupby : '';\n			$corderby = apply_filters_ref_array('comment_feed_orderby', array( 'comment_date_gmt DESC', &$this ) );\n			$corderby = ( ! empty( $corderby ) ) ? 'ORDER BY ' . $corderby : '';\n			$climits = apply_filters_ref_array('comment_feed_limits', array( 'LIMIT ' . get_option('posts_per_rss'), &$this ) );\n			$comments_request = \"SELECT $wpdb->comments.* FROM $wpdb->comments $cjoin $cwhere $cgroupby $corderby $climits\";\n			$this->comments = $wpdb->get_results($comments_request);\n			$this->comment_count = count($this->comments);\n		}\n\n		// Check post status to determine if post should be displayed.\n		if ( !empty($this->posts) && ($this->is_single || $this->is_page) ) {\n			$status = get_post_status($this->posts[0]);\n			$post_status_obj = get_post_status_object($status);\n			//$type = get_post_type($this->posts[0]);\n			if ( !$post_status_obj->public ) {\n				if ( ! is_user_logged_in() ) {\n					// User must be logged in to view unpublished posts.\n					$this->posts = array();\n				} else {\n					if  ( $post_status_obj->protected ) {\n						// User must have edit permissions on the draft to preview.\n						if ( ! current_user_can($edit_cap, $this->posts[0]->ID) ) {\n							$this->posts = array();\n						} else {\n							$this->is_preview = true;\n							if ( 'future' != $status )\n								$this->posts[0]->post_date = current_time('mysql');\n						}\n					} elseif ( $post_status_obj->private ) {\n						if ( ! current_user_can($read_cap, $this->posts[0]->ID) )\n							$this->posts = array();\n					} else {\n						$this->posts = array();\n					}\n				}\n			}\n\n			if ( $this->is_preview && $this->posts && current_user_can( $edit_cap, $this->posts[0]->ID ) )\n				$this->posts[0] = get_post( apply_filters_ref_array( 'the_preview', array( $this->posts[0], &$this ) ) );\n		}\n\n		// Put sticky posts at the top of the posts array\n		$sticky_posts = get_option('sticky_posts');\n		if ( $this->is_home && $page <= 1 && is_array($sticky_posts) && !empty($sticky_posts) && !$q['ignore_sticky_posts'] ) {\n			$num_posts = count($this->posts);\n			$sticky_offset = 0;\n			// Loop over posts and relocate stickies to the front.\n			for ( $i = 0; $i < $num_posts; $i++ ) {\n				if ( in_array($this->posts[$i]->ID, $sticky_posts) ) {\n					$sticky_post = $this->posts[$i];\n					// Remove sticky from current position\n					array_splice($this->posts, $i, 1);\n					// Move to front, after other stickies\n					array_splice($this->posts, $sticky_offset, 0, array($sticky_post));\n					// Increment the sticky offset. The next sticky will be placed at this offset.\n					$sticky_offset++;\n					// Remove post from sticky posts array\n					$offset = array_search($sticky_post->ID, $sticky_posts);\n					unset( $sticky_posts[$offset] );\n				}\n			}\n\n			// If any posts have been excluded specifically, Ignore those that are sticky.\n			if ( !empty($sticky_posts) && !empty($q['post__not_in']) )\n				$sticky_posts = array_diff($sticky_posts, $q['post__not_in']);\n\n			// Fetch sticky posts that weren't in the query results\n			if ( !empty($sticky_posts) ) {\n				$stickies = get_posts( array(\n					'post__in' => $sticky_posts,\n					'post_type' => $post_type,\n					'post_status' => 'publish',\n					'nopaging' => true\n				) );\n\n				foreach ( $stickies as $sticky_post ) {\n					array_splice( $this->posts, $sticky_offset, 0, array( $sticky_post ) );\n					$sticky_offset++;\n				}\n			}\n		}\n\n		if ( !$q['suppress_filters'] )\n			$this->posts = apply_filters_ref_array('the_posts', array( $this->posts, &$this ) );\n\n		// Ensure that any posts added/modified via one of the filters above are\n		// of the type WP_Post and are filtered.\n		if ( $this->posts ) {\n			$this->post_count = count( $this->posts );\n\n			$this->posts = array_map( 'get_post', $this->posts );\n\n			if ( $q['cache_results'] )\n				update_post_caches($this->posts, $post_type, $q['update_post_term_cache'], $q['update_post_meta_cache']);\n\n			$this->post = reset( $this->posts );\n		} else {\n			$this->post_count = 0;\n			$this->posts = array();\n		}\n\n		return $this->posts;\n	}\n\n	/**\n	 * Set up the amount of found posts and the number of pages (if limit clause was used)\n	 * for the current query.\n	 *\n	 * @since 3.5.0\n	 * @access private\n	 */\n	function set_found_posts( $q, $limits ) {\n		global $wpdb;\n\n		// Bail if posts is an empty array. Continue if posts is an empty string\n		// null, or false to accommodate caching plugins that fill posts later.\n		if ( $q['no_found_rows'] || ( is_array( $this->posts ) && ! $this->posts ) )\n			return;\n\n		if ( ! empty( $limits ) )\n			$this->found_posts = $wpdb->get_var( apply_filters_ref_array( 'found_posts_query', array( 'SELECT FOUND_ROWS()', &$this ) ) );\n		else\n			$this->found_posts = count( $this->posts );\n\n		$this->found_posts = apply_filters_ref_array( 'found_posts', array( $this->found_posts, &$this ) );\n\n		if ( ! empty( $limits ) )\n			$this->max_num_pages = ceil( $this->found_posts / $q['posts_per_page'] );\n	}\n\n	/**\n	 * Set up the next post and iterate current post index.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @return WP_Post Next post.\n	 */\n	function next_post() {\n\n		$this->current_post++;\n\n		$this->post = $this->posts[$this->current_post];\n		return $this->post;\n	}\n\n	/**\n	 * Sets up the current post.\n	 *\n	 * Retrieves the next post, sets up the post, sets the 'in the loop'\n	 * property to true.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @uses $post\n	 * @uses do_action_ref_array() Calls 'loop_start' if loop has just started\n	 */\n	function the_post() {\n		global $post;\n		$this->in_the_loop = true;\n\n		if ( $this->current_post == -1 ) // loop has just started\n			do_action_ref_array('loop_start', array(&$this));\n\n		$post = $this->next_post();\n		setup_postdata($post);\n	}\n\n	/**\n	 * Whether there are more posts available in the loop.\n	 *\n	 * Calls action 'loop_end', when the loop is complete.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 * @uses do_action_ref_array() Calls 'loop_end' if loop is ended\n	 *\n	 * @return bool True if posts are available, false if end of loop.\n	 */\n	function have_posts() {\n		if ( $this->current_post + 1 < $this->post_count ) {\n			return true;\n		} elseif ( $this->current_post + 1 == $this->post_count && $this->post_count > 0 ) {\n			do_action_ref_array('loop_end', array(&$this));\n			// Do some cleaning up after the loop\n			$this->rewind_posts();\n		}\n\n		$this->in_the_loop = false;\n		return false;\n	}\n\n	/**\n	 * Rewind the posts and reset post index.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 */\n	function rewind_posts() {\n		$this->current_post = -1;\n		if ( $this->post_count > 0 ) {\n			$this->post = $this->posts[0];\n		}\n	}\n\n	/**\n	 * Iterate current comment index and return comment object.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 *\n	 * @return object Comment object.\n	 */\n	function next_comment() {\n		$this->current_comment++;\n\n		$this->comment = $this->comments[$this->current_comment];\n		return $this->comment;\n	}\n\n	/**\n	 * Sets up the current comment.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 * @global object $comment Current comment.\n	 * @uses do_action() Calls 'comment_loop_start' hook when first comment is processed.\n	 */\n	function the_comment() {\n		global $comment;\n\n		$comment = $this->next_comment();\n\n		if ( $this->current_comment == 0 ) {\n			do_action('comment_loop_start');\n		}\n	}\n\n	/**\n	 * Whether there are more comments available.\n	 *\n	 * Automatically rewinds comments when finished.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 *\n	 * @return bool True, if more comments. False, if no more posts.\n	 */\n	function have_comments() {\n		if ( $this->current_comment + 1 < $this->comment_count ) {\n			return true;\n		} elseif ( $this->current_comment + 1 == $this->comment_count ) {\n			$this->rewind_comments();\n		}\n\n		return false;\n	}\n\n	/**\n	 * Rewind the comments, resets the comment index and comment to first.\n	 *\n	 * @since 2.2.0\n	 * @access public\n	 */\n	function rewind_comments() {\n		$this->current_comment = -1;\n		if ( $this->comment_count > 0 ) {\n			$this->comment = $this->comments[0];\n		}\n	}\n\n	/**\n	 * Sets up the WordPress query by parsing query string.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @param string $query URL query string.\n	 * @return array List of posts.\n	 */\n	function query( $query ) {\n		$this->init();\n		$this->query = $this->query_vars = wp_parse_args( $query );\n		return $this->get_posts();\n	}\n\n	/**\n	 * Retrieve queried object.\n	 *\n	 * If queried object is not set, then the queried object will be set from\n	 * the category, tag, taxonomy, posts page, single post, page, or author\n	 * query variable. After it is set up, it will be returned.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @return object\n	 */\n	function get_queried_object() {\n		if ( isset($this->queried_object) )\n			return $this->queried_object;\n\n		$this->queried_object = null;\n		$this->queried_object_id = 0;\n\n		if ( $this->is_category || $this->is_tag || $this->is_tax ) {\n			$tax_query_in_and = wp_list_filter( $this->tax_query->queries, array( 'operator' => 'NOT IN' ), 'NOT' );\n\n			$query = reset( $tax_query_in_and );\n\n			if ( 'term_id' == $query['field'] )\n				$term = get_term( reset( $query['terms'] ), $query['taxonomy'] );\n			elseif ( $query['terms'] )\n				$term = get_term_by( $query['field'], reset( $query['terms'] ), $query['taxonomy'] );\n\n			if ( ! empty( $term ) && ! is_wp_error( $term ) )  {\n				$this->queried_object = $term;\n				$this->queried_object_id = (int) $term->term_id;\n\n				if ( $this->is_category )\n					_make_cat_compat( $this->queried_object );\n			}\n		} elseif ( $this->is_post_type_archive ) {\n			$this->queried_object = get_post_type_object( $this->get('post_type') );\n		} elseif ( $this->is_posts_page ) {\n			$page_for_posts = get_option('page_for_posts');\n			$this->queried_object = get_post( $page_for_posts );\n			$this->queried_object_id = (int) $this->queried_object->ID;\n		} elseif ( $this->is_singular && !is_null($this->post) ) {\n			$this->queried_object = $this->post;\n			$this->queried_object_id = (int) $this->post->ID;\n		} elseif ( $this->is_author ) {\n			$this->queried_object_id = (int) $this->get('author');\n			$this->queried_object = get_userdata( $this->queried_object_id );\n		}\n\n		return $this->queried_object;\n	}\n\n	/**\n	 * Retrieve ID of the current queried object.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @return int\n	 */\n	function get_queried_object_id() {\n		$this->get_queried_object();\n\n		if ( isset($this->queried_object_id) ) {\n			return $this->queried_object_id;\n		}\n\n		return 0;\n	}\n\n	/**\n	 * Constructor.\n	 *\n	 * Sets up the WordPress query, if parameter is not empty.\n	 *\n	 * @since 1.5.0\n	 * @access public\n	 *\n	 * @param string $query URL query string.\n	 * @return WP_Query\n	 */\n	function __construct($query = '') {\n		if ( ! empty($query) ) {\n			$this->query($query);\n		}\n	}\n\n	/**\n 	 * Is the query for an existing archive page?\n 	 *\n 	 * Month, Year, Category, Author, Post Type archive...\n	 *\n 	 * @since 3.1.0\n 	 *\n 	 * @return bool\n 	 */\n	function is_archive() {\n		return (bool) $this->is_archive;\n	}\n\n	/**\n	 * Is the query for an existing post type archive page?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $post_types Optional. Post type or array of posts types to check against.\n	 * @return bool\n	 */\n	function is_post_type_archive( $post_types = '' ) {\n		if ( empty( $post_types ) || !$this->is_post_type_archive )\n			return (bool) $this->is_post_type_archive;\n\n		$post_type_object = $this->get_queried_object();\n\n		return in_array( $post_type_object->name, (array) $post_types );\n	}\n\n	/**\n	 * Is the query for an existing attachment page?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_attachment() {\n		return (bool) $this->is_attachment;\n	}\n\n	/**\n	 * Is the query for an existing author archive page?\n	 *\n	 * If the $author parameter is specified, this function will additionally\n	 * check if the query is for one of the authors specified.\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $author Optional. User ID, nickname, nicename, or array of User IDs, nicknames, and nicenames\n	 * @return bool\n	 */\n	function is_author( $author = '' ) {\n		if ( !$this->is_author )\n			return false;\n\n		if ( empty($author) )\n			return true;\n\n		$author_obj = $this->get_queried_object();\n\n		$author = (array) $author;\n\n		if ( in_array( $author_obj->ID, $author ) )\n			return true;\n		elseif ( in_array( $author_obj->nickname, $author ) )\n			return true;\n		elseif ( in_array( $author_obj->user_nicename, $author ) )\n			return true;\n\n		return false;\n	}\n\n	/**\n	 * Is the query for an existing category archive page?\n	 *\n	 * If the $category parameter is specified, this function will additionally\n	 * check if the query is for one of the categories specified.\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $category Optional. Category ID, name, slug, or array of Category IDs, names, and slugs.\n	 * @return bool\n	 */\n	function is_category( $category = '' ) {\n		if ( !$this->is_category )\n			return false;\n\n		if ( empty($category) )\n			return true;\n\n		$cat_obj = $this->get_queried_object();\n\n		$category = (array) $category;\n\n		if ( in_array( $cat_obj->term_id, $category ) )\n			return true;\n		elseif ( in_array( $cat_obj->name, $category ) )\n			return true;\n		elseif ( in_array( $cat_obj->slug, $category ) )\n			return true;\n\n		return false;\n	}\n\n	/**\n	 * Is the query for an existing tag archive page?\n	 *\n	 * If the $tag parameter is specified, this function will additionally\n	 * check if the query is for one of the tags specified.\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $slug Optional. Tag slug or array of slugs.\n	 * @return bool\n	 */\n	function is_tag( $slug = '' ) {\n		if ( !$this->is_tag )\n			return false;\n\n		if ( empty( $slug ) )\n			return true;\n\n		$tag_obj = $this->get_queried_object();\n\n		$slug = (array) $slug;\n\n		if ( in_array( $tag_obj->slug, $slug ) )\n			return true;\n\n		return false;\n	}\n\n	/**\n	 * Is the query for an existing taxonomy archive page?\n	 *\n	 * If the $taxonomy parameter is specified, this function will additionally\n	 * check if the query is for that specific $taxonomy.\n	 *\n	 * If the $term parameter is specified in addition to the $taxonomy parameter,\n	 * this function will additionally check if the query is for one of the terms\n	 * specified.\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $taxonomy Optional. Taxonomy slug or slugs.\n	 * @param mixed $term. Optional. Term ID, name, slug or array of Term IDs, names, and slugs.\n	 * @return bool\n	 */\n	function is_tax( $taxonomy = '', $term = '' ) {\n		global $wp_taxonomies;\n\n		if ( !$this->is_tax )\n			return false;\n\n		if ( empty( $taxonomy ) )\n			return true;\n\n		$queried_object = $this->get_queried_object();\n		$tax_array = array_intersect( array_keys( $wp_taxonomies ), (array) $taxonomy );\n		$term_array = (array) $term;\n\n		// Check that the taxonomy matches.\n		if ( ! ( isset( $queried_object->taxonomy ) && count( $tax_array ) && in_array( $queried_object->taxonomy, $tax_array ) ) )\n			return false;\n\n		// Only a Taxonomy provided.\n		if ( empty( $term ) )\n			return true;\n\n		return isset( $queried_object->term_id ) &&\n			count( array_intersect(\n				array( $queried_object->term_id, $queried_object->name, $queried_object->slug ),\n				$term_array\n			) );\n	}\n\n	/**\n	 * Whether the current URL is within the comments popup window.\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_comments_popup() {\n		return (bool) $this->is_comments_popup;\n	}\n\n	/**\n	 * Is the query for an existing date archive?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_date() {\n		return (bool) $this->is_date;\n	}\n\n	/**\n	 * Is the query for an existing day archive?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_day() {\n		return (bool) $this->is_day;\n	}\n\n	/**\n	 * Is the query for a feed?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param string|array $feeds Optional feed types to check.\n	 * @return bool\n	 */\n	function is_feed( $feeds = '' ) {\n		if ( empty( $feeds ) || ! $this->is_feed )\n			return (bool) $this->is_feed;\n		$qv = $this->get( 'feed' );\n		if ( 'feed' == $qv )\n			$qv = get_default_feed();\n		return in_array( $qv, (array) $feeds );\n	}\n\n	/**\n	 * Is the query for a comments feed?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_comment_feed() {\n		return (bool) $this->is_comment_feed;\n	}\n\n	/**\n	 * Is the query for the front page of the site?\n	 *\n	 * This is for what is displayed at your site's main URL.\n	 *\n	 * Depends on the site's \"Front page displays\" Reading Settings 'show_on_front' and 'page_on_front'.\n	 *\n	 * If you set a static page for the front page of your site, this function will return\n	 * true when viewing that page.\n	 *\n	 * Otherwise the same as @see WP_Query::is_home()\n	 *\n	 * @since 3.1.0\n	 * @uses is_home()\n	 * @uses get_option()\n	 *\n	 * @return bool True, if front of site.\n	 */\n	function is_front_page() {\n		// most likely case\n		if ( 'posts' == get_option( 'show_on_front') && $this->is_home() )\n			return true;\n		elseif ( 'page' == get_option( 'show_on_front') && get_option( 'page_on_front' ) && $this->is_page( get_option( 'page_on_front' ) ) )\n			return true;\n		else\n			return false;\n	}\n\n	/**\n	 * Is the query for the blog homepage?\n	 *\n	 * This is the page which shows the time based blog content of your site.\n	 *\n	 * Depends on the site's \"Front page displays\" Reading Settings 'show_on_front' and 'page_for_posts'.\n	 *\n	 * If you set a static page for the front page of your site, this function will return\n	 * true only on the page you set as the \"Posts page\".\n	 *\n	 * @see WP_Query::is_front_page()\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool True if blog view homepage.\n	 */\n	function is_home() {\n		return (bool) $this->is_home;\n	}\n\n	/**\n	 * Is the query for an existing month archive?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_month() {\n		return (bool) $this->is_month;\n	}\n\n	/**\n	 * Is the query for an existing single page?\n	 *\n	 * If the $page parameter is specified, this function will additionally\n	 * check if the query is for one of the pages specified.\n	 *\n	 * @see WP_Query::is_single()\n	 * @see WP_Query::is_singular()\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $page Page ID, title, slug, or array of such.\n	 * @return bool\n	 */\n	function is_page( $page = '' ) {\n		if ( !$this->is_page )\n			return false;\n\n		if ( empty( $page ) )\n			return true;\n\n		$page_obj = $this->get_queried_object();\n\n		$page = (array) $page;\n\n		if ( in_array( $page_obj->ID, $page ) )\n			return true;\n		elseif ( in_array( $page_obj->post_title, $page ) )\n			return true;\n		else if ( in_array( $page_obj->post_name, $page ) )\n			return true;\n\n		return false;\n	}\n\n	/**\n	 * Is the query for paged result and not for the first page?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_paged() {\n		return (bool) $this->is_paged;\n	}\n\n	/**\n	 * Is the query for a post or page preview?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_preview() {\n		return (bool) $this->is_preview;\n	}\n\n	/**\n	 * Is the query for the robots file?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_robots() {\n		return (bool) $this->is_robots;\n	}\n\n	/**\n	 * Is the query for a search?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_search() {\n		return (bool) $this->is_search;\n	}\n\n	/**\n	 * Is the query for an existing single post?\n	 *\n	 * Works for any post type, except attachments and pages\n	 *\n	 * If the $post parameter is specified, this function will additionally\n	 * check if the query is for one of the Posts specified.\n	 *\n	 * @see WP_Query::is_page()\n	 * @see WP_Query::is_singular()\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $post Post ID, title, slug, or array of such.\n	 * @return bool\n	 */\n	function is_single( $post = '' ) {\n		if ( !$this->is_single )\n			return false;\n\n		if ( empty($post) )\n			return true;\n\n		$post_obj = $this->get_queried_object();\n\n		$post = (array) $post;\n\n		if ( in_array( $post_obj->ID, $post ) )\n			return true;\n		elseif ( in_array( $post_obj->post_title, $post ) )\n			return true;\n		elseif ( in_array( $post_obj->post_name, $post ) )\n			return true;\n\n		return false;\n	}\n\n	/**\n	 * Is the query for an existing single post of any post type (post, attachment, page, ... )?\n	 *\n	 * If the $post_types parameter is specified, this function will additionally\n	 * check if the query is for one of the Posts Types specified.\n	 *\n	 * @see WP_Query::is_page()\n	 * @see WP_Query::is_single()\n	 *\n	 * @since 3.1.0\n	 *\n	 * @param mixed $post_types Optional. Post Type or array of Post Types\n	 * @return bool\n	 */\n	function is_singular( $post_types = '' ) {\n		if ( empty( $post_types ) || !$this->is_singular )\n			return (bool) $this->is_singular;\n\n		$post_obj = $this->get_queried_object();\n\n		return in_array( $post_obj->post_type, (array) $post_types );\n	}\n\n	/**\n	 * Is the query for a specific time?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_time() {\n		return (bool) $this->is_time;\n	}\n\n	/**\n	 * Is the query for a trackback endpoint call?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_trackback() {\n		return (bool) $this->is_trackback;\n	}\n\n	/**\n	 * Is the query for an existing year archive?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_year() {\n		return (bool) $this->is_year;\n	}\n\n	/**\n	 * Is the query a 404 (returns no results)?\n	 *\n	 * @since 3.1.0\n	 *\n	 * @return bool\n	 */\n	function is_404() {\n		return (bool) $this->is_404;\n	}\n\n	/**\n	 * Is the query the main query?\n	 *\n	 * @since 3.3.0\n	 *\n	 * @return bool\n	 */\n	function is_main_query() {\n		global $wp_the_query;\n		return $wp_the_query === $this;\n	}\n}\n\n/**\n * Redirect old slugs to the correct permalink.\n *\n * Attempts to find the current slug from the past slugs.\n *\n * @since 2.1.0\n * @uses $wp_query\n * @uses $wpdb\n *\n * @return null If no link is found, null is returned.\n */\nfunction wp_old_slug_redirect() {\n	global $wp_query;\n	if ( is_404() && '' != $wp_query->query_vars['name'] ) :\n		global $wpdb;\n\n		// Guess the current post_type based on the query vars.\n		if ( get_query_var('post_type') )\n			$post_type = get_query_var('post_type');\n		elseif ( !empty($wp_query->query_vars['pagename']) )\n			$post_type = 'page';\n		else\n			$post_type = 'post';\n\n		if ( is_array( $post_type ) ) {\n			if ( count( $post_type ) > 1 )\n				return;\n			$post_type = array_shift( $post_type );\n		}\n\n		// Do not attempt redirect for hierarchical post types\n		if ( is_post_type_hierarchical( $post_type ) )\n			return;\n\n		$query = $wpdb->prepare(\"SELECT post_id FROM $wpdb->postmeta, $wpdb->posts WHERE ID = post_id AND post_type = %s AND meta_key = '_wp_old_slug' AND meta_value = %s\", $post_type, $wp_query->query_vars['name']);\n\n		// if year, monthnum, or day have been specified, make our query more precise\n		// just in case there are multiple identical _wp_old_slug values\n		if ( '' != $wp_query->query_vars['year'] )\n			$query .= $wpdb->prepare(\" AND YEAR(post_date) = %d\", $wp_query->query_vars['year']);\n		if ( '' != $wp_query->query_vars['monthnum'] )\n			$query .= $wpdb->prepare(\" AND MONTH(post_date) = %d\", $wp_query->query_vars['monthnum']);\n		if ( '' != $wp_query->query_vars['day'] )\n			$query .= $wpdb->prepare(\" AND DAYOFMONTH(post_date) = %d\", $wp_query->query_vars['day']);\n\n		$id = (int) $wpdb->get_var($query);\n\n		if ( ! $id )\n			return;\n\n		$link = get_permalink($id);\n\n		if ( !$link )\n			return;\n\n		wp_redirect( $link, 301 ); // Permanent redirect\n		exit;\n	endif;\n}\n\n/**\n * Set up global post data.\n *\n * @since 1.5.0\n *\n * @param object $post Post data.\n * @uses do_action_ref_array() Calls 'the_post'\n * @return bool True when finished.\n */\nfunction setup_postdata($post) {\n	global $id, $authordata, $currentday, $currentmonth, $page, $pages, $multipage, $more, $numpages;\n\n	$id = (int) $post->ID;\n\n	$authordata = get_userdata($post->post_author);\n\n	$currentday = mysql2date('d.m.y', $post->post_date, false);\n	$currentmonth = mysql2date('m', $post->post_date, false);\n	$numpages = 1;\n	$page = get_query_var('page');\n	if ( !$page )\n		$page = 1;\n	if ( is_single() || is_page() || is_feed() )\n		$more = 1;\n	$content = $post->post_content;\n	if ( strpos( $content, '<!--nextpage-->' ) ) {\n		if ( $page > 1 )\n			$more = 1;\n		$multipage = 1;\n		$content = str_replace(\"\\n<!--nextpage-->\\n\", '<!--nextpage-->', $content);\n		$content = str_replace(\"\\n<!--nextpage-->\", '<!--nextpage-->', $content);\n		$content = str_replace(\"<!--nextpage-->\\n\", '<!--nextpage-->', $content);\n		$pages = explode('<!--nextpage-->', $content);\n		$numpages = count($pages);\n	} else {\n		$pages = array( $post->post_content );\n		$multipage = 0;\n	}\n\n	do_action_ref_array('the_post', array(&$post));\n\n	return true;\n}\n",
+			"log_me",
+			"cm_post_views_edit_nonce",
+			"nonce",
+			"check",
+			"beofre the_post()",
+			"get_adjacent_post",
+			"add_action",
+			"wpp_update",
+			"INSERT",
+			"get_results",
+			"CMARTISTPROFILE_PATH",
+			"dotte",
+			"artist",
+			"home",
+			"register_po",
+			"show",
+			"sidebar",
+			"wpfp",
+			"wpp_",
+			"wpp_get_mostpopular",
+			"/ul",
+			"tax",
+			"the_views(",
+			"clearfix",
+			"script",
+			"style",
+			"$do_not_duplicate",
+			"do_not_duplicate",
+			"duplicate",
+			"form",
+			"upload",
+			"media",
+			"echo",
+			"dev",
+			"();\n",
+			"author",
+			".col",
+			".col-wrap",
+			"col-wr",
+			"col",
+			"?",
+			"docto",
+			"Debug",
+			"milos",
+			"bookin",
+			"font"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"KrrrunchApp",
+			"vendors",
+			" ",
+			"state",
+			"mobispine",
+			"src",
+			".footer-inner",
+			"cm-post-charts",
+			"CMPOSTCHARTS_PATH",
+			"clinician"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "angular/Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 9087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8570,
+								8543
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "angular/app/views/main.html",
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "angular/app/styles/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							],
+							[
+								31,
+								31
+							],
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "$green = #06c298;",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "angular/app/styles/_helpers.scss",
+					"settings":
+					{
+						"buffer_size": 1518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1518,
+								1518
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "angular/app/styles/_base.scss",
+					"settings":
+					{
+						"buffer_size": 1657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1657,
+								1657
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "angular/app/styles/main.scss",
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "angular/app/styles/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 183.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"angular/app/styles/main.scss"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"lufra",
+				"app/scripts/controllers/LuframeCtrl.js"
+			],
+			[
+				"bslu",
+				"app/scripts/directives/bsLu.js"
+			],
+			[
+				"us",
+				"app/models/user.rb"
+			],
+			[
+				"mig",
+				"db/migrate/20130901180614_create_users.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"lure",
+				"app/scripts/directives/luResources.js"
+			],
+			[
+				"_mi",
+				"app/styles/_mixins.scss"
+			],
+			[
+				"_le",
+				"app/styles/_learningunit.scss"
+			],
+			[
+				"vocab",
+				"app/views/vocab.html"
+			],
+			[
+				"voca",
+				"app/scripts/controllers/busuuvocab.js"
+			],
+			[
+				"das",
+				"app/views/dashboard.html"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"notif",
+				"app/template/headerNotifications.html"
+			],
+			[
+				"exerc",
+				"app/scripts/controllers/busuuexercises.js"
+			],
+			[
+				"busuuda",
+				"app/scripts/controllers/dashboard/busuudashboard.js"
+			],
+			[
+				"_vari",
+				"app/bower_components/bootstrap-sass/lib/_variables.scss"
+			],
+			[
+				"_btn",
+				"app/bower_components/bootstrap-sass/lib/_buttons.scss"
+			],
+			[
+				"_var",
+				"app/styles/_variables.scss"
+			],
+			[
+				"ma",
+				".tmp/styles/main.css"
+			],
+			[
+				"busuu_hea",
+				"app/styles/busuu_header.scss"
+			],
+			[
+				"addlan",
+				"app/template/addLanguageModal.html"
+			],
+			[
+				"addla",
+				"app/scripts/controllers/busuuaddlanguage.js"
+			],
+			[
+				"bu",
+				"app/scripts/controllers/busuuheader.js"
+			],
+			[
+				"addl",
+				"app/scripts/controllers/busuuaddlanguage.js"
+			],
+			[
+				"busuugo",
+				"app/scripts/controllers/busuugoals.js"
+			],
+			[
+				"sid",
+				"app/scripts/directives/bsSidepanel.js"
+			],
+			[
+				"exer",
+				"app/views/exercises.html"
+			],
+			[
+				"too",
+				"app/scripts/directives/bsTooltip.js"
+			],
+			[
+				"comm",
+				"app/template/communityListUser.html"
+			],
+			[
+				"side",
+				"app/template/sidepanelRight.html"
+			],
+			[
+				"app",
+				"app/scripts/app.js"
+			],
+			[
+				"ui",
+				"app/bower_components/angular-ui-bootstrap-bower/ui-bootstrap.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"bsp",
+				"app/template/bsProgressBar.html"
+			],
+			[
+				"di",
+				"app/scripts/directives.js"
+			],
+			[
+				"fil",
+				"app/scripts/filters.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"sidele",
+				"app/template/sidepanelLeft.html"
+			],
+			[
+				"dash",
+				"app/views/dashboard.html"
+			],
+			[
+				"bus",
+				"app/scripts/controllers/dashboard/busuudashboard.js"
+			],
+			[
+				"busuud",
+				"app/scripts/controllers/dashboard/busuudashboard.js"
+			],
+			[
+				"dire",
+				"app/scripts/directives.js"
+			],
+			[
+				"",
+				"app/scripts/controllers/busuupool.js"
+			],
+			[
+				"corr",
+				"app/scripts/controllers/busuucorrections.js"
+			],
+			[
+				"exercise",
+				"app/scripts/controllers/busuuexercises.js"
+			],
+			[
+				"busuu",
+				"app/scripts/controllers/busuupool.js"
+			],
+			[
+				"poo",
+				"app/scripts/services/poolService.js"
+			],
+			[
+				"corre",
+				"app/scripts/controllers/busuucorrections.js"
+			],
+			[
+				"dir",
+				"app/scripts/directives.js"
+			],
+			[
+				"busex",
+				"app/scripts/controllers/busuuexercises.js"
+			],
+			[
+				"busuup",
+				"app/scripts/controllers/busuupool.js"
+			],
+			[
+				"pool",
+				"app/scripts/services/poolService.js"
+			],
+			[
+				"ratin",
+				"app/template/rating/rating.html"
+			],
+			[
+				"m",
+				"app/styles/main.scss"
+			],
+			[
+				"pagin",
+				"app/template/pagination/pagination.html"
+			],
+			[
+				"sprit",
+				"app/styles/busuu_sprites.scss"
+			],
+			[
+				"busu",
+				"app/scripts/controllers/busuupool.js"
+			],
+			[
+				"ind",
+				"app/index.html"
+			],
+			[
+				"voc",
+				"app/styles/busuu_vocabulary.scss"
+			],
+			[
+				"ap",
+				"app/scripts/app.js"
+			],
+			[
+				"bs",
+				"app/scripts/directives/bsSidepanel.js"
+			],
+			[
+				"vocabjs",
+				"app/scripts/controllers/busuuvocab.js"
+			],
+			[
+				"es",
+				"app/bower_components/es5-shim/es5-sham.js"
+			],
+			[
+				"dashjs",
+				"app/scripts/controllers/busuudashboard.js"
+			],
+			[
+				"sprite",
+				"app/styles/busuu_sprites.scss"
+			],
+			[
+				"_mix",
+				"app/styles/_mixins.scss"
+			],
+			[
+				"mix",
+				"app/bower_components/bootstrap-sass/lib/_mixins.scss"
+			],
+			[
+				"use",
+				"app/scripts/services/userService.js"
+			],
+			[
+				"user",
+				"app/scripts/services/userService.js"
+			],
+			[
+				"_va",
+				"app/styles/_variables.scss"
+			],
+			[
+				"_varia",
+				"app/bower_components/bootstrap-sass/lib/_variables.scss"
+			],
+			[
+				"dashb",
+				"app/views/dashboard.html"
+			],
+			[
+				"dashbo",
+				"app/scripts/controllers/busuudashboard.js"
+			],
+			[
+				"bss",
+				"app/scripts/directives/bsSidepanel.js"
+			],
+			[
+				"busud",
+				"app/scripts/controllers/busuudashboard.js"
+			],
+			[
+				"s",
+				"app/template/sidepanelRight.html"
+			],
+			[
+				"direc",
+				"app/scripts/directives.js"
+			],
+			[
+				"modal",
+				"app/template/addLanguageModal.html"
+			],
+			[
+				"prog",
+				"app/template/progressCircle.html"
+			],
+			[
+				"left",
+				"app/template/sidepanelLeft.html"
+			],
+			[
+				"spri",
+				".tmp/styles/busuu_sprites.css"
+			],
+			[
+				"mai",
+				"app/styles/main.scss"
+			],
+			[
+				"da",
+				"app/views/dashboard.html"
+			],
+			[
+				"sidecss",
+				"app/styles/busuu_sidebarnav.scss"
+			],
+			[
+				"tooltipus",
+				"app/template/tooltip/tooltip-user-popup.html"
+			],
+			[
+				"creat",
+				"db/migrate/20130901180614_create_users.rb"
+			],
+			[
+				"sec",
+				"config/initializers/secret_token.rb"
+			],
+			[
+				"gi",
+				".gitignore"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"vend",
+				"app/assets/javascripts/angular/controllers/vendors/vendors.js"
+			],
+			[
+				"ven",
+				"app/controllers/vendors_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"add",
+				"app/assets/javascripts/angular/controllers/vendors/add.js"
+			],
+			[
+				"vendors",
+				"app/assets/javascripts/angular/controllers/vendors/vendors.js"
+			],
+			[
+				"id",
+				"app/assets/javascripts/angular/controllers/vendors/:id.js"
+			],
+			[
+				".gi",
+				".gitignore"
+			],
+			[
+				".rv",
+				".rvmrc"
+			],
+			[
+				".pow",
+				".powenv"
+			],
+			[
+				"ha",
+				"app/views/home/index.html.haml"
+			],
+			[
+				"home",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"rv",
+				".rvmrc"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"boot",
+				"app/bower_components/bootstrap-sass/lib/bootstrap.scss"
+			],
+			[
+				"buss",
+				"app/styles/busuu_fonts.scss"
+			],
+			[
+				"la",
+				"templates/layouts/layout.liquid"
+			],
+			[
+				"slid",
+				"assets/css/slider.css"
+			],
+			[
+				"styl",
+				"assets/css/style.mix.css"
+			],
+			[
+				"lay",
+				"templates/layouts/layout.liquid"
+			],
+			[
+				"foo",
+				"templates/includes/footer.liquid"
+			],
+			[
+				"pl",
+				"assets/scripts/plugins.js"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"sli",
+				"assets/css/slider.css"
+			],
+			[
+				"hea",
+				"templates/includes/header.liquid"
+			],
+			[
+				"plu",
+				"assets/scripts/plugins.js"
+			],
+			[
+				"migr",
+				"db/migrate/20130815225113_create_vendors.rb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"vendo",
+				"app/models/vendors.rb"
+			],
+			[
+				"create",
+				"db/migrate/20130815225113_create_vendors.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"fo",
+				"templates/includes/footer.liquid"
+			],
+			[
+				"state",
+				"collections/projects/state.liquid"
+			],
+			[
+				"mob",
+				"collections/projects/mobispine.liquid"
+			],
+			[
+				"goo",
+				"collections/projects/goodboy.liquid"
+			],
+			[
+				"good",
+				"collections/projects/goodboy.liquid"
+			],
+			[
+				"evi",
+				"collections/projects/evi.liquid"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 161.0,
+	"status_bar_visible": true
+}
