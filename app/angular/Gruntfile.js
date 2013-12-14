@@ -37,9 +37,13 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.coffee'],
         tasks: ['coffee:test']
       },
-      styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['copy:styles', 'autoprefixer']
+      // styles: {
+      //   files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+      //   tasks: ['copy:styles', 'autoprefixer']
+      // },
+      compass: {
+        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+        tasks: ['compass:server', 'autoprefixer']
       },
       livereload: {
         options: {
@@ -152,6 +156,28 @@ module.exports = function (grunt) {
         }]
       }
     },
+    compass: {
+      options: {
+        sassDir: '<%= yeoman.app %>/styles',
+        cssDir: '.tmp/styles',
+        generatedImagesDir: '.tmp/images/generated',
+        imagesDir: '<%= yeoman.app %>/images',
+        javascriptsDir: '<%= yeoman.app %>/scripts',
+        fontsDir: '<%= yeoman.app %>/styles/fonts',
+        importPath: '<%= yeoman.app %>/bower_components',
+        httpImagesPath: '/images',
+        httpGeneratedImagesPath: '/images/generated',
+        httpFontsPath: '/styles/fonts',
+        relativeAssets: false
+      },
+      dist: {},
+      server: {
+        options: {
+          debugInfo: true
+        }
+      }
+    },
+
     // not used since Uglify task does concat,
     // but still available if needed
     /*concat: {
@@ -270,15 +296,18 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'coffee:dist',
-        'copy:styles'
+        // 'copy:styles'
+        'compass:server'
       ],
       test: [
         'coffee',
-        'copy:styles'
+        // 'copy:styles'
+        'compass'
       ],
       dist: [
         'coffee',
-        'copy:styles',
+        // 'copy:styles',
+        'compass:dist',
         'imagemin',
         'svgmin',
         'htmlmin'
