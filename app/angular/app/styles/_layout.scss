@@ -1,5 +1,6 @@
 body{
 	font-family: "ff-basic-gothic-web-pro", sans-serif;
+	color: $cm-gray--dark;
 }
 
 h1, .h1{
@@ -35,15 +36,9 @@ html{
 
 body{
 	min-height: 100%;	
-}
-
-
-.container{
-	height: inherit;	
-}
-
-.projects{
-	height: 100%;
-	width: 100%;
 	background: $cm-green;
+}
+
+.project-item .project-title{
+	margin: 0 0 20px;
 }
