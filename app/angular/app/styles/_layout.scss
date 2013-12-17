@@ -19,6 +19,11 @@ h3, .h3{
 
 }
 
+a{
+	color: $cm-purple;
+	text-decoration: none;
+}
+
 .longform{
 	font-size: 22px;
 	font-size: 1.375rem;
@@ -28,6 +33,7 @@ h3, .h3{
 .caption{
 	font-size: 14px;
 	font-size: 0.875rem;
+	line-height: 1.07142857142857;
 }
 
 html{
@@ -39,6 +45,36 @@ body{
 	background: $cm-green;
 }
 
+.home{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.project-list{
+	position: relative;
+	top: 17%;
+}
+
+
+.project-discipline{
+	margin: 0 0 0 -20px;
+}
+
 .project-item .project-title{
-	margin: 0 0 20px;
+	margin: 0 0 15px;
+	line-height: 1;
+}
+
+.project-link{
+	color: $cm-gray--dark;	
+	&:hover{
+		color: $cm-purple;
+	}
+}
+
+.profile{
+	position: relative;
+	top: 4.625%;
+
 }
