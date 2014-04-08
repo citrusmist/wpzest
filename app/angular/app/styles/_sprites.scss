@@ -1,0 +1,23 @@
+.sprite {
+  background-image: url(../images/sprite.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.no-svg .sprite {
+  background-image: url(../img/sprite.png);
+}
+
+.sprite--logotype {
+	background-position: -34px -39px;
+	width: 136px;
+	height: 21px;
+}
+
+.sprite--logomark {
+	background-position: -30px -120px;
+	width: 191px;
+	height: 121px;
+}
+
+
