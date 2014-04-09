@@ -51,7 +51,32 @@ body{
 	height: 100%;
 }
 
-.project-list{
+.projects {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.projects--isActive {
+
+	.projects-preview {
+		height: 66.66666%;
+		width: 51.4097%; 
+		margin-left: 40.9398%; 
+		margin-right: -100%;
+	}
+}
+
+.projects-preview {
+	background-color: $cm-white;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	float: left; 
+	@include single-transition();
+}
+
+.projects-list {
 	position: relative;
 	top: 17%;
 }
@@ -60,25 +85,27 @@ body{
 	margin: 0 0 0 -20px;
 }
 
-.project-item .project-title{
-	margin: 0 0 15px;
+.projects-item .projects-title {
 	line-height: 1;
+	letter-spacing: -0.25px;
+	margin: 0 0 15px;
+	word-spacing: -1px;
 }
 
-.project-link{
+.project-link {
 	color: $cm-gray--dark;	
 	&:hover{
 		color: $cm-purple;
 	}
 }
 
-.profile{
+.profile {
 	position: relative;
 	top: 4.625%;
 }
 
+.projects-preview,
 .home-logomark,
 .home-logotype {
-	position: absolute;
-	bottom: 4%;
+	@extend %btmalign;
 }
