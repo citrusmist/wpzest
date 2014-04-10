@@ -18,7 +18,7 @@ angular.module('wpZest')
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
-
+					console.log(elPreviewWrap.attr('style'));
 					elPreviewWrap.css({
 						'-webkit-transform': 'translateY(-' + distanceY + 'px)',
 						'-moz-transform': 'translateY(-' +  distanceY + 'px)',
@@ -26,8 +26,6 @@ angular.module('wpZest')
 						'-o-transform': 'translateY(-' + distanceY + 'px)',
 						'transform': 'translateY(-' + distanceY + 'px)',
 					});
-
-					
 				};
 
 
@@ -40,7 +38,7 @@ angular.module('wpZest')
 					    '-o-transition-duration': '0s',
 					    'transition-duration': '0s'
 						});
-						console.log(elPreviewWrap.attr('style'));
+						
 					}
 				});
 
@@ -58,7 +56,7 @@ angular.module('wpZest')
 					);
 
 					if(first === true) {
-						elPreview.one('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd', function() {
+						elPreview.one('transitionend msTransitionEnd oTransitionEnd', function(evt) {
 
 							slideIntoView(elThumb);
 
