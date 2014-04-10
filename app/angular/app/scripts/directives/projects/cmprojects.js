@@ -16,6 +16,21 @@ angular.module('wpZest')
 				var elList        = angular.element(element[0].querySelectorAll('.projects-list'));
 				var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
 
+				var slideIntoView = function(elThumb) {
+					var distanceY = elThumb[0].offsetTop;
+
+					elPreviewWrap.css({
+						'-webkit-transform': 'translateY(-' + distanceY + 'px)',
+						'-moz-transform': 'translateY(-' +  distanceY + 'px)',
+						'-ms-transform': 'translateY(-' + distanceY + 'px)',
+						'-o-transform': 'translateY(-' + distanceY + 'px)',
+						'transform': 'translateY(-' + distanceY + 'px)',
+					});
+
+					
+				};
+
+
 				elList.on('mouseenter', function() {
 					element.addClass('projects--isActive');
 					if(first === true) {
@@ -41,31 +56,28 @@ angular.module('wpZest')
 					var elThumb = angular.element(
 						elPreview[0].querySelectorAll(elTitle.data('thumb'))
 					);
-					var distanceY = elThumb[0].offsetTop;
-					console.log(elThumb[0].offsetTop);
-
-					elPreviewWrap.css({
-						'-webkit-transform': 'translateY(-' + distanceY + 'px)',
-						'-moz-transform': 'translateY(-' +  distanceY + 'px)',
-						'-ms-transform': 'translateY(-' + distanceY + 'px)',
-						'-o-transform': 'translateY(-' + distanceY + 'px)',
-						'transform': 'translateY(-' + distanceY + 'px)',
-					});
 
 					if(first === true) {
-						elPreviewWrap.css({
-							'-webkit-transition-duration': '',
-					    '-moz-transition-duration': '',
-					    '-o-transition-duration': '',
-					    'transition-duration': ''
+						elPreview.one('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd', function() {
+
+							slideIntoView(elThumb);
+
+							elPreviewWrap.css({
+								'-webkit-transition-duration': '',
+						    '-moz-transition-duration': '',
+						    '-o-transition-duration': '',
+						    'transition-duration': ''
+							});
+
+							elPreview.addClass('projects-preview--isActive');
+							first = false;
 						});
-
-						first = false;
+					} else {
+						slideIntoView(elThumb);
 					}
-
-					elPreview.addClass('projects-preview--isActive');
-
 				});
+
+
 			}
 		};
 	});
