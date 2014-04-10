@@ -2,6 +2,7 @@
 
 angular.module('wpZest')
 	.directive('cmProjects', function () {
+
 		return {
 			template: '<div ng-transclude></div>',
 			restrict: 'E',
@@ -20,9 +21,6 @@ angular.module('wpZest')
 				elList.bind('mouseleave', function() {
 					element.removeClass('projects--isActive');
 				});
-
-
-
 			}
 		};
 	});
