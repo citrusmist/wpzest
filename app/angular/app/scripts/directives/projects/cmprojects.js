@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZest')
-	.directive('cmProjects', function () {
+	.directive('cmProjects', function(cmTransition) {
 
 		return {
 			template: '<div ng-transclude></div>',
@@ -18,24 +18,15 @@ angular.module('wpZest')
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
-					elPreviewWrap.css({
-						'-webkit-transform': 'translateY(-' + distanceY + 'px)',
-						'-moz-transform': 'translateY(-' +  distanceY + 'px)',
-						'-ms-transform': 'translateY(-' + distanceY + 'px)',
-						'-o-transform': 'translateY(-' + distanceY + 'px)',
-						'transform': 'translateY(-' + distanceY + 'px)',
-					});
+					elPreviewWrap.css(
+						cmTransition.getPrefixed('transform', 'translateY(-' + distanceY + 'px)')
+					);
 				};
 
 				elList.on('mouseenter', function() {
 					element.addClass('projects--isActive');
 					if(first === true) {
-						elPreviewWrap.css({
-							'-webkit-transition-duration': '0s',
-					    '-moz-transition-duration': '0s',
-					    '-o-transition-duration': '0s',
-					    'transition-duration': '0s'
-						});
+						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 					}
 				});
 
@@ -53,17 +44,12 @@ angular.module('wpZest')
 					);
 
 					if(first === true) {
-						elPreview.one('transitionend msTransitionEnd oTransitionEnd', function() {
+						elPreview.one(cmTransition.transitionEvent, function() {
 
 							slideIntoView(elThumb);
 
 							elPreviewWrap[0].offsetTop;
-							elPreviewWrap.css({
-								'-webkit-transition-duration': '',
-						    '-moz-transition-duration': '',
-						    '-o-transition-duration': '',
-						    'transition-duration': ''
-							});
+							elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
 							elPreview.addClass('projects-preview--isActive');
 							first = false;
