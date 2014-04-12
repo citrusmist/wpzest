@@ -18,7 +18,6 @@ angular.module('wpZest')
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
-					console.log(elPreviewWrap.attr('style'));
 					elPreviewWrap.css({
 						'-webkit-transform': 'translateY(-' + distanceY + 'px)',
 						'-moz-transform': 'translateY(-' +  distanceY + 'px)',
@@ -27,7 +26,6 @@ angular.module('wpZest')
 						'transform': 'translateY(-' + distanceY + 'px)',
 					});
 				};
-
 
 				elList.on('mouseenter', function() {
 					element.addClass('projects--isActive');
@@ -38,7 +36,6 @@ angular.module('wpZest')
 					    '-o-transition-duration': '0s',
 					    'transition-duration': '0s'
 						});
-						
 					}
 				});
 
@@ -56,10 +53,11 @@ angular.module('wpZest')
 					);
 
 					if(first === true) {
-						elPreview.one('transitionend msTransitionEnd oTransitionEnd', function(evt) {
+						elPreview.one('transitionend msTransitionEnd oTransitionEnd', function() {
 
 							slideIntoView(elThumb);
 
+							elPreviewWrap[0].offsetTop;
 							elPreviewWrap.css({
 								'-webkit-transition-duration': '',
 						    '-moz-transition-duration': '',
@@ -74,8 +72,6 @@ angular.module('wpZest')
 						slideIntoView(elThumb);
 					}
 				});
-
-
 			}
 		};
 	});
