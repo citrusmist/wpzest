@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZest')
-	.directive('cmProjects', function(cmTransition) {
+	.directive('cmProjects', function($timeout, cmTransition) {
 
 		return {
 			template: '<div ng-transclude></div>',
@@ -15,26 +15,15 @@ angular.module('wpZest')
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				var elList        = angular.element(element[0].querySelectorAll('.projects-list'));
 				var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
+				var timeout       = false;
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
+
 					elPreviewWrap.css(
 						cmTransition.getPrefixed('transform', 'translateY(-' + distanceY + 'px)')
 					);
 				};
-
-				elList.on('mouseenter', function() {
-					element.addClass('projects--isActive');
-					if(first === true) {
-						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
-					}
-				});
-
-				elList.on('mouseleave', function() {
-					element.removeClass('projects--isActive');
-					elPreview.removeClass('projects-preview--isActive');
-					first = true;
-				});
 
 				elTitles.on('mouseenter', function() {
 
@@ -43,13 +32,21 @@ angular.module('wpZest')
 						elPreview[0].querySelectorAll(elTitle.data('thumb'))
 					);
 
+					if(timeout !== false) {
+						$timeout.cancel(timeout);
+					}
+
 					if(first === true) {
+
+						element.addClass('projects--isActive');
+						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
+
 						elPreview.one(cmTransition.transitionEvent, function() {
 
 							slideIntoView(elThumb);
 
 							elPreviewWrap[0].offsetTop;
-							elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
+							elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 
 							elPreview.addClass('projects-preview--isActive');
 							first = false;
@@ -57,6 +54,15 @@ angular.module('wpZest')
 					} else {
 						slideIntoView(elThumb);
 					}
+				});
+
+				elTitles.on('mouseleave', function() {
+
+					timeout = $timeout(function(){
+						element.removeClass('projects--isActive');
+						elPreview.removeClass('projects-preview--isActive');
+						first = true;
+					}, 400, false);
 				});
 			}
 		};
