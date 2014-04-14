@@ -15,7 +15,8 @@ angular.module('wpZest')
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				var elList        = angular.element(element[0].querySelectorAll('.projects-list'));
 				var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
-				var timeout       = false;
+				var leaveTimeout  = false;
+				var enterTimeout  = false;
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
@@ -32,45 +33,54 @@ angular.module('wpZest')
 						elPreview[0].querySelectorAll(elTitle.data('thumb'))
 					);
 
-					if(timeout !== false) {
-						console.log('cancel timeout');
-						$timeout.cancel(timeout);
-						timeout = false;
-					}
+					enterTimeout = $timeout(function () {
 
-					if(first === true) {
-						console.log('showing preview');
-						element.addClass('projects--isActive');
-						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
+						if(leaveTimeout !== false) {
+							console.log('cancel timeout');
+							$timeout.cancel(leaveTimeout);
+							leaveTimeout = false;
+						}
 
-						elPreviewWrap.on(cmTransition.transitionEvent, function(evt) {
-							evt.stopPropagation();
-						} );
+						if(first === true) {
+							console.log('showing preview');
+							element.addClass('projects--isActive');
+							elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
-						elPreview.one(cmTransition.transitionEvent, function(evt) {
-							console.log(evt);
-							//If the mouse hasn't moved from the title before the transition finished
-							if(element.hasClass('projects--isActive')) {
-								slideIntoView(elThumb);
-								console.log(elPreview[0].offsetLeft);
-								elPreviewWrap[0].offsetTop;
-								elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
+							elPreviewWrap.on(cmTransition.transitionEvent, function(evt) {
+								evt.stopPropagation();
+							} );
 
-								elPreview.addClass('projects-preview--isActive');
-								first = false;
-							}
-						});
-					} else {
-						slideIntoView(elThumb);
-					}
+							elPreview.one(cmTransition.transitionEvent, function(evt) {
+								console.log(evt);
+								//If the mouse hasn't moved from the title before the transition finished
+								if(element.hasClass('projects--isActive')) {
+									slideIntoView(elThumb);
+									elPreviewWrap[0].offsetTop;
+									elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
+
+									elPreview.addClass('projects-preview--isActive');
+									first = false;
+								}
+							});
+						} else {
+							slideIntoView(elThumb);
+						}
+					}, 200);
+					
 				});
 
 				elTitles.on('mouseleave', function() {
-					console.log('leaving');
-					timeout = $timeout(function(){
+					
+					if(enterTimeout !== false) {
+						$timeout.cancel(enterTimeout);
+						enterTimeout = false;
+					}
+
+					//TODO: check if the prjocects preview is active before setting hte timeoue
+					leaveTimeout = $timeout(function(){
 
 						first = true;
-						timeout = false;
+						leaveTimeout = false;
 
 						element.removeClass('projects--isActive');
 						elPreview.removeClass('projects-preview--isActive');
