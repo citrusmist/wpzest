@@ -43,10 +43,16 @@ angular.module('wpZest')
 						element.addClass('projects--isActive');
 						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
-						elPreview.one(cmTransition.transitionEvent, function() {
+						elPreviewWrap.on(cmTransition.transitionEvent, function(evt) {
+							evt.stopPropagation();
+						} );
+
+						elPreview.one(cmTransition.transitionEvent, function(evt) {
+							console.log(evt);
 							//If the mouse hasn't moved from the title before the transition finished
 							if(element.hasClass('projects--isActive')) {
 								slideIntoView(elThumb);
+								console.log(elPreview[0].offsetLeft);
 								elPreviewWrap[0].offsetTop;
 								elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 
