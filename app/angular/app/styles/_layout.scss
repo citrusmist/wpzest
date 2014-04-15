@@ -68,7 +68,11 @@ body{
     height: 66.66666%;
     margin-right: -100%;
     margin-left: 40.9398%; 
-    width: 51.4097%; 
+    width: 51.4097%;
+    padding: 30px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
   }
 }
 
