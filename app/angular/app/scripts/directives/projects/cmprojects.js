@@ -64,14 +64,14 @@ angular.module('wpZest')
 						enterTimeout = false;
 					}
 
-					//TODO: check if the prjocects preview is active before setting hte timeoue
+					//TODO: check if the projects preview is active before setting hte timeoue
 					leaveTimeout = $timeout(function(){
 
 						controller.first = true;
 						leaveTimeout = false;
 
 						element.removeClass('projects--isActive');
-						
+						controller.hidePreview();
 					}, 400);
 				});
 			}
@@ -116,7 +116,7 @@ angular.module('wpZest')
 
 				var hidePreview = function() {
 					element.removeClass('projects-preview--isActive');
-					elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
+					// elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 				};
 
 				controller.slideIntoView = slideIntoView;
