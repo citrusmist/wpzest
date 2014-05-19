@@ -8,9 +8,11 @@ angular.module('wpZest')
 			restrict: 'E',
 			controller: function($scope, $element, $attrs) {
 				this.first         = true;
+				this.thumbRatio    = false;
 				this.slideIntoView = false;
 				this.showPreview   = false;
 				this.hidePreview   = false;
+				this.calcHeight    = false;
 			},
 			transclude: true,
 			replace: true,
@@ -23,13 +25,13 @@ angular.module('wpZest')
 				var leaveTimeout  = false;
 				var enterTimeout  = false;
 
-				var slideIntoView = function(elThumb) {
+				/*var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
 
 					elPreviewWrap.css(
 						cmTransition.getPrefixed('transform', 'translateY(-' + distanceY + 'px)')
 					);
-				};
+				};*/
 
 				elTitles.on('mouseenter', function() {
 
@@ -74,6 +76,21 @@ angular.module('wpZest')
 						controller.hidePreview();
 					}, 400);
 				});
+
+				element.imagesLoaded()
+					.progress(function(instance,image){
+						
+						var dummyImg = new Image();
+
+						if(controller.thumbRatio !== false) {
+							return;
+						}
+
+						dummyImg.src = image.img.src;
+						controller.thumbRatio = dummyImg.width / dummyImg.height;
+						console.log(controller.thumbRatio);
+						controller.calcHeight();
+					});
 			}
 		};
 	})
@@ -90,6 +107,7 @@ angular.module('wpZest')
 			link: function(scope, element, attrs, controller) {
 
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
+				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
@@ -119,13 +137,48 @@ angular.module('wpZest')
 					// elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 				};
 
+				var calcHeight = function() {
+
+					var defo = getRuleDefinition('.projects--isActive .projects-preview');
+					console.log(defo);
+				};
+
+				var getRuleDefinition = function(className) {
+
+					var styleSheet = null;
+
+					for (var i = 0; i < document.styleSheets.length; i++) {
+
+
+						if(document.styleSheets[i].hasOwnProperty('href') === false || 
+								document.styleSheets[i].href === null ) {
+							continue;
+						}
+
+						console.log(document.styleSheets[i]);
+
+						if( document.styleSheets[i].href.indexOf('main.css') !== -1 ) {
+							styleSheet = document.styleSheets[i];
+							break;
+						}
+					}
+
+					var classes = styleSheet.rules || styleSheet.cssRules;
+			    for(var x=0;x<classes.length;x++) {
+		        if(classes[x].selectorText===className) {
+              (classes[x].cssText) ? console.log(classes[x].cssText) : console.log(classes[x].style.cssText);
+		        }
+			    }
+				};
+
 				controller.slideIntoView = slideIntoView;
-				controller.showPreview = showPreview;
-				controller.hidePreview = hidePreview;
+				controller.showPreview   = showPreview;
+				controller.hidePreview   = hidePreview;
+				controller.calcHeight    = calcHeight;
 
 				elPreviewWrap.on(cmTransition.transitionEvent, function(evt) {
 					evt.stopPropagation();
-				} );
+				});
 			}
 		};
 	}]);
