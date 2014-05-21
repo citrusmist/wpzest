@@ -13,6 +13,7 @@ angular.module('wpZest')
 				this.showPreview   = false;
 				this.hidePreview   = false;
 				this.calcHeight    = false;
+				this.setupPreview  = false;
 			},
 			transclude: true,
 			replace: true,
@@ -89,7 +90,7 @@ angular.module('wpZest')
 						dummyImg.src = image.img.src;
 						controller.thumbRatio = dummyImg.width / dummyImg.height;
 						console.log(controller.thumbRatio);
-						controller.calcHeight();
+						controller.setupPreview();
 					});
 			}
 		};
@@ -108,6 +109,8 @@ angular.module('wpZest')
 
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
+				var styleRules    = null;
+
 
 				var slideIntoView = function(elThumb) {
 					var distanceY = elThumb[0].offsetTop;
@@ -139,42 +142,64 @@ angular.module('wpZest')
 
 				var calcHeight = function() {
 
-					var defo = getRuleDefinition('.projects--isActive .projects-preview');
-					console.log(defo);
+					styleRules  = getStyleRules('.projects--isActive .projects-preview');
+
+					if( styleRules === null ) {
+						return '';
+					}
+
+					var previewWidth   = parseInt(styleRules.style.width, 10);
+					var viewportWidth  = angular.element(window).width();
+
+					var previewHeight = (viewportWidth * (previewWidth/100)) / controller.thumbRatio;
+
+					return previewHeight;
 				};
 
-				var getRuleDefinition = function(className) {
+				var getStyleRules = function(className) {
 
-					var styleSheet = null;
+					var styleSheet     = null;
+					var ruleDefinition = null;
 
 					for (var i = 0; i < document.styleSheets.length; i++) {
 
-
-						if(document.styleSheets[i].hasOwnProperty('href') === false || 
-								document.styleSheets[i].href === null ) {
+						if( document.styleSheets[i].href === null ) {
 							continue;
 						}
 
-						console.log(document.styleSheets[i]);
-
-						if( document.styleSheets[i].href.indexOf('main.css') !== -1 ) {
+						if(document.styleSheets[i].href.indexOf('main.css') !== -1) {
 							styleSheet = document.styleSheets[i];
 							break;
 						}
 					}
 
 					var classes = styleSheet.rules || styleSheet.cssRules;
-			    for(var x=0;x<classes.length;x++) {
-		        if(classes[x].selectorText===className) {
-              (classes[x].cssText) ? console.log(classes[x].cssText) : console.log(classes[x].style.cssText);
+
+			    for(var x=0; x < classes.length; x++) {
+		        if(classes[x].selectorText === className) {
+              // ruleDefinition = classes[x].cssText || classes[x].style.cssText;
+              ruleDefinition = classes[x];
 		        }
 			    }
+
+			    return ruleDefinition;
+				};
+
+
+				var setupPreview = function() {
+					console.log('setting up preview');
+					// element.css('height', controller.calcHeight());
+					var height = controller.calcHeight();
+					console.log(styleRules.style.height);
+					styleRules.style.height = height + 'px';
+					console.log( element);
 				};
 
 				controller.slideIntoView = slideIntoView;
 				controller.showPreview   = showPreview;
 				controller.hidePreview   = hidePreview;
 				controller.calcHeight    = calcHeight;
+				controller.setupPreview  = setupPreview;
 
 				elPreviewWrap.on(cmTransition.transitionEvent, function(evt) {
 					evt.stopPropagation();

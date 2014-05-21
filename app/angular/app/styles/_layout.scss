@@ -93,11 +93,13 @@ body{
 
 .projects-preview-wrap {
   opacity: 0;
+  position: relative;
   @include single-transition();
 }
 
 .projects-preview-thumb {
   width: 100%;
+  margin-bottom: 60px;            //2x .projects-preview padding
 }
 
 .projects-list {
