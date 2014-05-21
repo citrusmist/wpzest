@@ -69,7 +69,7 @@ body{
     margin-right: -100%;
     margin-left: 40.9398%; 
     width: 51.4097%;
-    padding: 30px;
+    padding: $preview-padding + px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -99,7 +99,7 @@ body{
 
 .projects-preview-thumb {
   width: 100%;
-  margin-bottom: 60px;            //2x .projects-preview padding
+  margin-bottom: $preview-padding * 2 + px;;            //2x .projects-preview padding
 }
 
 .projects-list {
