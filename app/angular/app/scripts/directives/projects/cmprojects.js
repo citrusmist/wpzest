@@ -37,7 +37,7 @@ angular.module('wpZest')
 						);
 	
 						if(leaveTimeout !== false) {
-							console.log('cancel leave timeout');
+							// console.log('cancel leave timeout');
 							$timeout.cancel(leaveTimeout);
 							leaveTimeout = false;
 						}
@@ -47,10 +47,7 @@ angular.module('wpZest')
 							enterTimeout = false;
 
 							if(controller.isPreviewActive === false) {
-								console.log('showing preview');
-								controller.isPreviewActive = true;
 								element.addClass('projects--isActive');
-								
 								controller.showPreview(elThumb);
 							} else {
 								controller.slideIntoView(elThumb);
@@ -61,15 +58,13 @@ angular.module('wpZest')
 					elTitles.on('mouseleave', function() {
 						
 						if(enterTimeout !== false) {
-							console.log('cancel enter timeout');
+							// console.log('cancel enter timeout');
 							$timeout.cancel(enterTimeout);
 							enterTimeout = false;
 						}
 	
-						//TODO: check if the projects preview is active before setting hte timeoue
 						leaveTimeout = $timeout(function(){
 	
-							controller.isPreviewActive = false;
 							leaveTimeout = false;
 	
 							element.removeClass('projects--isActive');
@@ -122,6 +117,7 @@ angular.module('wpZest')
 				};
 
 				var showPreview = function(elThumb) {
+					controller.isPreviewActive = true;
 					elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
 					element.one(cmTransition.transitionEvent, function(evt) {
@@ -144,6 +140,7 @@ angular.module('wpZest')
 				};
 
 				var hidePreview = function() {
+					controller.isPreviewActive = false;
 					element.removeClass('projects-preview--isActive');
 					// elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 				};
