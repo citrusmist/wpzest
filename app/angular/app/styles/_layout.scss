@@ -66,17 +66,19 @@ body{
 .projects--isActive {
   .projects-preview {
     height: 66.66666%;
-    margin-right: -100%;
-    margin-left: 40.9398%; 
+    margin-right: -110%;
+    padding: #{$preview-padding}px;
     width: 51.4097%;
-    padding: $preview-padding + px;
+    z-index: 100;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
+    @include experimental-value(margin-left, calc(40.9398% - #{$preview-padding}px)); 
   }
 }
 
 .projects-preview {
+  @extend %btmalign;
   background-color: $cm-white;
   overflow: hidden;
   width: 0;
@@ -105,6 +107,7 @@ body{
 .projects-list {
   position: relative;
   top: 17%;
+  z-index: 200;
 }
 
 .project-discipline{
@@ -129,8 +132,11 @@ body{
   top: 4.625%;
 }
 
-.projects-preview,
 .home-logomark,
 .home-logotype {
   @extend %btmalign;
+}
+
+.home-logomark {
+  z-index: 1;
 }
