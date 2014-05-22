@@ -23,8 +23,6 @@ angular.module('wpZest')
 				link: function postLink(scope, element, attrs, controller) {
 					
 					var elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
-					// var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
-					// var elList        = angular.element(element[0].querySelectorAll('.projects-list'));
 					var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
 					var leaveTimeout  = false;
 					var enterTimeout  = false;
@@ -74,15 +72,14 @@ angular.module('wpZest')
 	
 					element.imagesLoaded()
 						.progress(function(instance,image){
-							
-							var dummyImg = new Image();
 	
 							if(controller.thumbRatio !== false) {
 								return;
 							}
+
+							var dim = cmUtil.getNaturalImageDimensions(image.img);
 	
-							dummyImg.src = image.img.src;
-							controller.thumbRatio = dummyImg.width / dummyImg.height;
+							controller.thumbRatio = dim.width / dim.height;
 							console.log(controller.thumbRatio);
 							controller.setupPreview();
 						});
@@ -91,12 +88,9 @@ angular.module('wpZest')
 				}
 			};
 		}])
-	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', function($timeout, cmTransition){
+	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', function($timeout, cmTransition, cmUtil){
 		// Runs during compile
 		return {
-			// terminal: true,s
-			// scope: {}, // {} = isolate, true = child, false/undefined = no change
-			// controller: function($scope, $element, $attrs, $transclude) {},
 			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 			template: '<div ng-transclude></div>',
@@ -142,17 +136,17 @@ angular.module('wpZest')
 				var hidePreview = function() {
 					controller.isPreviewActive = false;
 					element.removeClass('projects-preview--isActive');
-					// elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 				};
 
 				var calcHeight = function() {
 
-					styleRules  = getStyleRules('.projects--isActive .projects-preview');
+					styleRules  = cmUtil.getStyleRules('.projects--isActive .projects-preview');
 
-					if( styleRules === null ) {
+					if(styleRules === null) {
 						return '';
 					}
 
+					//README: assuming that widht is a percentage value
 					var previewWidth   = parseInt(styleRules.style.width, 10);
 					var viewportWidth  = angular.element(window).width();
 
@@ -161,34 +155,6 @@ angular.module('wpZest')
 					return previewHeight;
 				};
 
-				var getStyleRules = function(className) {
-
-					var styleSheet     = null;
-					var ruleDefinition = null;
-
-					for (var i = 0; i < document.styleSheets.length; i++) {
-
-						if( document.styleSheets[i].href === null ) {
-							continue;
-						}
-
-						if(document.styleSheets[i].href.indexOf('main.css') !== -1) {
-							styleSheet = document.styleSheets[i];
-							break;
-						}
-					}
-
-					var classes = styleSheet.rules || styleSheet.cssRules;
-
-			    for(var x=0; x < classes.length; x++) {
-		        if(classes[x].selectorText === className) {
-              // ruleDefinition = classes[x].cssText || classes[x].style.cssText;
-              ruleDefinition = classes[x];
-		        }
-			    }
-
-			    return ruleDefinition;
-				};
 
 				var setupPreview = function() {
 					console.log('setting up preview');
