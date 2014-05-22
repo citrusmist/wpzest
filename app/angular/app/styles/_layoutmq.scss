@@ -1,11 +1,12 @@
-/* ==========================================================================
-	 EXAMPLE Media Queries for Responsive Design.
-	 These examples override the primary ('mobile first') styles.
-	 Modify as content requires.
-	 ========================================================================== */
+// Screens larger than 1450px if em is 16px
+@media only screen and (min-width: 98em) and (min-height:50em) { 
+  h2, .h2 {
+    font-size: 3rem;
+	}
 
-@media only screen and (min-width: 35em) {
-		/* Style adjustments for viewports that meet the condition */
+	.caption {
+		font-size: 1rem;
+	}
 }
 
 @media print,

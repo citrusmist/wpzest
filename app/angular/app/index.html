@@ -46,7 +46,11 @@
      ga('send', 'pageview');
   </script>
 
+  <!-- build:js scripts/plugins.js -->
   <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/imagesloaded/imagesloaded.pkgd.js"></script>
+  <!-- endbuild -->
+  
   <script src="bower_components/angular/angular.js"></script>
 
     <!-- build:js scripts/modules.js -->
@@ -62,6 +66,8 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/directives/projects/cmprojects.js"></script>
+    <script src="scripts/services/cmTransition.js"></script>
+    <script src="scripts/services/cmutil.js"></script>
     <!-- endbuild -->
 
     <script src="https://get.gridsetapp.com/25503/overlay/"></script>

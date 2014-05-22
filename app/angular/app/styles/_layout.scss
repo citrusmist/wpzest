@@ -7,12 +7,16 @@ h1, .h1{
   font-family: "ff-spinoza-web-pro", serif;
   font-size: 58px;
   font-size: 3.625rem;
+  font-weight: normal;
 }
 
 h2, .h2{
   font-family: "ff-spinoza-web-pro", serif;
   font-size: 40px;
   font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: -0.25px;
+  word-spacing: -1px;
 }
 
 h3, .h3{
@@ -60,16 +64,21 @@ body{
 }
 
 .projects--isActive {
-
   .projects-preview {
     height: 66.66666%;
-    margin-right: -100%;
-    margin-left: 40.9398%; 
-    width: 51.4097%; 
+    margin-right: -110%;
+    padding: #{$preview-padding}px;
+    width: 51.4097%;
+    z-index: 100;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    @include experimental-value(margin-left, calc(40.9398% - #{$preview-padding}px)); 
   }
 }
 
 .projects-preview {
+  @extend %btmalign;
   background-color: $cm-white;
   overflow: hidden;
   width: 0;
@@ -78,13 +87,27 @@ body{
   @include single-transition();
 }
 
+.projects-preview--isActive {
+  .projects-preview-wrap { 
+    opacity: 1;
+  }
+}
+
+.projects-preview-wrap {
+  opacity: 0;
+  position: relative;
+  @include single-transition();
+}
+
 .projects-preview-thumb {
   width: 100%;
+  margin-bottom: $preview-padding * 2 + px;;            //2x .projects-preview padding
 }
 
 .projects-list {
   position: relative;
   top: 17%;
+  z-index: 200;
 }
 
 .project-discipline{
@@ -92,10 +115,8 @@ body{
 }
 
 .projects-item .projects-title {
-  letter-spacing: -0.25px;
   line-height: 1;
   margin: 0 0 15px;
-  word-spacing: -1px;
 }
 
 .project-link {
@@ -111,8 +132,11 @@ body{
   top: 4.625%;
 }
 
-.projects-preview,
 .home-logomark,
 .home-logotype {
   @extend %btmalign;
+}
+
+.home-logomark {
+  z-index: 1;
 }
