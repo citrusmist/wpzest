@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmProjects', ['$timeout', 'cmUtil' , function($timeout, cmUtil) {
+	.directive('cmProjects', ['$timeout', 'cmUtil', 'cmProjects' , function($timeout, cmUtil, cmProjects) {
 	
 			return {
+				scope: {},
 				template: '<div ng-transclude></div>',
 				restrict: 'E',
 				controller: function($scope, $element, $attrs) {
@@ -16,11 +17,21 @@ angular.module('wpZestApp')
 					this.hidePreview     = false;
 					this.calcHeight      = false;
 					this.setupPreview    = false;
+
+					
 	
 				},
 				transclude: true,
 				replace: true,
 				link: function postLink(scope, element, attrs, controller) {
+
+					scope.projects = {};
+					scope.cock = 'cock';
+
+					cmProjects.all().then(function(projects) {
+						scope.projects = projects;
+						console.log(scope.projects);
+					});
 					
 					var elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
 					var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
