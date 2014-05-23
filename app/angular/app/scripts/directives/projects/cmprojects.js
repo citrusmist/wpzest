@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wpZest')
+angular.module('wpZestApp')
 	.directive('cmProjects', ['$timeout', 'cmUtil' , function($timeout, cmUtil) {
 	
 			return {

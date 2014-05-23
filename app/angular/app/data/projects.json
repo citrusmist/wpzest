@@ -1,0 +1,38 @@
+[
+	{
+		"ID": 5,
+		"post_title": "Mosaica Restaurant",
+		"post_name": "mosaica-restaurant",
+		"post_content": "",
+		"post_thumbnail": ""
+	},
+	{
+		"ID": 6,
+		"post_title": "Amalgam Studios",
+		"post_name": "amalgam-studios",
+		"post_content": "",
+		"post_thumbnail": ""
+	},
+	{
+		"ID": 7,
+		"post_title": "Surround Speakers Boutique",
+		"post_name": "surround-speakers-boutique",
+		"post_content": "",
+		"post_thumbnail": ""
+	},
+	{
+		"ID": 8,
+		"post_title": "High Rise Theatre",
+		"post_name": "high-rise-theatre",
+		"post_content": "",
+		"post_thumbnail": ""
+	},
+	{
+		"ID": 9,
+		"post_title": "Waha Wera",
+		"post_name": "waha-wera",
+		"post_content": "",
+		"post_thumbnail": ""
+	}
+
+]

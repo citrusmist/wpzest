@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wpZest')
+angular.module('wpZestApp')
   .factory('cmUtil', function () {
 
     var now = Date.now || function() {

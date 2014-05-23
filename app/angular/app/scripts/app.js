@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wpZest', ['ngRoute'])
+angular.module('wpZestApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

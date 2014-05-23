@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wpZest')
+angular.module('wpZestApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

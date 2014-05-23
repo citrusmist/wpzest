@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('wpZest')
+angular.module('wpZestApp')
   .factory('cmTransition', function () {
 
     var whichTransitionEvent = function() {

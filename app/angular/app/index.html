@@ -20,7 +20,7 @@
     <!-- endbuild -->
     <link href="https://get.gridsetapp.com/25503/" rel="stylesheet" />
 </head>
-<body ng-app="wpZest">
+<body ng-app="wpZestApp">
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -31,6 +31,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <cm-header></cm-header>
   <div class="container" ng-view="">
     
   </div>
@@ -68,6 +69,8 @@
     <script src="scripts/directives/projects/cmprojects.js"></script>
     <script src="scripts/services/cmTransition.js"></script>
     <script src="scripts/services/cmutil.js"></script>
+    <script src="scripts/services/projects/cmprojects.js"></script>
+    <script src="scripts/directives/cmheader.js"></script>
     <!-- endbuild -->
 
     <script src="https://get.gridsetapp.com/25503/overlay/"></script>
