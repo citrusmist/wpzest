@@ -5,7 +5,7 @@ angular.module('wpZestApp')
 	
 			return {
 				scope: {},
-				template: '<div ng-transclude></div>',
+				templateUrl: 'views/projects.html',
 				restrict: 'E',
 				controller: function($scope, $element, $attrs) {
 	
@@ -18,15 +18,13 @@ angular.module('wpZestApp')
 					this.calcHeight      = false;
 					this.setupPreview    = false;
 
-					
-	
 				},
-				transclude: true,
+				transclude: false,
 				replace: true,
 				link: function postLink(scope, element, attrs, controller) {
 
+					console.log(scope);
 					scope.projects = {};
-					scope.cock = 'cock';
 
 					cmProjects.all().then(function(projects) {
 						scope.projects = projects;
@@ -102,11 +100,22 @@ angular.module('wpZestApp')
 	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', function($timeout, cmTransition, cmUtil){
 		// Runs during compile
 		return {
+			scope: false,
 			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-			template: '<div ng-transclude></div>',
+			template: '<div><div class="projects-preview-wrap">' +
+				'<div ng-repeat="project in projects" class="projects-preview-{{project.ID}}">' +
+					'<img class="projects-preview-thumb" ng-src="{{project.thumbnail}}" alt="">' +
+				'</div>' +
+			'</div>' +
+		'</div>',
 			transclude: true,
+			replace: true,
 			link: function(scope, element, attrs, controller) {
+
+				console.log('cmProjectsPreview');
+				console.log(scope);
+
 
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));

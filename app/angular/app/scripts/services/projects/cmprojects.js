@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .factory('cmProjects', function($http, $q) {
+  .factory('cmProjects', function($http, $rootScope, $q) {
     
     // var projects = null;
 

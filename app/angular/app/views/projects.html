@@ -1,0 +1,16 @@
+<div>
+	<ul class="projects-list w2-w5 plainlist">
+
+		<li class="projects-item" ng-repeat="project in projects">
+			<span class="project-discipline caption">{{project.discipline}}</span>
+			<h2 class="projects-title">
+				<a class="project-link" href="" ng-href="">
+					{{project.post_title}}
+				</a>
+			</h2>
+		</li>
+
+	</ul>
+	
+	<cm-projects-preview class="projects-preview"></cm-projects-preview>
+</div>
