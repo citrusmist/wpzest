@@ -5,7 +5,7 @@ angular.module('wpZestApp')
 	
 			return {
 				scope: {},
-				templateUrl: 'views/projects.html',
+				templateUrl: 'views/cmProjects.html',
 				restrict: 'E',
 				controller: function($scope, $element, $attrs) {
 	
