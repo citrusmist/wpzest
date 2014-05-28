@@ -7,6 +7,10 @@ angular.module('wpZestApp', ['ngRoute'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/projects/:projectName', {
+        templateUrl: 'views/projects/project.html',
+        controller: 'ProjectsProjectCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

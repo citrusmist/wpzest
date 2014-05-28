@@ -36,7 +36,7 @@ angular.module('wpZestApp')
 
 							var elTitle = angular.element(this);
 							var elThumb = angular.element(
-								elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/', ''))
+								elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/projects/', ''))
 							);
 
 							if(leaveTimeout !== false) {
