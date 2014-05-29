@@ -1,1 +1,19 @@
-<p>This is the projects/:projectName view. {{projectName}}</p>
+<article class="project">
+
+	<header class="project-header w-all w-clear">
+		<div class="wr5">
+			<div class="project-summary caption et1-et2">{{project.postExcerpt}}</div>
+			<div class="et3">
+				<a ng-href="/" class="project-close sprite sprite--close alignright"></a>
+			</div>
+		</div>
+	</header>
+
+	<h1 class="wr4 wr-clear project-title">{{project.postTitle}}</h1>
+	<figure class="project-hero w3-w5 w-clear">
+		<img src="" alt="" class="project-hero-img" ng-src="{{project.thumbnail.large}}">
+	</figure>
+	<div class="w-clear">
+		
+	</div>
+</article>
