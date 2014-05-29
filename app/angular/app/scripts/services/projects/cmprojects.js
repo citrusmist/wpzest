@@ -16,8 +16,13 @@ angular.module('wpZestApp')
       return projects.promise;
     };
 
+    var findByName = function(name) {
+
+    };
+
     // Public API here
     return {
-      all: all
+      all: all,
+      findByName: findByName
     };
   });
