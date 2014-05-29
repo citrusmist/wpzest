@@ -1,10 +1,6 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .controller('ProjectsProjectCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ProjectsProjectCtrl', function ($scope, $routeParams, cmProjects) {
+		$scope.projectName = $routeParams.projectName;    
   });
