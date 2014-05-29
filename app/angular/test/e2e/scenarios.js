@@ -24,8 +24,16 @@ describe('wpZest App', function() {
   		browser().navigateTo('/#/projects/amalgam-studios');
   	});
 
-  	it('should display placeholder wiht project name', function() {
+  	it('should display placeholder with project name', function() {
     	expect(binding('projectName')).toBe('amalgam-studios');
+    });
+
+    it('should display landing page when closed', function() {
+    	var el   = element('.project-close');
+
+    	el.click();
+
+    	expect(browser().location().path()).toBe('/');
     });
   });
 
