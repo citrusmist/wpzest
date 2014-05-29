@@ -6,13 +6,13 @@ describe('Service: projects/cmProjects', function () {
   beforeEach(module('wpZestApp'));
 
   // instantiate service
-  var projects/cmProjects;
-  beforeEach(inject(function (_projects/cmProjects_) {
-    projects/cmProjects = _projects/cmProjects_;
+  var cmProjects;
+  beforeEach(inject(function (_cmProjects_) {
+    cmProjects = _cmProjects_;
   }));
 
   it('should do something', function () {
-    expect(!!projects/cmProjects).toBe(true);
+    expect(!!cmProjects).toBe(true);
   });
 
 });

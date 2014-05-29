@@ -1,22 +1,31 @@
 'use strict';
 
-describe('Controller: ProjectsProjectnameCtrl', function () {
+describe('Controller: ProjectsProjectCtrl', function () {
 
   // load the controller's module
   beforeEach(module('wpZestApp'));
 
-  var ProjectsProjectnameCtrl,
-    scope;
+  var ProjectsProjectCtrl,
+    scope,
+    $httpBackend;
 
   // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
+  beforeEach(inject(function (_$httpBackend_, $controller, $rootScope) {
+
+    $httpBackend = _$httpBackend_;
+    $httpBackend.expectGET('data/projects.json')
+      .respond([{postName: 'amalgam-studios'}]);
+
     scope = $rootScope.$new();
-    ProjectsProjectnameCtrl = $controller('ProjectsProjectnameCtrl', {
+    ProjectsProjectCtrl = $controller('ProjectsProjectCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a project to the scope', function () {
+    expect(scope.project).toBeUndefined();
+    $httpBackend.flush();
+
+
   });
 });
