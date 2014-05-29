@@ -114,8 +114,8 @@ angular.module('wpZestApp')
 			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 			template: '<div><div class="projects-preview-wrap">' +
-				'<div ng-repeat="project in projects" class="projects-preview-{{post_name}}">' +
-					'<img class="projects-preview-thumb projects-thumb--{{project.post_name}}" ng-src="{{project.thumbnail}}" alt="">' +
+				'<div ng-repeat="project in projects">' +
+					'<img class="projects-preview-thumb projects-thumb--{{project.postName}}" ng-src="{{project.thumbnail.medium}}" alt="">' +
 				'</div>' +
 			'</div></div>',
 			transclude: true,

@@ -1,47 +1,62 @@
 [
 	{
 		"ID": 5,
-		"post_title": "Mosaica Restaurant",
-		"post_name": "mosaica-restaurant",
-		"post_content": "",
-		"post_thumbnail": "",
+		"postTitle": "Mosaica Restaurant",
+		"postName": "mosaica-restaurant",
+		"postContent": "",
+		"postExcerpt": "",
+		"postThumbnail": "",
 		"discipline": "Web Design",
-		"thumbnail": "/images/mosaica-hero-1000x599.jpg"
+		"thumbnail": { 
+			"medium": "/images/mosaica-hero-1000x599.jpg"
+		}
 	},
 	{
 		"ID": 6,
-		"post_title": "Amalgam Studios",
-		"post_name": "amalgam-studios",
-		"post_content": "",
-		"post_thumbnail": "",
+		"postTitle": "Amalgam Studios",
+		"postName": "amalgam-studios",
+		"postContent": "",
+		"postExcerpt": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet ",
 		"discipline": "Web Design",
-		"thumbnail": "/images/amalgam-hero-1000x599.jpg"
+		"thumbnail": { 
+			"medium": "/images/amalgam-hero-1000x599.jpg",
+			"large":  "/images/amalgam/hero-1600x958.jpg"
+		}
 	},
 	{
 		"ID": 7,
-		"post_title": "Surround Speakers Boutique",
-		"post_name": "surround-speakers-boutique",
-		"post_content": "",
-		"post_thumbnail": "",
+		"postTitle": "Surround Speakers Boutique",
+		"postName": "surround-speakers-boutique",
+		"postContent": "",
+		"postExcerpt": "",
+		"postThumbnail": "",
 		"discipline": "Identity Design",
-		"thumbnail": "/images/ss-hero-1000x599.png"
+		"thumbnail": { 
+			"medium": "/images/ss-hero-1000x599.png"
+		}
 	},
 	{
 		"ID": 8,
-		"post_title": "High Rise Theatre",
-		"post_name": "high-rise-theatre",
-		"post_content": "",
-		"post_thumbnail": "",
+		"postTitle": "High Rise Theatre",
+		"postName": "high-rise-theatre",
+		"postContent": "",
+		"postExcerpt": "",
+		"postThumbnail": "",
 		"discipline": "Identity Design",
-		"thumbnail": ""
+		"thumbnail": { 
+			"medium": ""
+		}
 	},
 	{
 		"ID": 9,
-		"post_title": "Waha Wera",
-		"post_name": "waha-wera",
-		"post_content": "",
-		"post_thumbnail": "",
+		"postTitle": "Waha Wera",
+		"postName": "waha-wera",
+		"postContent": "",
+		"postExcerpt": "",
+		"postThumbnail": "",
 		"discipline": "Print Design",
-		"thumbnail": ""
+		"thumbnail": { 
+			"medium": ""
+		}
 	}
 ]
