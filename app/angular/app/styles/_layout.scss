@@ -1,66 +1,33 @@
-body{
-  font-family: "ff-basic-gothic-web-pro", sans-serif;
-  color: $cm-gray--dark;
-}
-
-h1, .h1{
-  font-family: "ff-spinoza-web-pro", serif;
-  font-size: 58px;
-  font-size: 3.625rem;
-  font-weight: normal;
-}
-
-h2, .h2{
-  font-family: "ff-spinoza-web-pro", serif;
-  font-size: 40px;
-  font-size: 2.5rem;
-  font-weight: normal;
-  letter-spacing: -0.25px;
-  word-spacing: -1px;
-}
-
-h3, .h3{
-
-}
-
-a{
-  color: $cm-purple;
-  text-decoration: none;
-}
-
-.longform{
-  font-size: 22px;
-  font-size: 1.375rem;
-  line-height: 1.36363636363636; //30px
-}
-
-.caption{
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.07142857142857;
-}
-
-html{
+html {
   height: 100%;
 }
 
-body{
+body {
+  background: white;
   min-height: 100%; 
-  background: $cm-green;
 }
 
-.home{
+.header {
+  background: $cm-green;
+  height: 100%;
   position: absolute;
   width: 100%;
-  height: 100%;
+
+  &.header--isSecondary {
+    width: 5.7121%;
+  }
+
+  .header-wrap {
+    height: inherit;
+  }
 }
 
 .projects {
-  top: 0;
-  left: 0;
   height: 100%;
-  width: 100%;
+  left: 0;
+  top: 0;
   position: absolute;
+  width: 100%;
 }
 
 .projects--isActive {
@@ -132,11 +99,11 @@ body{
   top: 4.625%;
 }
 
-.home-logomark,
-.home-logotype {
+.header-logomark,
+.header-logotype {
   @extend %btmalign;
 }
 
-.home-logomark {
+.header-logomark {
   z-index: 1;
 }
