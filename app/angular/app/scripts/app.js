@@ -7,7 +7,7 @@ angular.module('wpZestApp', ['ngRoute'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/projects/:projectName', {
+      .when('/project/:projectName', {
         templateUrl: 'views/projects/project.html',
         controller: 'ProjectsProjectCtrl'
       })
