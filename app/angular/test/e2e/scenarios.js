@@ -21,19 +21,26 @@ describe('wpZest App', function() {
   describe('Project view', function() {
 
   	beforeEach(function() {
-  		browser().navigateTo('/#/projects/amalgam-studios');
+  		browser().navigateTo('/#/project/amalgam-studios');
   	});
 
   	it('should display placeholder with project name', function() {
-    	expect(binding('projectName')).toBe('amalgam-studios');
+    	expect(binding('project.postTitle')).toBe('Amalgam Studios');
     });
 
     it('should display landing page when closed', function() {
-    	var el   = element('.project-close');
 
-    	el.click();
+			var header = element('.header');
+			var close  = element('.project-close');
+    	close.click();
 
     	expect(browser().location().path()).toBe('/');
+    	expect(header.attr('class')).not().toContain('header--isSecondary');
+    });
+
+    it('should display header in secondary state', function() {
+    	var header = element('.header');
+    	expect(header.attr('class')).toContain('header--isSecondary');
     });
   });
 
