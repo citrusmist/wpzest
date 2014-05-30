@@ -1,6 +1,14 @@
 <article class="project">
 
 	<header class="project-header w-all w-clear">
+		<div class="wr4">
+			<dl class="project-credits et3 caption">
+				<dt>Agency</dt>
+				<dd><a href="" ng-href="http://pgabradning.com">PGA Branding</a></dd>
+				<dt>Studio Role</dt>
+				<dd><a href="" ng-href="">Web Design</a></dd>
+			</dl>
+		</div>
 		<div class="wr5">
 			<div class="project-summary caption et1-et2">{{project.postExcerpt}}</div>
 			<div class="et3">
@@ -9,11 +17,20 @@
 		</div>
 	</header>
 
-	<h1 class="wr4 wr-clear project-title">{{project.postTitle}}</h1>
+	<div class="project-title wr4 wr-clear">
+		<div class="project-title-wrap">
+			<span class="project-title-decoration caption">
+				<a href="" class="project-title-link" ng-href="http://amalgam.co.uk">Visit Website</a>
+			</span>
+			<h1 class="project-title-text">{{project.postTitle}}</h1>
+		</div>
+	</div>
+
 	<figure class="project-hero w3-w5 w-clear">
 		<img src="" alt="" class="project-hero-img" ng-src="{{project.thumbnail.large}}">
 	</figure>
-	<div class="w-clear">
+	
+	<div class="w-clear project-body">
 		
 	</div>
 </article>
