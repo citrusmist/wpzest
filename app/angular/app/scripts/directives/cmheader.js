@@ -34,9 +34,9 @@ angular.module('wpZestApp')
 	.directive('cmHeaderToggle', function($route) {
 		return {
 			scope: {},
-			template: '<div ng-transclude></div>',
+			template: '<div>menu</div>',
 			replace: true,
-			transclude: true,
+			// transclude: true,
 			restrict: 'E',
 			require: '^cmHeader',
 			link: function postLink(scope, element, attrs, controller) {

@@ -28,6 +28,19 @@ body {
   }
 }
 
+.header-toggle {
+  opacity: 0;
+  position: absolute;
+  right: 2.2em;
+  top: .9375rem;
+  cursor: pointer;
+
+  @include single-transition();
+  @include transform-origin(top, right);
+  @include rotateZ(-90deg);
+}
+
+.header-logomark2,
 .header-logomark,
 .header-logotype {
   @extend %btmalign;
@@ -35,6 +48,27 @@ body {
 
 .header-logomark {
   z-index: 1;
+}
+
+.header-logomark2 {
+  opacity: 0;
+  z-index: 1;
+  
+  @include single-transition();
+  
+  .header-logomark2-img {
+    padding: 0 0 0 18%;
+    width: 75%;
+  }
+}
+
+.header--isSecondary {
+  .header-toggle {
+    opacity: 1;
+  }
+  .header-logomark2 {
+    opacity: 1;
+  }
 }
 
 .projects {
@@ -132,26 +166,29 @@ body {
 }
 
 .project-header-wrap {
-  width: 66.6667%;
   float: right;
 }
 
 .project-header-section {
   float: left;
-  margin-left: 1.6777%;
-  width: 33.33333%;
 }
 
 .project-header-controls {
   float: right;
   margin-left: 1.6777%;
-  width: 5.5%;
   min-width: 42px;
+  width: 5.5%;
+}
+
+.project-summary {
+  margin-left: 1.6777%;
+  width: 44.44444%;
 }
 
 .project-credits {
+  width: 33.33333%;
   dd {
-    margin: 0 0 0 20px
+    margin: 0;
   }
 }
 
@@ -168,6 +205,7 @@ body {
 
 .project-title-decoration {
   
+  display: block;
   margin-bottom: 2px;
 
   &:before {

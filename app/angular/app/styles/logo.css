@@ -1,0 +1,9 @@
+.logo-mark {
+	fill: #444;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.logo:hover .logo-mark {
+	fill: #5b46d6;
+}

@@ -1,8 +1,8 @@
 <article class="project">
 
 	<header class="project-header w-all w-clear">
-		<div class="w5">
-			<div class="project-header-wrap">
+		<div class="w3-w5">
+			<div class="project-header-wrap et3">
 				<dl class="project-header-section project-credits caption">
 					<dt>Agency</dt>
 					<dd><a href="" ng-href="http://pgabranding.com">PGA Branding</a></dd>
@@ -30,7 +30,5 @@
 		<img src="" alt="" class="project-hero-img" ng-src="{{project.thumbnail.large}}">
 	</figure>
 
-	<div class="w-clear project-body">
-		
-	</div>
+	<div class="w-clear w-all project-body" ng-bind-html="project.postContent"></div>
 </article>

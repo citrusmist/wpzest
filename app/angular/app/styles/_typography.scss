@@ -29,10 +29,15 @@ a {
   text-decoration: none;
 }
 
-.longform {
+%longform {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.36363636363636; //30px
+}
+
+.longform,
+.project-body {
+  @extend %longform;
 }
 
 .caption {
