@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: white;
+  background: #f8fefc;
   min-height: 100%; 
 }
 
@@ -204,16 +204,15 @@ body {
 }
 
 .project-title-decoration {
-  
   display: block;
   margin-bottom: 2px;
 
   &:before {
     content: '';
     display: inline-block;
+    border-bottom: 1px solid $cm-gray--dark;
     margin-left: -20px;
     width: 66.666%;
-    border-bottom: 1px solid $cm-gray--dark;
   }
 }
 
@@ -224,7 +223,6 @@ body {
 }
 
 .project-hero-img {
-  width: 100%;
   display: block;
   margin-top: -1.75em;
   position: relative;
@@ -233,4 +231,40 @@ body {
 
 .project-credits {
   margin: 0;
+}
+
+.project-figure {
+  margin-bottom: .9090909090909em;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-figure-caption {
+  
+  position: absolute;
+  width: 103px;
+
+  &.caption--keeplayout {
+    position: static;
+    
+    &.caption--bottomright { 
+      float: right;
+      margin-top: .71428571428571em;
+    }
+  }
+
+  &.caption--bottomright { 
+    right: 0;
+    top: 100%;
+    @include experimental-value(top, calc(100% + .71428571428571em));
+  }
+
+  &.caption--topleft { 
+    bottom: 101%;
+    left: 0;
+    @include experimental-value(bottom, calc(100% + .71428571428571em));
+  }
 }

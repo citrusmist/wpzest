@@ -40,8 +40,10 @@ a {
 .project-body {
   @extend %longform;
 }
-
-.caption {
+  
+.caption,
+.project-figure-caption {
+  font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.07142857142857;
@@ -49,6 +51,6 @@ a {
 
 .project-body {
   p {
-    margin: 0.9090909090909em 0;
+    margin: 0 0 .9090909090909em;
   }
 }
