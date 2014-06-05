@@ -1,4 +1,4 @@
-<article class="project">
+<article class="project hentry">
 
 	<header class="project-header w-all w-clear">
 		<div class="w3-w5">
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 
-	<figure class="project-hero w3-w5 w-clear">
+	<figure class="project-figure project-hero w3-w5 w-clear">
 		<img src="" alt="" class="project-hero-img" ng-src="{{project.thumbnail.large}}">
 	</figure>
 
-	<div class="w-clear w-all project-body" ng-bind-html="project.postContent"></div>
+	<div class="w-clear w-all project-body" ng-bind-html="trustAsHtml(project.postContent)"></div>
 </article>
