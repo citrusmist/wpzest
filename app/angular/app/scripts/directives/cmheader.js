@@ -16,6 +16,7 @@ angular.module('wpZestApp')
 				var determineState = function(currentRoute) {
 					if(currentRoute.$$route.controller === 'MainCtrl') {
 						element.removeClass('header--isSecondary');
+						element.removeClass('header--isActive');
 						controller.state = 'primary';
 					} else {
 						element.addClass('header--isSecondary');
@@ -23,11 +24,16 @@ angular.module('wpZestApp')
 					}
 				};
 
-				determineState($route.current);
+				var activate = function() {
+					element.addClass('header--isActive');
+				};
 
 				scope.$on('$routeChangeSuccess', function(event, current) {
 					determineState(current);
 				});
+
+				determineState($route.current);
+				controller.activate = activate;
 			}
 		};
 	})
