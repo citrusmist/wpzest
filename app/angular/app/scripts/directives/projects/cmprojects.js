@@ -74,22 +74,24 @@ angular.module('wpZestApp')
 								controller.hidePreview();
 							}, 400);
 						});
-		
-						element.imagesLoaded()
-							.progress(function(instance,image){
+						
+						$timeout(function(){
+							element.imagesLoaded()
+								.progress(function(instance, image) {
 
-								var dim = null;
-		
-								if(controller.thumbRatio !== false) {
-									return;
-								}
+									var dim = null;
+			
+									if(controller.thumbRatio !== false) {
+										return;
+									}
 
-								dim = cmUtil.getNaturalImageDimensions(image.img);
-		
-								controller.thumbRatio = dim.width / dim.height;
-								console.log(controller.thumbRatio);
-								controller.setupPreview();
-							});
+									dim = cmUtil.getNaturalImageDimensions(image.img);
+									controller.thumbRatio = dim.width / dim.height;
+									console.log(controller.thumbRatio);
+									controller.setupPreview();
+								});
+						});
+						
 
 						angular.element(window).on('resize', cmUtil.debounce(controller.setupPreview, 100));
 					};
@@ -174,7 +176,7 @@ angular.module('wpZestApp')
 						return '';
 					}
 
-					//README: assuming that widht is a percentage value
+					//README: assuming that width is a percentage value
 					var previewWidth   = parseInt(styleRules.style.width, 10);
 					var viewportWidth  = angular.element(window).width();
 
