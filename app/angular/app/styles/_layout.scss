@@ -155,7 +155,7 @@ body {
 }
 
 .project {
-  padding: .9375em 0 0;
+  padding: 1.25em 0 2.5em;
 }
 
 .project-summary {
@@ -222,6 +222,22 @@ body {
   z-index: 100;
 }
 
+.project-body {
+
+  p {
+    margin: 0;
+  }
+
+  p:last-of-type {
+    margin-bottom: 1.8181818181818em;
+  }
+
+  p+p {
+    text-indent: 2em;
+  }
+}
+
+
 .project-hero-img {
   display: block;
   margin-top: -1.75em;
@@ -234,7 +250,7 @@ body {
 }
 
 .project-figure {
-  margin-bottom: .9090909090909em;
+  margin-bottom: 1.8181818181818em;
   position: relative;
 
   img {
@@ -259,12 +275,12 @@ body {
   &.caption--bottomright { 
     right: 0;
     top: 100%;
-    @include experimental-value(top, calc(100% + .71428571428571em));
+    @include experimental-value(top, calc(100% + 1em));
   }
 
   &.caption--topleft { 
     bottom: 101%;
     left: 0;
-    @include experimental-value(bottom, calc(100% + .71428571428571em));
+    @include experimental-value(bottom, calc(100% + 1em));
   }
 }

@@ -9,6 +9,8 @@ h1, .h1 {
   font-size: 3.625rem;
   line-height: 1.07758620689655;
   font-weight: normal;
+  letter-spacing: -0.25px;
+  word-spacing: -1px;
 }
 
 h2, .h2 {
@@ -32,7 +34,7 @@ a {
 %longform {
   font-size: 22px;
   font-size: 1.375rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.36363636363636; //30px
 }
 
@@ -49,8 +51,3 @@ a {
   line-height: 1.07142857142857;
 }
 
-.project-body {
-  p {
-    margin: 0 0 .9090909090909em;
-  }
-}
