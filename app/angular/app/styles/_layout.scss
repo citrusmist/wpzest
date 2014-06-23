@@ -31,10 +31,11 @@ body {
 
 .header--isSecondary.header--isActive {
 
-  @include translate3d(-24.5154%, 0, 0);
+  @include translate3d(-26.182%, 0, 0);
 
   .projects-list {
     @include gs-span(w, 5);
+
   }
 
   .profile,
