@@ -168,9 +168,11 @@ angular.module('wpZestApp')
 					element.removeClass('projects-preview--isActive');
 				};
 
-				var calcHeight = function() {
+				var calcHeight = function(prefix) {
 
-					styleRules  = cmUtil.getStyleRules('.projects--isActive .projects-preview');
+					var selector = (prefix === '') ? '.projects--isActive .projects-preview' : prefix + ' .projects--isActive .projects-preview';
+ 
+					styleRules  = cmUtil.getStyleRules(selector);
 
 					if(styleRules === null) {
 						return '';
@@ -179,17 +181,18 @@ angular.module('wpZestApp')
 					//README: assuming that width is a percentage value
 					var previewWidth   = parseInt(styleRules.style.width, 10);
 					var viewportWidth  = angular.element(window).width();
-
 					var previewHeight = (viewportWidth * (previewWidth/100)) / controller.thumbRatio;
 
 					return previewHeight;
 				};
 
 
-				var setupPreview = function() {
+				var setupPreview = function(headerState) {
+
+					headerState = headerState || '';
 					console.log('setting up preview');
 					// element.css('height', controller.calcHeight());
-					var height = controller.calcHeight();
+					var height = controller.calcHeight(headerState);
 					styleRules.style.height = height + 'px';
 				};
 
@@ -204,6 +207,10 @@ angular.module('wpZestApp')
 					//@TODO : consider an alternative approach
 
 					evt.stopPropagation();
+				});
+
+				scope.$on('headerStateChange', function(evt, data) {
+					controller.setupPreview(data);
 				});
 			}
 		};
