@@ -113,7 +113,7 @@ angular.module('wpZestApp')
 		// Runs during compile
 		return {
 			scope: false,
-			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
+			require: ['^cmProjects','^cmHeader'], // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 			template: '<div><div class="projects-preview-wrap">' +
 				'<div ng-repeat="project in projects">' +
@@ -122,10 +122,12 @@ angular.module('wpZestApp')
 			'</div></div>',
 			transclude: true,
 			replace: true,
-			link: function(scope, element, attrs, controller) {
+			link: function(scope, element, attrs, controllers) {
 
-				console.log('cmProjectsPreview');
-				console.log(scope);
+				var controller       = controllers[0];
+				var headerController = controllers[1];
+
+				console.log(controllers);
 
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
@@ -170,9 +172,12 @@ angular.module('wpZestApp')
 
 				var calcHeight = function(prefix) {
 
-					var selector = (prefix === '') ? '.projects--isActive .projects-preview' : prefix + ' .projects--isActive .projects-preview';
- 
-					styleRules  = cmUtil.getStyleRules(selector);
+					var selector = '.projects--isActive .projects-preview';
+
+					prefix     = headerController.getStateClass();
+					console.log(prefix);
+					selector   = (prefix === '') ? selector : '.' + prefix + ' ' + selector;
+					styleRules = cmUtil.getStyleRules(selector);
 
 					if(styleRules === null) {
 						return '';
@@ -181,18 +186,17 @@ angular.module('wpZestApp')
 					//README: assuming that width is a percentage value
 					var previewWidth   = parseInt(styleRules.style.width, 10);
 					var viewportWidth  = angular.element(window).width();
-					var previewHeight = (viewportWidth * (previewWidth/100)) / controller.thumbRatio;
+					var previewHeight = (viewportWidth * (previewWidth / 100)) / controller.thumbRatio;
 
 					return previewHeight;
 				};
 
+				var setupPreview = function() {
 
-				var setupPreview = function(headerState) {
-
-					headerState = headerState || '';
+					// headerState = headerState || '';
 					console.log('setting up preview');
 					// element.css('height', controller.calcHeight());
-					var height = controller.calcHeight(headerState);
+					var height = controller.calcHeight();
 					styleRules.style.height = height + 'px';
 				};
 
@@ -210,7 +214,7 @@ angular.module('wpZestApp')
 				});
 
 				scope.$on('headerStateChange', function(evt, data) {
-					controller.setupPreview(data);
+					controller.setupPreview();
 				});
 			}
 		};

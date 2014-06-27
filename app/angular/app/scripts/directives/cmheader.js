@@ -8,41 +8,34 @@ angular.module('wpZestApp')
 			replace: true,
 			restrict: 'E',
 			controller: function($scope, $element, $attrs) {
-				this.state        = 'primary';
-				this.activate     = function() {};
-				this.deactivate   = function() {};
-				this.isActive     = function() {};
-				this.toggleState  = function() {};
+				this.state         = null;
+				this.activate      = function() {};
+				this.deactivate    = function() {};
+				this.isActive      = function() {};
+				this.toggleState   = function() {};
+				this.getStateClass = function() {};
 			},
 			link: function postLink(scope, element, attrs, controller) {
 
 				var determineState = function(currentRoute) {
 
 					var initialState = controller.state;
-					var data = '';
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
-
-						element.removeClass('header--isSecondary');
-						element.removeClass('header--isActive');
-
+						element.removeClass(controller.getStateClass('secondary'));
 						controller.state = 'primary';
-						data             = '';
 					} else {
-
-						element.addClass('header--isSecondary');
-
+						element.addClass(controller.getStateClass('secondary'));
 						controller.state = 'secondary';
-						data             = '.header--isSecondary';
+					}
 
-						if(controller.isActive()) {
-							controller.deactivate();
-						}
+					if(controller.isActive()) {
+						controller.deactivate();
 					}
 
 					if(initialState !== controller.state) {
-
-						scope.$broadcast('headerStateChange', data);
+						console.log('broadcasting');
+						scope.$broadcast('headerStateChange', controller.state);
 					}
 				};
 
@@ -66,10 +59,22 @@ angular.module('wpZestApp')
 					}
 				};
 
-				controller.activate    = activate;
-				controller.deactivate  = deactivate;
-				controller.isActive    = isActive;
-				controller.toggleState = toggleState;
+				var getStateClass = function(state) {
+					
+					state = state || controller.state;
+
+					if(state == 'secondary') {
+						return 'header--isSecondary';
+					} else {
+						return '';
+					}
+				};
+
+				controller.activate      = activate;
+				controller.deactivate    = deactivate;
+				controller.isActive      = isActive;
+				controller.toggleState   = toggleState;
+				controller.getStateClass = getStateClass;
 
 				scope.$on('$routeChangeSuccess', function(event, current) {
 					determineState(current);
