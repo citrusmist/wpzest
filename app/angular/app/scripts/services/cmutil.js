@@ -81,8 +81,6 @@ angular.module('wpZestApp')
 
     var getNaturalImageDimensions = function(image) {
 
-
-
       var width  = null;
       var height = null;
 
