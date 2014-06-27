@@ -30,49 +30,61 @@ angular.module('wpZestApp')
 					var leaveTimeout  = false;
 					var enterTimeout  = false;
 
+					var showProject = function(elTitle) {
+
+						var elThumb = angular.element(
+							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
+						);
+
+						if(leaveTimeout !== false) {
+							// console.log('cancel leave timeout');
+							$timeout.cancel(leaveTimeout);
+							leaveTimeout = false;
+						}
+	
+						enterTimeout = $timeout(function () {
+							
+							enterTimeout = false;
+
+							if(controller.isPreviewActive === false) {
+								element.addClass('projects--isActive');
+								controller.showPreview(elThumb);
+							} else {
+								controller.slideIntoView(elThumb);
+							}
+						}, 200);
+					};
+
+					var hideProject = function() {
+													
+						if(enterTimeout !== false) {
+							// console.log('cancel enter timeout');
+							$timeout.cancel(enterTimeout);
+							enterTimeout = false;
+						}
+	
+						leaveTimeout = $timeout(function(){
+	
+							leaveTimeout = false;
+	
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
+						}, 400);
+					};
+
 					var attachHandlers = function() {
 
 						elTitles.on('mouseenter', function() {
-
-							var elTitle = angular.element(this);
-							var elThumb = angular.element(
-								elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
-							);
-
-							if(leaveTimeout !== false) {
-								// console.log('cancel leave timeout');
-								$timeout.cancel(leaveTimeout);
-								leaveTimeout = false;
-							}
-		
-							enterTimeout = $timeout(function () {
-								
-								enterTimeout = false;
-
-								if(controller.isPreviewActive === false) {
-									element.addClass('projects--isActive');
-									controller.showPreview(elThumb);
-								} else {
-									controller.slideIntoView(elThumb);
-								}
-							}, 200);
+							showProject(angular.element(this));
 						});
 		
 						elTitles.on('mouseleave', function() {
-							
-							if(enterTimeout !== false) {
-								// console.log('cancel enter timeout');
-								$timeout.cancel(enterTimeout);
-								enterTimeout = false;
-							}
-		
-							leaveTimeout = $timeout(function(){
-		
-								leaveTimeout = false;
-		
-								element.removeClass('projects--isActive');
-								controller.hidePreview();
-							}, 400);
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
+						});
+
+						elTitles.on('click',function() {
+							hideProject();
 						});
 						
 						$timeout(function(){

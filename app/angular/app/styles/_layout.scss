@@ -38,11 +38,22 @@ body {
     opacity: 0;
   }
 
+  .header-toggle,
+  .header-logomark2 {
+    opacity: 1;
+  }
+
+  .nav-appendix {
+    margin-left: #{gs-marginleft(w, 5) - gs-width(w, 1) - gs-gutter(w) + '%'};
+  }
+
+  .projects-preview {
+    top: 17%;
+    bottom: auto;
+  }
+
   .projects--isActive {
     .projects-preview {
-      top: 17%;
-      bottom: auto;
-
       width: #{gs-width('et', 2, false, false, true)};
       @include experimental-value(margin-left, calc(#{gs-marginleft('et', 2, false, true)} + 26.1820666% - #{$preview-padding}px)); 
     }
@@ -84,15 +95,6 @@ body {
   .header-logomark2-img {
     padding: 0 0 0 18%;
     width: 75%;
-  }
-}
-
-.header--isSecondary {
-  .header-toggle {
-    opacity: 1;
-  }
-  .header-logomark2 {
-    opacity: 1;
   }
 }
 
@@ -170,6 +172,25 @@ body {
   &:hover {
     color: $cm-purple;
   }
+}
+
+.nav-appendix {
+  @extend %btmalign;
+  position: absolute;
+  @include gs-span(w, 5);
+}
+
+.nav-appendix-item { 
+  margin-left: .75em;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.nav-appendix-link {
+  @extend %plainlink;
+  @extend %underscore;
 }
 
 .profile {
