@@ -79,12 +79,12 @@ angular.module('wpZestApp')
 						});
 		
 						elTitles.on('mouseleave', function() {
-							element.removeClass('projects--isActive');
-							controller.hidePreview();
+							hideProject();							
 						});
 
 						elTitles.on('click',function() {
-							hideProject();
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
 						});
 						
 						$timeout(function(){
