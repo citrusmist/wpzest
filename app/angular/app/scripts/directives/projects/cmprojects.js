@@ -79,7 +79,7 @@ angular.module('wpZestApp')
 						});
 		
 						elTitles.on('mouseleave', function() {
-							hideProject();							
+							hideProject();
 						});
 
 						elTitles.on('click',function() {
@@ -196,8 +196,8 @@ angular.module('wpZestApp')
 					}
 
 					//README: assuming that width is a percentage value
-					var previewWidth   = parseInt(styleRules.style.width, 10);
-					var viewportWidth  = angular.element(window).width();
+					var previewWidth  = parseInt(styleRules.style.width, 10);
+					var viewportWidth = angular.element(window).width();
 					var previewHeight = (viewportWidth * (previewWidth / 100)) / controller.thumbRatio;
 
 					return previewHeight;

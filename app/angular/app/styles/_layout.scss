@@ -14,7 +14,9 @@ body {
   position: absolute;
   width: 100%;
   z-index: 100;
+  position: fixed;
 
+  @include translate3d(-94.2878%, 0, 0);
   @include single-transition();
 
   .header-wrap {
@@ -22,11 +24,20 @@ body {
   }
 }
 
+.header--isPrimary {
+  @include translate3d(0, 0, 0);
+
+  .projects--isActive {
+    .projects-preview {
+      width: #{gs-width('w', 5, false, false, true)};
+      @include experimental-value(margin-left, calc(#{gs-marginleft('w', 5, false, true)} - #{$preview-padding}px)); 
+    }
+  }
+}
+
 .header--isSecondary {
   // left: -92.3495%;  //include gutter
   // left: -94.2878%;  //exclude gutter
-  position: fixed;
-  @include translate3d(-94.2878%, 0, 0);
 
   .projects-list {
     @include gs-span(w, 5);
@@ -111,12 +122,10 @@ body {
     height: 66.66666%;
     margin-right: -110%;
     padding: #{$preview-padding}px;
-    width: #{gs-width('w', 5, false, false, true)};
     z-index: 100;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    @include experimental-value(margin-left, calc(#{gs-marginleft('w', 5, false, true)} - #{$preview-padding}px)); 
   }
 }
 
