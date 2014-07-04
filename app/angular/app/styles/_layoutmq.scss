@@ -1,17 +1,56 @@
-// Screens larger than 1450px if em is 16px
-@media only screen and (min-width: 98em) and (min-height:50em) { 
-  h2, .h2 {
-    font-size: 3rem;
-	}
+//Type adjustments for screens wider > 1568px and taller > 800px (root em = 16px)
+@media only screen and (min-width: 94em) {
 
-	.caption {
-		font-size: 1rem;
-	}
+  .longform,
+  .project-body {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.36363636363636; //30px 
+  }
+
+  .project-body {
+    p:last-of-type {
+      margin-bottom: 1.8181818181818em;
+    }
+  }
+
+  .project-figure { 
+    margin-bottom: 1.8181818181818em;   
+  }
+
+  .project-figure-caption {
+  
+    &.caption--keeplayout {
+      &.caption--bottomright { 
+        margin-top: .71428571428571em;
+      }
+    }
+
+    &.caption--bottomright { 
+      @include experimental-value(top, calc(100% + 1em));
+    }
+
+    &.caption--topleft { 
+      @include experimental-value(bottom, calc(100% + 1em));
+    }
+  }
+}
+
+@media only screen and (min-width: 94em) and (min-height:50em) { 
+
+  h2, 
+  .h2 {
+    font-size: 3rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
 }
 
 @media print,
-			 (-o-min-device-pixel-ratio: 5/4),
-			 (-webkit-min-device-pixel-ratio: 1.25),
-			 (min-resolution: 120dpi) {
-		/* Style adjustments for high resolution devices */
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }

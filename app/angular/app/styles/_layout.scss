@@ -310,7 +310,7 @@ body {
   }
 
   p:last-of-type {
-    margin-bottom: 1.8181818181818em;
+    margin-bottom: 1.71428571428571em;
   }
 
   p+p {
@@ -331,7 +331,7 @@ body {
 }
 
 .project-figure {
-  margin-bottom: 1.8181818181818em;
+  margin-bottom: 1.71428571428571em;
   position: relative;
 
   img {
@@ -349,19 +349,19 @@ body {
     
     &.caption--bottomright { 
       float: right;
-      margin-top: .71428571428571em;
+      margin-top: .42857142857142em;
     }
   }
 
   &.caption--bottomright { 
     right: 0;
     top: 100%;
-    @include experimental-value(top, calc(100% + 1em));
+    @include experimental-value(top, calc(100% + 42857142857142em));
   }
 
   &.caption--topleft { 
     bottom: 101%;
     left: 0;
-    @include experimental-value(bottom, calc(100% + 1em));
+    @include experimental-value(bottom, calc(100% + .42857142857142em));
   }
 }
