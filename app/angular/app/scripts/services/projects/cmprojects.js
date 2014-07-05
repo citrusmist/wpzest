@@ -9,7 +9,7 @@ angular.module('wpZestApp')
 
       var projects = $q.defer();
 
-      $http.get('data/projects.json').success(function(data) {
+      $http.get('data/projects.json', {cache: true}).success(function(data) {
         projects.resolve(data);
       });
     

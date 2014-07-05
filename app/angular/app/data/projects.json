@@ -45,7 +45,8 @@
 		"postThumbnail": "",
 		"discipline": "Identity Design",
 		"thumbnail": { 
-			"medium": ""
+			"medium": "/images/hrt-hero-1000x599.png",
+			"large":  "/images/hrt/hero-1600x955.jpg"
 		}
 	},
 	{
