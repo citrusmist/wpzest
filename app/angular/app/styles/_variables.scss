@@ -1,6 +1,7 @@
 $cm-gray--dark: #444;
 $cm-green: #07d4a6;
-$cm-purple: #5b46d6;
+// $cm-purple: #5b46d6;
+$cm-purple: #6f29e4;
 $cm-white: #fff;
 
 $preview-padding: 30;
@@ -8,4 +9,26 @@ $preview-padding: 30;
 %btmalign {
 	bottom: 4%;
 	position: absolute;
+}
+
+%plainlist {
+	list-style: none outside;
+	margin: 0;
+	padding: 0;
+}
+
+%underscore {
+	&:before {
+		content: '__';
+		display: inline;
+	}
+}
+
+%plainlink {
+	color: inherit;
+	@include single-transition();
+
+	&:hover {
+    color: $cm-purple;
+  }
 }

@@ -30,49 +30,61 @@ angular.module('wpZestApp')
 					var leaveTimeout  = false;
 					var enterTimeout  = false;
 
+					var showProject = function(elTitle) {
+
+						var elThumb = angular.element(
+							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
+						);
+
+						if(leaveTimeout !== false) {
+							// console.log('cancel leave timeout');
+							$timeout.cancel(leaveTimeout);
+							leaveTimeout = false;
+						}
+	
+						enterTimeout = $timeout(function () {
+							
+							enterTimeout = false;
+
+							if(controller.isPreviewActive === false) {
+								element.addClass('projects--isActive');
+								controller.showPreview(elThumb);
+							} else {
+								controller.slideIntoView(elThumb);
+							}
+						}, 200);
+					};
+
+					var hideProject = function() {
+													
+						if(enterTimeout !== false) {
+							// console.log('cancel enter timeout');
+							$timeout.cancel(enterTimeout);
+							enterTimeout = false;
+						}
+	
+						leaveTimeout = $timeout(function(){
+	
+							leaveTimeout = false;
+	
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
+						}, 400);
+					};
+
 					var attachHandlers = function() {
 
 						elTitles.on('mouseenter', function() {
-
-							var elTitle = angular.element(this);
-							var elThumb = angular.element(
-								elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
-							);
-
-							if(leaveTimeout !== false) {
-								// console.log('cancel leave timeout');
-								$timeout.cancel(leaveTimeout);
-								leaveTimeout = false;
-							}
-		
-							enterTimeout = $timeout(function () {
-								
-								enterTimeout = false;
-
-								if(controller.isPreviewActive === false) {
-									element.addClass('projects--isActive');
-									controller.showPreview(elThumb);
-								} else {
-									controller.slideIntoView(elThumb);
-								}
-							}, 200);
+							showProject(angular.element(this));
 						});
 		
 						elTitles.on('mouseleave', function() {
-							
-							if(enterTimeout !== false) {
-								// console.log('cancel enter timeout');
-								$timeout.cancel(enterTimeout);
-								enterTimeout = false;
-							}
-		
-							leaveTimeout = $timeout(function(){
-		
-								leaveTimeout = false;
-		
-								element.removeClass('projects--isActive');
-								controller.hidePreview();
-							}, 400);
+							hideProject();
+						});
+
+						elTitles.on('click',function() {
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
 						});
 						
 						$timeout(function(){
@@ -113,7 +125,7 @@ angular.module('wpZestApp')
 		// Runs during compile
 		return {
 			scope: false,
-			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
+			require: ['^cmProjects','^cmHeader'], // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 			template: '<div><div class="projects-preview-wrap">' +
 				'<div ng-repeat="project in projects">' +
@@ -122,10 +134,12 @@ angular.module('wpZestApp')
 			'</div></div>',
 			transclude: true,
 			replace: true,
-			link: function(scope, element, attrs, controller) {
+			link: function(scope, element, attrs, controllers) {
 
-				console.log('cmProjectsPreview');
-				console.log(scope);
+				var controller       = controllers[0];
+				var headerController = controllers[1];
+
+				console.log(controllers);
 
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
@@ -168,25 +182,30 @@ angular.module('wpZestApp')
 					element.removeClass('projects-preview--isActive');
 				};
 
-				var calcHeight = function() {
+				var calcHeight = function(prefix) {
 
-					styleRules  = cmUtil.getStyleRules('.projects--isActive .projects-preview');
+					var selector = '.projects--isActive .projects-preview';
+
+					prefix     = headerController.getStateClass();
+					console.log(prefix);
+					selector   = (prefix === '') ? selector : '.' + prefix + ' ' + selector;
+					styleRules = cmUtil.getStyleRules(selector);
 
 					if(styleRules === null) {
 						return '';
 					}
 
 					//README: assuming that width is a percentage value
-					var previewWidth   = parseInt(styleRules.style.width, 10);
-					var viewportWidth  = angular.element(window).width();
-
-					var previewHeight = (viewportWidth * (previewWidth/100)) / controller.thumbRatio;
+					var previewWidth  = parseInt(styleRules.style.width, 10);
+					var viewportWidth = angular.element(window).width();
+					var previewHeight = (viewportWidth * (previewWidth / 100)) / controller.thumbRatio;
 
 					return previewHeight;
 				};
 
-
 				var setupPreview = function() {
+
+					// headerState = headerState || '';
 					console.log('setting up preview');
 					// element.css('height', controller.calcHeight());
 					var height = controller.calcHeight();
@@ -204,6 +223,10 @@ angular.module('wpZestApp')
 					//@TODO : consider an alternative approach
 
 					evt.stopPropagation();
+				});
+
+				scope.$on('headerStateChange', function(evt, data) {
+					controller.setupPreview();
 				});
 			}
 		};
