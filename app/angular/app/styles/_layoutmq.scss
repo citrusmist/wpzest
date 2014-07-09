@@ -30,7 +30,7 @@
       @include experimental-value(top, calc(100% + 1em));
     }
 
-    &.caption--topleft { 
+    &.caption--aboveleft { 
       @include experimental-value(bottom, calc(100% + 1em));
     }
   }
