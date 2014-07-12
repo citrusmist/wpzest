@@ -32,10 +32,13 @@ a {
 }
 
 %longform {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  // font-size: 21px;
+  // font-size: 1.312
+  // line-height: 1.28571428571428; //27px
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 200;
-  line-height: 1.28571428571428; //27px
+  line-height: 1.35; //27px
 }
 
 .longform,
@@ -45,8 +48,12 @@ a {
   
 .caption,
 .project-figure-caption {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.07142857142857;
+}
+
+.header .caption {
+  font-weight: 400;
 }

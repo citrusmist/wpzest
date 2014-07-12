@@ -354,13 +354,19 @@ body {
     }
   }
 
+  &.caption--topleft { 
+    right: 100%;
+    top: 0;
+    @include experimental-value(right, calc(100% + 1em));
+  }
+
   &.caption--bottomright { 
     right: 0;
     top: 100%;
-    @include experimental-value(top, calc(100% + 42857142857142em));
+    @include experimental-value(top, calc(100% + .42857142857142em));
   }
 
-  &.caption--topleft { 
+  &.caption--aboveleft { 
     bottom: 101%;
     left: 0;
     @include experimental-value(bottom, calc(100% + .42857142857142em));
