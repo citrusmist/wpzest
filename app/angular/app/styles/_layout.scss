@@ -348,7 +348,7 @@ body {
   &.caption--keeplayout {
     position: static;
     
-    &.caption--bottomright { 
+    &.caption--belowright { 
       float: right;
       margin-top: .42857142857142em;
     }
@@ -361,6 +361,12 @@ body {
   }
 
   &.caption--bottomright { 
+    bottom: 0;
+    left: 100%;
+    @include experimental-value(left, calc(100% + .42857142857142em));
+  }
+
+  &.caption--belowright { 
     right: 0;
     top: 100%;
     @include experimental-value(top, calc(100% + .42857142857142em));
