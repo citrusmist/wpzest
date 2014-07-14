@@ -21,12 +21,12 @@
   .project-figure-caption {
   
     &.caption--keeplayout {
-      &.caption--bottomright { 
+      &.caption--belowright { 
         margin-top: .71428571428571em;
       }
     }
 
-    &.caption--bottomright { 
+    &.caption--belowright { 
       @include experimental-value(top, calc(100% + 1em));
     }
 
