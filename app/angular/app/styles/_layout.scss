@@ -306,15 +306,21 @@ body {
 .project-body {
 
   p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 2em;
   }
 
   p:last-of-type {
     margin-bottom: 1.71428571428571em;
   }
 
-  p+p {
-    text-indent: 2em;
+  p:first-of-type {
+    text-indent: 0;
+  }
+
+  p + .project-figure {
+    margin-top: 1.71428571428571em; 
   }
 }
 
@@ -374,6 +380,12 @@ body {
   &.caption--aboveleft { 
     bottom: 101%;
     left: 0;
+    @include experimental-value(bottom, calc(100% + .42857142857142em));
+  }
+
+  &.caption--aboveright { 
+    bottom: 101%;
+    right: 0;
     @include experimental-value(bottom, calc(100% + .42857142857142em));
   }
 }
