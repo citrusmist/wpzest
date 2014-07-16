@@ -38,6 +38,8 @@ body {
 .header--isSecondary {
   // left: -92.3495%;  //include gutter
   // left: -94.2878%;  //exclude gutter
+  
+  max-width: 109em;
 
   .projects-list {
     @include gs-span(w, 5);
@@ -213,6 +215,7 @@ body {
   z-index: 0;
   position: absolute;
   width: 100%;
+  max-width: 109em; //1744px
 
   &.ng-enter {
     opacity: 0;
@@ -312,7 +315,7 @@ body {
   }
 
   p:last-of-type {
-    margin-bottom: 1.71428571428571em;
+    margin-bottom: 1.35em;
   }
 
   p:first-of-type {
@@ -320,7 +323,11 @@ body {
   }
 
   p + .project-figure {
-    margin-top: 1.71428571428571em; 
+    margin-top: 1.35em; 
+  }
+
+  .project-figure {
+    margin-bottom: 1.35em; //27px
   }
 }
 
@@ -337,7 +344,7 @@ body {
 }
 
 .project-figure {
-  margin-bottom: 1.71428571428571em;
+  margin-bottom: 1.6875em; //27px
   position: relative;
 
   img {
