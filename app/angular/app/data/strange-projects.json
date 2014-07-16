@@ -33,15 +33,15 @@
 		"ID": 7,
 		"postTitle": "Surround Speakers Boutique",
 		"postName": "surround-speakers-boutique",
-		"postContent": "<div class=\"w5\"><p>Surround Speakers Boutique is an online retailer of high end speakers and audio equipment. Products found on the website are carefully selected for their design and performance.<\/p><p>The objective was to design an identity which reflects the precision and craftsmanship that goes into creating products of such high standard. In addition to forming the first two initials of the store name the shape of the letter s was also chosen because it can represent how sound travels through space.</p><\/div><figure class=\"w3-w5 project-figure w-clear\"> <figcaption class=\"project-figure-caption caption--aboveleft\">This wine is a bomb. As many drinks as you want. Other drinks.</figcaption> <img src=\"\/images\/ss\/lockup_and_application.png\" alt=\"Identity lockup consisting of the symbol on top and Surround Speakers Boutique underneath. A screenshot of hte webiste with the identity applied.\"><\/figure>",
+		"postContent": "<div class=\"w-all\"><p class=\"w5\">Surround Speakers Boutique is an online retailer of high end speakers and audio equipment. Products found on the website are carefully selected for their design and performance.<\/p> <figure class=\"wr4 wr-clear project-figure\"><img src=\"\/images\/ss\/logo.png\"><\/figure> <p class=\"wr5\">The objective was to design an identity which reflects the precision and craftsmanship that goes into creating products of such high standard. In addition to forming the first two initials of the store name the shape of the letter s was also chosen because it can represent how sound travels through space.<\/p> <\/div> <figure class=\"w4-w5 w-clear project-figure w-clear\"> <img src=\"\/images\/ss\/website-application.jpg\"><\/figure>",
 		"postExcerpt": "Create an identiy which reflects the quality of the curated products. All the products found on the webiste are designed and engineered with utmost precision and care. felis dapibus ",
 		"discipline": "Identity Design",
 		"heroAttrs" : {
-			"class": "w3-w5" 
+			"class": "w5" 
 		},
 		"thumbnail": { 
 			"medium": "/images/ss-hero-1000x599.png",
-			"large":  "/images/ss/hero-1600x956.jpg"
+			"large":  "/images/ss/hero-1000x1028.jpg"
 		}
 	},
 	{
