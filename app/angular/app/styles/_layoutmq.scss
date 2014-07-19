@@ -1,5 +1,9 @@
 @media only screen and (min-width: 768px) { 
   
+  #mqOutput:after { 
+    content: "medium";
+  }
+
   %btmalign {
     bottom: 4%;
     position: absolute;
@@ -86,6 +90,10 @@
     @include transform-origin(top, right);
     @include rotateZ(-90deg);
   }
+  
+  .header-identity {
+    position: static;
+  }
 
   .header-logomark2,
   .header-logomark,
@@ -93,7 +101,12 @@
     @extend %btmalign;
   }
 
+  .header-logotype {
+    top: auto;
+  }
+
   .header-logomark {
+    top: auto;
     z-index: 1;
   }
 
@@ -395,6 +408,12 @@
 
 
 @media only screen and (min-width: 81em) {
+
+  
+  #mqOutput:after { 
+    content: "wide";
+  }
+
   .longform,
   .project-body {
     font-size: 21px;

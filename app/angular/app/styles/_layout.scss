@@ -1,3 +1,8 @@
+#mqOutput:after {
+  content: 'narrow';
+  display: none;
+}
+
 html {
   height: 100%;
 }
@@ -17,13 +22,20 @@ body {
   width: 100%;
 }
 
+.header-identity {
+  position: relative;
+}
+
 .header-logotype {
-  float: left;
-  width: 25%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 28%;
+  position: absolute;
 }
 
 .header-logomark {
-  width: 17.5%;
+  width: 16.5%;
   float: right;
 }
 

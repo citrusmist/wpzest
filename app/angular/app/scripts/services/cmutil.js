@@ -111,6 +111,6 @@ angular.module('wpZestApp')
       now: now,
       debounce: debounce,
       getStyleRules: getStyleRules,
-      getNaturalImageDimensions: getNaturalImageDimensions
+      getNaturalImageDimensions: getNaturalImageDimensions,
     };
   });
