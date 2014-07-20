@@ -104,3 +104,28 @@ body {
   @extend %underscore;
 }
 
+
+//This rule is here so the JS can find it, should be within the media query
+.projects--isActive {
+  .projects-preview {
+    height: 66.66666%;
+  }
+}
+
+.header--isSecondary {
+  .projects--isActive {
+    .projects-preview {
+      width: #{gs-width('et', 2, false, false, true)};
+    }
+  }
+}
+
+.header--isPrimary {
+
+  .projects--isActive {
+    .projects-preview {
+      width: #{gs-width('w', 5, false, false, true)};
+    }
+  }
+}
+

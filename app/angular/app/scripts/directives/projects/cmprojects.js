@@ -9,14 +9,15 @@ angular.module('wpZestApp')
 				restrict: 'E',
 				controller: function($scope, $element, $attrs) {
 	
-					this.first           = true;
-					this.isPreviewActive = false;
-					this.thumbRatio      = false;
-					this.slideIntoView   = false;
-					this.showPreview     = false;
-					this.hidePreview     = false;
-					this.calcHeight      = false;
-					this.setupPreview    = false;
+					this.first             = true;
+					this.isPreviewActive   = false;
+					this.isPreviewDisabled = false;
+					this.thumbRatio        = false;
+					this.slideIntoView     = false;
+					this.showPreview       = false;
+					this.hidePreview       = false;
+					this.calcHeight        = false;
+					this.setupPreview      = false;
 				},
 				transclude: false,
 				replace: true,
@@ -75,14 +76,29 @@ angular.module('wpZestApp')
 					var attachHandlers = function() {
 
 						elTitles.on('mouseenter', function() {
+							
+							if(controller.isPreviewDisabled === true ) {
+								return;
+							}
+
 							showProject(angular.element(this));
 						});
 		
 						elTitles.on('mouseleave', function() {
+							
+							if(controller.isPreviewDisabled === true ) {
+								return;
+							}
+
 							hideProject();
 						});
 
 						elTitles.on('click',function() {
+							
+							if(controller.isPreviewDisabled === true ) {
+								return;
+							}
+
 							element.removeClass('projects--isActive');
 							controller.hidePreview();
 						});
@@ -121,7 +137,7 @@ angular.module('wpZestApp')
 				}
 			};
 		}])
-	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', function($timeout, cmTransition, cmUtil){
+	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', 'cmMqState', function($timeout, cmTransition, cmUtil, cmMqState){
 		// Runs during compile
 		return {
 			scope: false,
@@ -147,6 +163,7 @@ angular.module('wpZestApp')
 
 
 				var slideIntoView = function(elThumb) {
+
 					var distanceY = elThumb[0].offsetTop;
 
 					elPreviewWrap.css(
@@ -155,7 +172,9 @@ angular.module('wpZestApp')
 				};
 
 				var showPreview = function(elThumb) {
+
 					controller.isPreviewActive = true;
+
 					elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
 					element.one(cmTransition.transitionEvent, function(evt) {
@@ -178,6 +197,7 @@ angular.module('wpZestApp')
 				};
 
 				var hidePreview = function() {
+
 					controller.isPreviewActive = false;
 					element.removeClass('projects-preview--isActive');
 				};
@@ -204,6 +224,13 @@ angular.module('wpZestApp')
 				};
 
 				var setupPreview = function() {
+
+					if(cmMqState.get().indexOf('narrow') !== -1) {
+						controller.isPreviewDisabled = true;
+						return;
+					}
+
+					controller.isPreviewDisabled = false;
 
 					// headerState = headerState || '';
 					console.log('setting up preview');
