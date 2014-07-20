@@ -8,20 +8,19 @@ angular.module('wpZestApp')
 			replace: true,
 			link: function postLink(scope, element, attrs) {
 
-				var pseudo = false;
-
 				var retrieveState = function() {
+
+					var pseudo = false;
 
 					if (!window.getComputedStyle) { 
 						return;
 					}
 
-					//FIXME: this only retrieves pseudo value once, even thoug the method is called
-					//on every resize
-					pseudo = pseudo || window.getComputedStyle(element[0], ':after').getPropertyValue('content');
+					pseudo = window.getComputedStyle(element[0], ':after').getPropertyValue('content');
 
 					if (pseudo) {
-						console.log(pseudo);
+						pseudo = pseudo.replace('\'', '').replace('"', '');;
+						cmMqState.set(pseudo);
 					}
 				}
 				
