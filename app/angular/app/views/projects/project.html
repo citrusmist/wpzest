@@ -1,8 +1,8 @@
-<article class="project w-all hentry">
+<article class="project clearfix w-all hentry">
 
 	<header class="project-header w-clear">
 		<div class="w3-w5">
-			<div class="project-header-wrap et3">
+			<div class="project-header-wrap">
 				<dl class="project-header-section project-credits caption">
 					<dt>Agency</dt>
 					<dd><a href="" ng-href="http://pgabranding.com">PGA Branding</a></dd>
@@ -10,14 +10,14 @@
 					<dd><a href="" ng-href="">Web Design</a></dd>
 				</dl>
 				<div class="project-header-section project-summary caption">{{project.postExcerpt}}</div>
-				<div class="project-header-controls">
+				<div class="project-header-controls mt-hide">
 					<a ng-href="/" class="project-close sprite sprite--close alignright"></a>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="project-title wr4-wr5 wr-clear">
+	<div class="project-title mt-clear mt2-mt3 wr4-wr5 wr-clear">
 		<div class="project-title-wrap">
 			<span class="project-title-decoration caption">
 				<a href="" class="project-title-link" ng-href="http://amalgam.co.uk">Visit Website</a>
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 
-	<figure class="project-figure project-hero w-clear {{project.heroAttrs.class}}">
+	<figure class="project-figure project-hero mt-all w-clear {{project.heroAttrs.class}}">
 		<img src="" alt="" class="project-hero-img" ng-src="{{project.thumbnail.large}}">
 	</figure>
 
-	<div class="w-clear w-all project-body" ng-bind-html="trustAsHtml(project.postContent)"></div>
+	<div class="w-clear mt-all w-all project-body" ng-bind-html="trustAsHtml(project.postContent)"></div>
 </article>

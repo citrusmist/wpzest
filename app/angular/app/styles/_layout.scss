@@ -1,3 +1,7 @@
+* {
+  @include experimental(box-sizing, border-box); 
+}
+
 #mqOutput:after {
   content: 'narrow';
   display: none;
@@ -13,36 +17,67 @@ body {
 }
 
 .header {
-  background: $cm-green;
+  position: absolute;
   height: 100%;
-  padding-top: .5em;
-  padding-bottom: 2em;
-  padding-left:  .5em ;
-  padding-right: .5em;
   width: 100%;
 }
 
-.header-identity {
-  position: relative;
+
+.header--isPrimary {
+
+  .header-wrap{
+    @include translate3d(0, 0, 0);
+  }
 }
 
-.header-logotype {
-  left: 0;
-  bottom: 0;
-  top: 0;
-  width: 28%;
+.header-wrap {
   position: absolute;
+  background: $cm-green;
+  height: 100%;
+  padding-bottom: 2em;
+  width: 100%;
+  @include single-transition();
+  @include translate3d(0, -200%, 0);
 }
 
-.header-logomark {
+
+.header-wrap,
+.header-identity {
+  padding-top: .5em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.header-identity {
+  background: $cm-green;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-logotype-wrap {
+  float: left;
+  width: 28%;
+  max-width: 111px;
+}
+
+.header-logomark-wrap {
   width: 16.5%;
   float: right;
+  max-width: 58px;
 }
 
 .header-toggle {
   cursor: pointer;
   opacity: 0;
   position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
   @include single-transition();
 }
 
@@ -52,7 +87,7 @@ body {
 }
 
 .profile {
-  margin-top: 1.75em;
+  margin-top: 5em;
   margin-bottom: 1.75em;
 }
 
@@ -104,7 +139,6 @@ body {
   @extend %underscore;
 }
 
-
 //This rule is here so the JS can find it, should be within the media query
 .projects--isActive {
   .projects-preview {
@@ -129,3 +163,105 @@ body {
   }
 }
 
+.content {
+  background: $cm-white;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  top: 51px;
+  position: absolute;
+  width: 100%;
+}
+
+.project-header-wrap {
+  //TODO: use mt3 mixin
+  margin-left: 33.07691385%;
+  width: 66.92308615%;
+  display: block;
+  float: left;
+  clear: none;
+  margin-right: -100%;
+}
+
+.project-figure {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-title {
+  margin-top: 2.5em;  
+}
+
+.project-title-wrap {
+  display: inline-block;
+}
+
+.project-title-decoration {
+}
+
+.project-title-decoration {
+  position: absolute;
+  top: 13em;
+  display: block;
+  margin-bottom: 2px;
+
+  @include transform-origin(top, left);
+  @include rotateZ(-90deg);
+
+  &:before {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid $cm-gray--dark;
+    margin-left: -20px;
+    width: 66.666%;
+  }
+}
+
+.project-title-text {
+  margin: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.project-hero-img {
+  display: block;
+  margin-top: -1.2em;
+  position: relative;
+  z-index: 0;
+}
+
+.project-body {
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 1.222222222222em;
+  }
+
+  p:last-of-type {
+    margin-bottom: 1.35em;
+  }
+
+  p:first-of-type {
+    text-indent: 0;
+  }
+
+  p + .project-figure {
+    margin-top: 1.22222222222222222em; 
+  }
+
+  .project-figure {
+    margin-bottom: 1.222222222222222em; //27px
+  }
+}
+
+.project-figure {
+  margin-bottom: 1.375em; //22px
+}
+
+.project-figure-caption {
+  margin-top: 0.30555555555555em;
+}
