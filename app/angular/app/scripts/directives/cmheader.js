@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmHeader', function($route, $rootElement, cmTransition) {
+	.directive('cmHeader', function($route, $rootElement, cmTransition, cmMqState) {
 		return {
 			scope: {},
 			templateUrl: 'views/cmHeader.html',
@@ -16,6 +16,8 @@ angular.module('wpZestApp')
 				this.getStateClass = function() {};
 			},
 			link: function postLink(scope, element, attrs, controller) {
+
+				var elToggle = angular.element(element[0].querySelectorAll('.header-wrap'));
 
 				var determineState = function(currentRoute) {
 
@@ -39,7 +41,6 @@ angular.module('wpZestApp')
 					}
 
 					if(initialState !== controller.state) {
-						console.log('broadcasting');
 						scope.$broadcast('headerStateChange', controller.state);
 					}
 				};
@@ -101,11 +102,21 @@ angular.module('wpZestApp')
 				});
 
 				element.on(cmTransition.transitionEvent, function(evt) {
-					
+						
+					var elTest = null;
+
 					//only execute if event has been triggered by header itself
-					if(evt.target !== element[0]) {
+					//or if the viewport is narrow the header-wrap
+					if(cmMqState.get().indexOf('narrow') !== -1) {
+						elTest = elToggle[0];
+					} else {
+						elTest = element[0];
+					}
+
+					if(evt.target !== elTest) {
 						return true;
 					}
+
 					console.log(evt);
 					element.addClass(controller.getStateClass());
 

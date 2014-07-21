@@ -18,7 +18,7 @@ body {
 
 .header {
   position: absolute;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -30,10 +30,35 @@ body {
   }
 }
 
+.header--isSecondary {
+  
+  .header-identity {
+    position: fixed;
+  }
+
+  &.header--isActive {
+    
+    & + .content {
+      // position: fixed;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .header-identity {
+      position: absolute;
+    }
+
+    .header-wrap {
+      @include translate3d(0, 0, 0);
+    }
+  }
+}
+
 .header-wrap {
   position: absolute;
+  z-index: 100;
   background: $cm-green;
-  height: 100%;
+  min-height: 100%;
   padding-bottom: 2em;
   width: 100%;
   @include single-transition();
@@ -52,9 +77,9 @@ body {
   background: $cm-green;
   left: 0;
   top: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 
 .header-logotype-wrap {

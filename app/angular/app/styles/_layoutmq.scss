@@ -119,6 +119,10 @@
 
     &.header--isActive {
       @include translate3d(-26.1820666%, 0, 0);
+
+      .header-wrap {
+        @include translate3d(0, 0, 0);
+      }
     }
   }
 
