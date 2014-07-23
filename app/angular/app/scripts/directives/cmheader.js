@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmHeader', function($route, $rootElement, cmTransition, cmMqState) {
+	.directive('cmHeader', function($route, $rootElement, $timeout, cmTransition, cmMqState) {
 		return {
 			scope: {},
 			templateUrl: 'views/cmHeader.html',
@@ -18,6 +18,7 @@ angular.module('wpZestApp')
 			link: function postLink(scope, element, attrs, controller) {
 
 				var elToggle = angular.element(element[0].querySelectorAll('.header-wrap'));
+				var needsStateClass = false;
 
 				var determineState = function(currentRoute) {
 
@@ -25,13 +26,19 @@ angular.module('wpZestApp')
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
 						
-						element.addClass(controller.getStateClass('primary'));
+						assignStateClass();
 						element.removeClass(controller.getStateClass('secondary'));
 						// $animate.removeClass(element, controller.getStateClass('secondary'));
 						controller.state = 'primary';
 					} else {
 						element.removeClass(controller.getStateClass('primary'));
-						// element.addClass(controller.getStateClass('secondary'));
+						needsStateClass = true;
+						
+						$timeout(function() {
+							if(needsStateClass) {
+								assignStateClass();
+							}
+						}, 1500);
 						// $animate.addClass(element, controller.getStateClass('secondary'));
 						controller.state = 'secondary';
 					}
@@ -78,6 +85,11 @@ angular.module('wpZestApp')
 					}
 				};
 
+				var assignStateClass = function() {
+					element.addClass(controller.getStateClass());
+					needsStateClass = false;
+				};
+
 				controller.activate      = activate;
 				controller.deactivate    = deactivate;
 				controller.isActive      = isActive;
@@ -102,7 +114,9 @@ angular.module('wpZestApp')
 				});
 
 				element.on(cmTransition.transitionEvent, function(evt) {
-						
+
+					console.log('header transition');
+					
 					var elTest = null;
 
 					//only execute if event has been triggered by header itself
@@ -118,7 +132,7 @@ angular.module('wpZestApp')
 					}
 
 					console.log(evt);
-					element.addClass(controller.getStateClass());
+					assignStateClass();
 
 				});
 
