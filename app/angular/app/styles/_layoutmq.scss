@@ -86,6 +86,10 @@
     
     max-width: $max-width;
 
+    .header-identity {
+      position: static;
+    }
+
     .projects-list {
       @include gs-span(w, 5);
     }
@@ -127,10 +131,9 @@
   }
 
   .header-wrap {
-    position: static;
-    background: transparent;
+    // background: transparent;
     padding: 0;
-    @include translate3d(0, 0, 0);
+    // @include translate3d(0, 0, 0);
   }
 
   .header-toggle {
@@ -168,6 +171,7 @@
 
   .header-logomark-wrap {
     width: 100%;
+    float: none;
     max-width: 191px;
   }
 
@@ -261,8 +265,8 @@
   }
 
   .nav-appendix {
-    margin: 0;
     @extend %btmalign;
+    margin: 0;
     position: absolute;
     @include gs-span(w, 5);
   }
