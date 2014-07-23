@@ -26,7 +26,7 @@ body {
 .header--isPrimary {
 
   .header-wrap{
-    @include translate3d(none);
+    @include transform(none);
   }
 }
 
