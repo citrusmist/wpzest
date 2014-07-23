@@ -131,6 +131,7 @@
   }
 
   .header-wrap {
+    position: static;
     background: transparent;
     padding: 0;
     @include transform(none);
@@ -154,6 +155,7 @@
     padding: 0;
   }
 
+  // .header-logomark2,
   .header-logomark2,
   .header-logomark,
   .header-logotype {
@@ -185,11 +187,13 @@
     z-index: 1;
     
     @include single-transition();
-    
-    .header-logomark2-img {
-      padding: 0 0 0 19%;
-      width: 90%;
-    }
+  }
+
+  .header-logomark2-img {
+    padding: 0 0 0 19%;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
   }
 
   .projects {
