@@ -55,14 +55,14 @@ body {
 }
 
 .header-wrap {
- /*  position: absolute;
+  position: absolute;
   z-index: 100;
   background: $cm-green;
   min-height: 100%;
   padding-bottom: 2em;
   width: 100%;
   @include single-transition();
-  @include translate3d(0, -200%, 0); */
+  @include translate3d(0, -200%, 0);
 }
 
 
@@ -109,6 +109,12 @@ body {
 .header-logomark2 {
   display: none;
   opacity: 0;
+}
+
+.header-logotype-img,
+.header-logomark-img,
+.header-logomark2-img {
+  display: block;
 }
 
 .profile {
