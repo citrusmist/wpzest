@@ -131,9 +131,9 @@
   }
 
   .header-wrap {
-    // background: transparent;
+    background: transparent;
     padding: 0;
-    // @include translate3d(0, 0, 0);
+    @include transform(none);
   }
 
   .header-toggle {
@@ -187,8 +187,8 @@
     @include single-transition();
     
     .header-logomark2-img {
-      padding: 0 0 0 18%;
-      width: 75%;
+      padding: 0 0 0 19%;
+      width: 90%;
     }
   }
 
