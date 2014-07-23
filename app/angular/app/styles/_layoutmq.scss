@@ -193,11 +193,11 @@
   }
 
   .projects {
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
+    // height: 100%;
+    // left: 0;
+    // top: 0;
+    // position: absolute;
+    // width: 100%;
   }
 
   .projects--isActive {
@@ -244,11 +244,11 @@
   }
 
   .projects-list {
-    position: relative;
+    position: absolute;
     top: 17%;
     z-index: 200;
     
-    @include gs-span(w, 2, 5);
+    @include gs-span(wr, 2, 4);
   }
 
   .projects-discipline {
@@ -272,7 +272,7 @@
   }
 
   .profile {
-    position: relative;
+    position: absolute;
     top: 5.625%;
     margin-top: 0;
     margin-bottom: 0;
