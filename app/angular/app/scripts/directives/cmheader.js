@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmHeader', function($route, $rootElement, $timeout, cmTransition, cmMqState) {
+	.directive('cmHeader', function($route, $rootElement, $timeout, cmTransition, cmMqState, cmUtil) {
 		return {
 			scope: {},
 			templateUrl: 'views/cmHeader.html',
@@ -16,7 +16,8 @@ angular.module('wpZestApp')
 				this.getStateClass = function() {};
 			},
 			link: function postLink(scope, element, attrs, controller) {
-
+				
+				var elBody   = angular.element(document.querySelectorAll('body'));
 				var elToggle = angular.element(element[0].querySelectorAll('.header-wrap'));
 				var needsStateClass = false;
 
@@ -91,6 +92,20 @@ angular.module('wpZestApp')
 					needsStateClass = false;
 				};
 
+				var toggleBodyHeight = function() {
+
+					if( !cmMqState.is('narrow') || controller.state !== 'secondary' ) {
+						return;
+					}
+
+					if(controller.isActive()) {
+						elBody.css('height', elToggle[0].offsetHeight);
+					} else {
+						elBody.css('height', '');
+					}
+				};
+
+				//Controller API
 				controller.activate      = activate;
 				controller.deactivate    = deactivate;
 				controller.isActive      = isActive;
@@ -116,8 +131,8 @@ angular.module('wpZestApp')
 
 				element.on(cmTransition.transitionEvent, function(evt) {
 
-					var elTest = null;
-
+					var elTest      = null;
+					
 
 					//only execute if event has been triggered by header itself
 					//or if the viewport is narrow the header-wrap
@@ -133,6 +148,7 @@ angular.module('wpZestApp')
 
 					console.log(evt);
 					assignStateClass();
+					toggleBodyHeight();
 				});
 
 				determineState($route.current);
