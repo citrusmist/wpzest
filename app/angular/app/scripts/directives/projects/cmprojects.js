@@ -188,7 +188,7 @@ angular.module('wpZestApp')
 
 						//If the mouse hasn't moved from the title before the transition finished
 						controller.slideIntoView(elThumb);
-						elPreviewWrap[0].offsetTop;
+						cmUtil.forceElRedraw(elPreviewWrap);
 						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 
 						element.addClass('projects-preview--isActive');
