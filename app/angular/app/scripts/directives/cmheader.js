@@ -26,11 +26,13 @@ angular.module('wpZestApp')
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
 						
-						assignStateClass();
-						element.removeClass(controller.getStateClass('secondary'));
-						// $animate.removeClass(element, controller.getStateClass('secondary'));
 						controller.state = 'primary';
+						
+						element.removeClass(controller.getStateClass('secondary'));
+						assignStateClass(); //needs to be called after controller.state has been assigned 
+						// $animate.removeClass(element, controller.getStateClass('secondary'));
 					} else {
+						controller.state = 'secondary';
 						element.removeClass(controller.getStateClass('primary'));
 						needsStateClass = true;
 						
@@ -40,7 +42,6 @@ angular.module('wpZestApp')
 							}
 						}, 1500);
 						// $animate.addClass(element, controller.getStateClass('secondary'));
-						controller.state = 'secondary';
 					}
 
 					if(controller.isActive()) {
@@ -115,13 +116,12 @@ angular.module('wpZestApp')
 
 				element.on(cmTransition.transitionEvent, function(evt) {
 
-					console.log('header transition');
-					
 					var elTest = null;
+
 
 					//only execute if event has been triggered by header itself
 					//or if the viewport is narrow the header-wrap
-					if(cmMqState.get().indexOf('narrow') !== -1) {
+					if(cmMqState.is('narrow')) {
 						elTest = elToggle[0];
 					} else {
 						elTest = element[0];
@@ -133,7 +133,6 @@ angular.module('wpZestApp')
 
 					console.log(evt);
 					assignStateClass();
-
 				});
 
 				determineState($route.current);
