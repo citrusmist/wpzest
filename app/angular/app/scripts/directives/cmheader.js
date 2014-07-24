@@ -33,7 +33,9 @@ angular.module('wpZestApp')
 						assignStateClass(); //needs to be called after controller.state has been assigned 
 						// $animate.removeClass(element, controller.getStateClass('secondary'));
 					} else {
+
 						controller.state = 'secondary';
+						
 						element.removeClass(controller.getStateClass('primary'));
 						needsStateClass = true;
 						

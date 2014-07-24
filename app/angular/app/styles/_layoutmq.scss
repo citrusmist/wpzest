@@ -126,6 +126,12 @@
       .header-wrap {
         @include transform(none);
       }
+
+      & + .content {
+        position: absolute;
+        // height: 100%;
+        // overflow: hidden;
+      }
     }
   }
 
@@ -174,6 +180,7 @@
     width: 100%;
     float: none;
     max-width: 191px;
+    padding-bottom: 0;
   }
 
   .header-logotype-wrap {

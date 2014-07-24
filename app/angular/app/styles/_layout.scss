@@ -37,12 +37,10 @@ body {
   }
 
   &.header--isActive {
-    
-
 
     & + .content {
-      // position: fixed;
-      height: 100%;
+      position: fixed;
+      // height: 100%;
       // overflow: hidden;
     }
 
@@ -91,9 +89,10 @@ body {
 }
 
 .header-logomark-wrap {
-  width: 16.5%;
+  width: 15.5%;
   float: right;
   max-width: 58px;
+  padding-bottom: .5em;
 }
 
 .header-toggle {
