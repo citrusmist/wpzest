@@ -79,6 +79,11 @@ angular.module('wpZestApp')
       return ruleDefinition;
     };
 
+    var forceElRedraw = function(element) {
+      //Force element redraw browser doesn't overoptimise and bundle transitions together
+      element[0].offsetTop; 
+    };
+
     var getNaturalImageDimensions = function(image) {
 
       var width  = null;
@@ -111,6 +116,7 @@ angular.module('wpZestApp')
       now: now,
       debounce: debounce,
       getStyleRules: getStyleRules,
+      forceElRedraw: forceElRedraw,
       getNaturalImageDimensions: getNaturalImageDimensions,
     };
   });
