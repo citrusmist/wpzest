@@ -196,6 +196,10 @@ body {
   width: 100%;
 }
 
+.project {
+  padding: 4.5em 0 2em 0;
+}
+
 .project-header-wrap {
   //TODO: use mt3 mixin
   margin-left: 33.07691385%;
@@ -215,7 +219,9 @@ body {
 }
 
 .project-title {
-  margin-top: 2.5em;  
+  margin-top: 2.5em;
+  position: relative;
+  z-index: 100;
 }
 
 .project-title-wrap {
@@ -223,11 +229,8 @@ body {
 }
 
 .project-title-decoration {
-}
-
-.project-title-decoration {
   position: absolute;
-  top: 13em;
+  top: -4.25em;
   display: block;
   margin-bottom: 2px;
 
@@ -245,15 +248,18 @@ body {
 
 .project-title-text {
   margin: 0;
+  // position: relative;
+  // z-index: 100;
+}
+
+.project-hero {
   position: relative;
-  z-index: 100;
+  z-index: 0;
 }
 
 .project-hero-img {
   display: block;
   margin-top: -1.2em;
-  position: relative;
-  z-index: 0;
 }
 
 .project-body {
