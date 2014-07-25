@@ -94,19 +94,6 @@ angular.module('wpZestApp')
 					needsStateClass = false;
 				};
 
-				var toggleBodyHeight = function() {
-
-					if( !cmMqState.is('narrow') || controller.state !== 'secondary' ) {
-						return;
-					}
-
-					if(controller.isActive()) {
-						elBody.css('height', elToggle[0].offsetHeight);
-					} else {
-						elBody.css('height', '');
-					}
-				};
-
 				//Controller API
 				controller.activate      = activate;
 				controller.deactivate    = deactivate;
@@ -150,7 +137,6 @@ angular.module('wpZestApp')
 
 					console.log(evt);
 					assignStateClass();
-					toggleBodyHeight();
 				});
 
 				determineState($route.current);
