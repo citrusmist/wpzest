@@ -58,7 +58,7 @@
     left: 0%;
     padding: 0;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
 
     @include translate3d(-94.2878%, 0, 0);
     @include single-transition();
@@ -128,9 +128,7 @@
       }
 
       & + .content {
-        position: absolute;
-        // height: 100%;
-        // overflow: hidden;
+        // position: absolute;
       }
     }
   }
@@ -140,6 +138,7 @@
     background: transparent;
     padding: 0;
     @include transform(none);
+    overflow-y: auto;
   }
 
   .header-toggle {

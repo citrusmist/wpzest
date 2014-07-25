@@ -37,17 +37,6 @@ body {
   }
 
   &.header--isActive {
-
-    & + .content {
-      position: fixed;
-      // height: 100%;
-      // overflow: hidden;
-    }
-
-    .header-identity {
-      position: absolute;
-    }
-
     .header-wrap {
       @include translate3d(0, 0, 0);
     }
@@ -55,14 +44,16 @@ body {
 }
 
 .header-wrap {
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  z-index: 200;
   background: $cm-green;
-  min-height: 100%;
+  height: 100%;
   padding-bottom: 2em;
   width: 100%;
   @include single-transition();
   @include translate3d(0, -200%, 0);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 
@@ -79,7 +70,7 @@ body {
   top: 0;
   position: absolute;
   width: 100%;
-  z-index: 200;
+  z-index: 300;
 }
 
 .header-logotype-wrap {
@@ -198,10 +189,10 @@ body {
 .content {
   background: $cm-white;
   overflow: hidden;
-  position: relative;
-  z-index: 0;
-  top: 51px;
-  position: absolute;
+  // position: relative;
+  // z-index: 0;
+  // top: 51px;
+  // position: absolute;
   width: 100%;
 }
 
