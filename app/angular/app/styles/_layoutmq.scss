@@ -315,13 +315,6 @@
     padding: 1.25em 0 2.5em;
   }
 
-  .project-summary {
-    &:before {
-      content: '__';
-      display: inline;
-    }
-  }
-
   .project-header-wrap {
 
     //TODO: use mixin for this as this now just copied from et3 class

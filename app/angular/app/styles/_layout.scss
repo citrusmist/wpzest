@@ -210,6 +210,22 @@ body {
   margin-right: -100%;
 }
 
+.project-credits {
+  margin-top: 0;
+  margin-bottom: 1.1428571428571428em;
+
+  dd {
+    margin-left: 1.5714285714285714em;
+  }
+}
+
+.project-summary {
+  &:before {
+    content: '__';
+    display: inline;
+  }
+}
+
 .project-figure {
   position: relative;
 
