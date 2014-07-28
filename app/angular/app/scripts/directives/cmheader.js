@@ -28,10 +28,11 @@ angular.module('wpZestApp')
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
 						
+						// must happen before assignStateClass() is called 
 						controller.state = 'primary';
 						
 						element.removeClass(controller.getStateClass('secondary'));
-						assignStateClass(); //needs to be called after controller.state has been assigned 
+						assignStateClass();
 						// $animate.removeClass(element, controller.getStateClass('secondary'));
 					} else {
 
@@ -98,7 +99,9 @@ angular.module('wpZestApp')
 
 				var showHide = function() {
 
-					if(!cmMqState.is('narrow') || controller.state !== 'secondary') {
+					if(!cmMqState.is('narrow') ||
+						controller.state !== 'secondary' ||
+						controller.isActive()) {
 						return;
 					}
 
