@@ -225,7 +225,7 @@ angular.module('wpZestApp')
 
 				var setupPreview = function() {
 
-					if(cmMqState.get().indexOf('narrow') !== -1) {
+					if(cmMqState.is('narrow')) {
 						controller.isPreviewDisabled = true;
 						return;
 					}
