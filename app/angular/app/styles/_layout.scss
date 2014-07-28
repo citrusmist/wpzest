@@ -34,11 +34,27 @@ body {
   
   .header-identity {
     position: fixed;
+    @include single-transition();
+  }
+
+  .header-logotype {
+    opacity: 0;
+  }
+
+  .header-toggle {
+    padding-top: .5em;
+    opacity: 1;
   }
 
   &.header--isActive {
     .header-wrap {
       @include translate3d(0, 0, 0);
+    }
+  }
+
+  &.header--isHidden {
+    .header-identity {
+      @include translate3d(0, -86%, 0);
     }
   }
 }

@@ -131,6 +131,12 @@
         // position: absolute;
       }
     }
+
+    &.header--isHidden {
+      .header-identity {
+        @include transform(none);
+      }
+    }
   }
 
   .header-wrap {
