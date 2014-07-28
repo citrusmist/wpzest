@@ -17,9 +17,10 @@ angular.module('wpZestApp')
 			},
 			link: function postLink(scope, element, attrs, controller) {
 				
-				var elBody   = angular.element(document.querySelectorAll('body'));
-				var elToggle = angular.element(element[0].querySelectorAll('.header-wrap'));
+				var elBody          = angular.element(document.querySelectorAll('body'));
+				var elToggle        = angular.element(element[0].querySelectorAll('.header-wrap'));
 				var needsStateClass = false;
+				var prevScrollY     = window.scrollY;
 
 				var determineState = function(currentRoute) {
 
@@ -91,12 +92,29 @@ angular.module('wpZestApp')
 
 				var assignStateClass = function() {
 					element.addClass(controller.getStateClass());
+					element.removeClass('header--isHidden'); //just in case
 					needsStateClass = false;
+				};
+
+				var showHide = function() {
+
+					if(!cmMqState.is('narrow') || controller.state !== 'secondary') {
+						return;
+					}
+
+					if(window.scrollY > prevScrollY) {
+						element.addClass('header--isHidden');
+					} else if (prevScrollY > window.scrollY) {
+						element.removeClass('header--isHidden');
+					}
+
+					prevScrollY = window.scrollY;
 				};
 
 				//Controller API
 				controller.activate      = activate;
 				controller.deactivate    = deactivate;
+				controller.showHide      = showHide;
 				controller.isActive      = isActive;
 				controller.toggleState   = toggleState;
 				controller.getStateClass = getStateClass;
@@ -122,7 +140,6 @@ angular.module('wpZestApp')
 
 					var elTest      = null;
 					
-
 					//only execute if event has been triggered by header itself
 					//or if the viewport is narrow the header-wrap
 					if(cmMqState.is('narrow')) {
@@ -137,7 +154,14 @@ angular.module('wpZestApp')
 
 					console.log(evt);
 					assignStateClass();
+
+					if(controller.state === 'secondary' && cmMqState.is('narrow')) {
+						window.scrollTo(0,0);
+						prevScrollY = 0;
+					}
 				});
+
+				angular.element(window).on('scroll', cmUtil.debounce(controller.showHide, 200));
 
 				determineState($route.current);
 			}
