@@ -104,6 +104,10 @@
       opacity: 1;
     }
 
+    .header-toggle {
+      padding-top: 0;
+    }
+
     .nav-appendix {
       margin-left: #{gs-marginleft(w, 5) - gs-width(w, 1) - gs-gutter(w) + '%'};
     }
