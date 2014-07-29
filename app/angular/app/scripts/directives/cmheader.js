@@ -21,40 +21,42 @@ angular.module('wpZestApp')
 				var elToggle        = angular.element(element[0].querySelectorAll('.header-wrap'));
 				var needsStateClass = false;
 				var prevScrollY     = window.scrollY;
+				
 
 				var determineState = function(currentRoute) {
 
-					var initialState = controller.state;
+					var initialState  = controller.state;
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
-						
-						// must happen before assignStateClass() is called 
 						controller.state = 'primary';
-						
-						element.removeClass(controller.getStateClass('secondary'));
-						assignStateClass();
 						// $animate.removeClass(element, controller.getStateClass('secondary'));
 					} else {
-
 						controller.state = 'secondary';
-						
-						element.removeClass(controller.getStateClass('primary'));
-						needsStateClass = true;
-						
-						$timeout(function() {
-							if(needsStateClass) {
-								assignStateClass();
-							}
-						}, 1500);
 						// $animate.addClass(element, controller.getStateClass('secondary'));
 					}
 
+					if( initialState !== controller.state ) {
+						changeState(initialState);
+					}
+				};
+
+
+				var changeState = function(oldState) {
+
+					var callbackDelay = (controller.state === 'primary') ? 0 : 1500;
+
+					needsStateClass = true;
+
+					element.removeClass(controller.getStateClass(oldState));
+
+					$timeout(function() {
+						if(needsStateClass) {
+							assignStateClass();
+						}
+					}, callbackDelay);
+
 					if(controller.isActive()) {
 						controller.deactivate();
-					}
-
-					if(initialState !== controller.state) {
-						scope.$broadcast('headerStateChange', controller.state);
 					}
 				};
 
@@ -95,6 +97,8 @@ angular.module('wpZestApp')
 					element.addClass(controller.getStateClass());
 					element.removeClass('header--isHidden'); //just in case
 					needsStateClass = false;
+
+					scope.$broadcast('headerStateChange', controller.state);
 				};
 
 				var showHide = function() {
