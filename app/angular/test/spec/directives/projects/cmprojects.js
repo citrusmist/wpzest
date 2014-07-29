@@ -13,7 +13,7 @@ describe('Directive: projects/cmProjects', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<projects/cm-projects></projects/cm-projects>');
+    element = angular.element('<cm-projects></cm-projects>');
     element = $compile(element)(scope);
     expect(element.text()).toBe('this is the projects/cmProjects directive');
   }));

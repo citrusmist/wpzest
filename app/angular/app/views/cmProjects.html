@@ -1,0 +1,16 @@
+<div>
+	<ul class="projects-list mt2-mt3 mt-clear">
+
+		<li class="projects-item" ng-repeat="project in projects">
+			<span class="projects-discipline caption">{{project.discipline}}</span>
+			<h2 class="projects-title">
+				<a class="projects-link" href="" ng-href="#/project/{{project.postName}}">
+					{{project.postTitle}}
+				</a>
+			</h2>
+		</li>
+
+	</ul>
+	
+	<cm-projects-preview class="projects-preview"></cm-projects-preview>
+</div>

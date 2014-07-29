@@ -49,11 +49,25 @@
 		visibility: hidden;
 }
 
-
 .plainlist{
-	list-style: none outside;
-	margin: 0;
-	padding: 0;
+	@extend %plainlist;
+}
+
+.inlinelist {
+	@extend %plainlist;
+}
+
+.inlinelist > li {
+	display: inline-block;
+}
+
+
+.alignleft {
+	float: left !important; 
+}
+
+.alignright {
+	float: right !important; 
 }
 
 /*

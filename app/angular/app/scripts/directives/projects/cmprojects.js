@@ -1,39 +1,43 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmProjects', ['$timeout', 'cmUtil' , function($timeout, cmUtil) {
+	.directive('cmProjects', ['$timeout', 'cmUtil', 'cmProjects' , function($timeout, cmUtil, cmProjects) {
 	
 			return {
-				template: '<div ng-transclude></div>',
+				scope: {},
+				templateUrl: 'views/cmProjects.html',
 				restrict: 'E',
 				controller: function($scope, $element, $attrs) {
 	
-					this.first           = true;
-					this.isPreviewActive = false;
-					this.thumbRatio      = false;
-					this.slideIntoView   = false;
-					this.showPreview     = false;
-					this.hidePreview     = false;
-					this.calcHeight      = false;
-					this.setupPreview    = false;
-	
+					this.first             = true;
+					this.isPreviewActive   = false;
+					this.isPreviewDisabled = false;
+					this.thumbRatio        = false;
+					this.slideIntoView     = false;
+					this.showPreview       = false;
+					this.hidePreview       = false;
+					this.calcHeight        = false;
+					this.setupPreview      = false;
+					this.elCurrentThumb    = false;
 				},
-				transclude: true,
+				transclude: false,
 				replace: true,
 				link: function postLink(scope, element, attrs, controller) {
-					
-					var elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
-					var elTitles      = angular.element(element[0].querySelectorAll('.project-link'));
+
+					console.log(scope);
+					scope.projects = {};
+
+					var elPreview     = false;
+					var elTitles      = false;
 					var leaveTimeout  = false;
 					var enterTimeout  = false;
-	
-					elTitles.on('mouseenter', function() {
-	
-						var elTitle = angular.element(this);
-						var elThumb = angular.element(
-							elPreview[0].querySelectorAll(elTitle.data('thumb'))
+
+					var showProject = function(elTitle) {
+
+						controller.elCurrentThumb = angular.element(
+							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
 						);
-	
+
 						if(leaveTimeout !== false) {
 							// console.log('cancel leave timeout');
 							$timeout.cancel(leaveTimeout);
@@ -46,15 +50,15 @@ angular.module('wpZestApp')
 
 							if(controller.isPreviewActive === false) {
 								element.addClass('projects--isActive');
-								controller.showPreview(elThumb);
+								controller.showPreview();
 							} else {
-								controller.slideIntoView(elThumb);
+								controller.slideIntoView();
 							}
 						}, 200);
-					});
-	
-					elTitles.on('mouseleave', function() {
-						
+					};
+
+					var hideProject = function() {
+													
 						if(enterTimeout !== false) {
 							// console.log('cancel enter timeout');
 							$timeout.cancel(enterTimeout);
@@ -67,51 +71,113 @@ angular.module('wpZestApp')
 	
 							element.removeClass('projects--isActive');
 							controller.hidePreview();
+							controller.elCurrentThumb = false;
 						}, 400);
-					});
-	
-					element.imagesLoaded()
-						.progress(function(instance,image){
-	
-							if(controller.thumbRatio !== false) {
+					};
+
+					var attachHandlers = function() {
+
+						elTitles.on('mouseenter', function() {
+							
+							if(controller.isPreviewDisabled === true ) {
 								return;
 							}
 
-							var dim = cmUtil.getNaturalImageDimensions(image.img);
-	
-							controller.thumbRatio = dim.width / dim.height;
-							console.log(controller.thumbRatio);
-							controller.setupPreview();
+							showProject(angular.element(this));
+						});
+		
+						elTitles.on('mouseleave', function() {
+							
+							if(controller.isPreviewDisabled === true ) {
+								return;
+							}
+
+							hideProject();
 						});
 
-					angular.element(window).on('resize', cmUtil.debounce(controller.setupPreview, 100));
+						elTitles.on('click',function() {
+							
+							if(controller.isPreviewDisabled === true ) {
+								return;
+							}
+
+							element.removeClass('projects--isActive');
+							controller.hidePreview();
+						});
+						
+						$timeout(function(){
+							element.imagesLoaded()
+								.progress(function(instance, image) {
+
+									var dim = null;
+			
+									if(controller.thumbRatio !== false) {
+										return;
+									}
+
+									dim = cmUtil.getNaturalImageDimensions(image.img);
+									controller.thumbRatio = dim.width / dim.height;
+									console.log(controller.thumbRatio);
+									controller.setupPreview();
+								});
+						});
+						
+
+						angular.element(window).on('resize', cmUtil.debounce(controller.setupPreview, 100));
+					};
+
+					cmProjects.all().then(function(projects) {
+						scope.projects = projects;
+						console.log(scope.projects);
+
+						$timeout(function() {
+							elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
+							elTitles      = angular.element(element[0].querySelectorAll('.projects-link'));
+							attachHandlers();
+						});
+					});
 				}
 			};
 		}])
-	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', function($timeout, cmTransition, cmUtil){
+	.directive('cmProjectsPreview', ['$timeout', 'cmTransition', 'cmUtil', 'cmMqState', function($timeout, cmTransition, cmUtil, cmMqState){
 		// Runs during compile
 		return {
-			require: '^cmProjects', // Array = multiple requires, ? = optional, ^ = check parent elements
+			scope: false,
+			require: ['^cmProjects','^cmHeader'], // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-			template: '<div ng-transclude></div>',
+			template: '<div><div class="projects-preview-wrap">' +
+				'<div ng-repeat="project in projects">' +
+					'<img class="projects-preview-thumb projects-thumb--{{project.postName}}" ng-src="{{project.thumbnail.medium}}" alt="">' +
+				'</div>' +
+			'</div></div>',
 			transclude: true,
-			link: function(scope, element, attrs, controller) {
+			replace: true,
+			link: function(scope, element, attrs, controllers) {
 
+				var controller       = controllers[0];
+				var headerController = controllers[1];
+
+				console.log(controllers);
+
+				var elHeader      = angular.element(document.querySelectorAll('.header'));
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
 				var styleRules    = null;
 
 
-				var slideIntoView = function(elThumb) {
-					var distanceY = elThumb[0].offsetTop;
+				var slideIntoView = function() {
+
+					var distanceY = controller.elCurrentThumb[0].offsetTop;
 
 					elPreviewWrap.css(
 						cmTransition.getPrefixed('transform', 'translateY(-' + distanceY + 'px)')
 					);
 				};
 
-				var showPreview = function(elThumb) {
+				var showPreview = function() {
+
 					controller.isPreviewActive = true;
+
 					elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', '0s'));
 
 					element.one(cmTransition.transitionEvent, function(evt) {
@@ -124,8 +190,8 @@ angular.module('wpZestApp')
 						// console.log(evt);
 
 						//If the mouse hasn't moved from the title before the transition finished
-						controller.slideIntoView(elThumb);
-						elPreviewWrap[0].offsetTop;
+						controller.slideIntoView(controller.elCurrentThumb);
+						cmUtil.forceElRedraw(elPreviewWrap);
 						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 
 						element.addClass('projects-preview--isActive');
@@ -134,29 +200,42 @@ angular.module('wpZestApp')
 				};
 
 				var hidePreview = function() {
+
 					controller.isPreviewActive = false;
 					element.removeClass('projects-preview--isActive');
 				};
 
-				var calcHeight = function() {
+				var calcHeight = function(prefix) {
 
-					styleRules  = cmUtil.getStyleRules('.projects--isActive .projects-preview');
+					var selector = '.projects--isActive .projects-preview';
+
+					prefix     = headerController.getStateClass();
+					console.log(prefix);
+					selector   = (prefix === '') ? selector : '.' + prefix + ' ' + selector;
+					styleRules = cmUtil.getStyleRules(selector);
 
 					if(styleRules === null) {
 						return '';
 					}
 
-					//README: assuming that widht is a percentage value
-					var previewWidth   = parseInt(styleRules.style.width, 10);
-					var viewportWidth  = angular.element(window).width();
-
-					var previewHeight = (viewportWidth * (previewWidth/100)) / controller.thumbRatio;
+					//README: assuming that width is a percentage value
+					var previewWidth  = parseInt(styleRules.style.width, 10);
+					var viewportWidth = elHeader.width();
+					var previewHeight = (viewportWidth * (previewWidth / 100)) / controller.thumbRatio;
 
 					return previewHeight;
 				};
 
-
 				var setupPreview = function() {
+
+					if(cmMqState.is('narrow')) {
+						controller.isPreviewDisabled = true;
+						return;
+					}
+
+					controller.isPreviewDisabled = false;
+
+					// headerState = headerState || '';
 					console.log('setting up preview');
 					// element.css('height', controller.calcHeight());
 					var height = controller.calcHeight();
@@ -174,6 +253,10 @@ angular.module('wpZestApp')
 					//@TODO : consider an alternative approach
 
 					evt.stopPropagation();
+				});
+
+				scope.$on('headerStateChange', function(evt, data) {
+					controller.setupPreview();
 				});
 			}
 		};
