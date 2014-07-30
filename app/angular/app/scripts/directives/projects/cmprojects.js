@@ -22,7 +22,13 @@ angular.module('wpZestApp')
 				},
 				transclude: false,
 				replace: true,
-				link: function postLink(scope, element, attrs, controller) {
+				require: ['cmProjects','^cmHeader'],
+				link: function postLink(scope, element, attrs, controllers) {
+
+					var controller = controllers[0];
+					var headerController = controllers[1];
+
+					console.log(controllers);
 
 					console.log(scope);
 					scope.projects = {};
@@ -77,7 +83,6 @@ angular.module('wpZestApp')
 					};
 
 					var handleRouteChange = function(currentRoute) {
-						console.log(currentRoute);
 						scope.currentProjectName = currentRoute.params.projectName;
 					};
 
@@ -103,12 +108,20 @@ angular.module('wpZestApp')
 
 						elTitles.on('click',function(evt) {
 							
+							var elTitle = angular.element(evt.target);
+
 							if(controller.isPreviewDisabled === true ) {
 								return;
 							}
 
 							element.removeClass('projects--isActive');
 							controller.hidePreview();
+
+							console.log(elTitle);
+
+							if(elTitle.hasClass('projects-link--isCurrent')) {
+								headerController.deactivate();
+							}
 						});
 						
 						$timeout(function(){
@@ -168,7 +181,7 @@ angular.module('wpZestApp')
 				var controller       = controllers[0];
 				var headerController = controllers[1];
 
-				console.log(controllers);
+				// console.log(controllers);
 
 				var elHeader      = angular.element(document.querySelectorAll('.header'));
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
