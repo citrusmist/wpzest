@@ -1,18 +1,20 @@
 [
-	{
-		"ID": 5,
-		"postTitle": "Mosaica Restaurant",
-		"postName": "mosaica-restaurant",
-		"postContent": "<div class=\"mt2-mt3 wr4\"><p>It’s quirky, warm and dimly lit interior make way for what a very intimate and romantic dining experience. The restaurants magic effect is further amplified by the remote and rough industrial surroundings.<\/p><p>In keeping with the restaurant’s ethos the home page animates a number of quirky statements about the restaurant in order to incite curiosity and encourage exploration of the site. The nav and the calls to action are clearly visible at all times.<\/p> <p>To reinforce the restaurants romantic and intimate mood large background images are used throughout the site and different parts of the image are revealed as the user scrolls.<\/p> <\/div> <figure class=\"mt-all wr4 project-figure\"> <img src=\"\/images\/mosaica\/wine.jpg\"/> <figcaption class=\"project-figure-caption mt2-mt3 caption--bottomright\">As the user scrolls different parts of the background are revealed</figcaption></figure> <figure class=\"mt-all wr4 project-figure\"><img src=\"\/images\/mosaica\/contact.jpg\"/></figure> <div class=\"mt2-mt3 mt-clear w4 w-clear\"><p> On the gallery screens the interface is minimal and the nav goes into a minimised state letting the photography occupy majority of the screen unobstructed. </p></div> <figure class=\"mt-all w5 project-figure\"><img src=\"\/images\/mosaica\/gallery1.jpg\"/></figure> <figure class=\"mt-all wr4 wr-clear project-figure\"><img src=\"\/images\/mosaica\/gallery2.jpg\"/></figure>",
-		"postExcerpt": "Mosaica is all about good food and atmosphere. Located on the bottom floor of a factory building the restaurant feels like a magical escape from reality. The new website needed to reflect the atmosphere and charm as it’s in an unexpected location.",
-		"discipline": "Web Design",
+		{
+		"ID": 9,
+		"postTitle": "Waha Wera Hot Sauce",
+		"postName": "waha-wera",
+		"postContent": "<div class=\"mt2-mt3 wr4\"><p>Waha Wera owes it unique taste to both its unorthodox combination of ingredients and unusual production process. It blends kiwi fruit, manuka honey and habanero peppers and uses barrel fermentation for an interesting effect.<\/p><p>A set of bold and fun flyers were produced to help promote the sauce at marketing events in preparation for it's UK launch.</p><\/div> <figure class=\"mt-all project-figure wr4 wr-clear\"> <img src=\"\/images\/wahawera\/flyer-front-wide-orange_green.jpg\" alt=\"\" /> <figcaption class=\"project-figure-caption mt2-mt3 caption--bottomright\">Alternative colour combinations used on the front of the flyer</figcaption>  <\/figure> ",
+		"postExcerpt": "Waha Wera is a very unique hot sauce from New Zealand. In preparation for it’s UK launch we were commissioned by the distributor to design a set of flyers used to promote a inform potential buyers",
+		"discipline": "Print Design",
 		"heroAttrs" : {
 			"class": "w3-w5" 
 		},
 		"thumbnail": { 
-			"medium": "/images/mosaica-hero-1000x599.jpg",
-			"large":  "/images/mosaica/hero-1600x949.jpg"
-		}
+			"medium": "/images/wahawera-hero-1000x599.jpg",
+			"large":  "/images/wahawera/hero-1600x960.jpg"
+		},
+		"credits": [],
+		"website": ""
 	},
 	{
 		"ID": 6,
@@ -26,8 +28,16 @@
 		},
 		"thumbnail": { 
 			"medium": "/images/amalgam-hero-1000x599.jpg",
-			"large":  "/images/amalgam/hero-1600x958.jpg"
-		}
+			"large" :  "/images/amalgam/hero-1600x958.jpg"
+		},
+		"credits": [
+			{
+				"label": "Agency",
+				"text" : "PGA Branding",
+				"url"  : "http://pgabranding.com"
+			}
+		],
+		"website": "http://amalgam.co.uk"
 	},
 	{
 		"ID": 7,
@@ -42,7 +52,9 @@
 		"thumbnail": { 
 			"medium": "/images/ss-hero-1000x599.png",
 			"large":  "/images/ss/hero-1600x956.jpg"
-		}
+		},
+		"credits": [],
+		"website": ""
 	},
 	{
 		"ID": 8,
@@ -57,21 +69,25 @@
 		"thumbnail": { 
 			"medium": "/images/hrt-hero-1000x599.png",
 			"large":  "/images/hrt/hero-1600x955.jpg"
-		}
+		},
+		"credits": [],
+		"website": ""
 	},
 	{
-		"ID": 9,
-		"postTitle": "Waha Wera",
-		"postName": "waha-wera",
-		"postContent": "<div class=\"mt2-mt3 wr4\"><p>Waha Wera owes it unique taste to both its unorthodox combination of ingredients and unusual production process. It blends kiwi fruit, manuka honey and habanero peppers and uses barrel fermentation for an interesting effect.<\/p><p>A set of bold and fun flyers were produced to help promote the sauce at marketing events in preparation for it's UK launch.</p><\/div> <figure class=\"mt-all project-figure wr4 wr-clear\"> <img src=\"\/images\/wahawera\/flyer-front-wide-orange_green.jpg\" alt=\"\" /> <figcaption class=\"project-figure-caption mt2-mt3 caption--bottomright\">Alternative colour combinations used on the front of the flyer</figcaption>  <\/figure> ",
-		"postExcerpt": "Waha Wera is a very unique hot sauce from New Zealand. In preparation for it’s UK launch we were commissioned by the distributor to design a set of flyers used to promote a inform potential buyers",
-		"discipline": "Print Design",
+		"ID": 5,
+		"postTitle": "Mosaica Restaurant",
+		"postName": "mosaica-restaurant",
+		"postContent": "<div class=\"mt2-mt3 wr4\"><p>It’s quirky, warm and dimly lit interior make way for what a very intimate and romantic dining experience. The restaurants magic effect is further amplified by the remote and rough industrial surroundings.<\/p><p>In keeping with the restaurant’s ethos the home page animates a number of quirky statements about the restaurant in order to incite curiosity and encourage exploration of the site. The nav and the calls to action are clearly visible at all times.<\/p> <p>To reinforce the restaurants romantic and intimate mood large background images are used throughout the site and different parts of the image are revealed as the user scrolls.<\/p> <\/div> <figure class=\"mt-all wr4 project-figure\"> <img src=\"\/images\/mosaica\/wine.jpg\"/> <figcaption class=\"project-figure-caption mt2-mt3 caption--bottomright\">As the user scrolls different parts of the background are revealed</figcaption></figure> <figure class=\"mt-all wr4 project-figure\"><img src=\"\/images\/mosaica\/contact.jpg\"/></figure> <div class=\"mt2-mt3 mt-clear w4 w-clear\"><p> On the gallery screens the interface is minimal and the nav goes into a minimised state letting the photography occupy majority of the screen unobstructed. </p></div> <figure class=\"mt-all w5 project-figure\"><img src=\"\/images\/mosaica\/gallery1.jpg\"/></figure> <figure class=\"mt-all wr4 wr-clear project-figure\"><img src=\"\/images\/mosaica\/gallery2.jpg\"/></figure>",
+		"postExcerpt": "Mosaica is all about good food and atmosphere. Located on the bottom floor of a factory building the restaurant feels like a magical escape from reality. The new website needed to reflect the atmosphere and charm as it’s in an unexpected location.",
+		"discipline": "Web Design",
 		"heroAttrs" : {
 			"class": "w3-w5" 
 		},
 		"thumbnail": { 
-			"medium": "/images/wahawera-hero-1000x599.jpg",
-			"large":  "/images/wahawera/hero-1600x960.jpg"
-		}
+			"medium": "/images/mosaica-hero-1000x599.jpg",
+			"large":  "/images/mosaica/hero-1600x949.jpg"
+		},
+		"credits": [],
+		"website": ""
 	}
 ]
