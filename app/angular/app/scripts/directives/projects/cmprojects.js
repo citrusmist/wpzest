@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmProjects', ['$timeout', 'cmUtil', 'cmProjects' , function($timeout, cmUtil, cmProjects) {
+	.directive('cmProjects', ['$timeout', '$route', 'cmUtil', 'cmProjects' , function($timeout, $route, cmUtil, cmProjects) {
 	
 			return {
 				scope: {},
@@ -26,6 +26,7 @@ angular.module('wpZestApp')
 
 					console.log(scope);
 					scope.projects = {};
+					scope.currentProjectName = '';
 
 					var elPreview     = false;
 					var elTitles      = false;
@@ -75,6 +76,11 @@ angular.module('wpZestApp')
 						}, 400);
 					};
 
+					var handleRouteChange = function(currentRoute) {
+						console.log(currentRoute);
+						scope.currentProjectName = currentRoute.params.projectName;
+					};
+
 					var attachHandlers = function() {
 
 						elTitles.on('mouseenter', function() {
@@ -95,7 +101,7 @@ angular.module('wpZestApp')
 							hideProject();
 						});
 
-						elTitles.on('click',function() {
+						elTitles.on('click',function(evt) {
 							
 							if(controller.isPreviewDisabled === true ) {
 								return;
@@ -121,9 +127,12 @@ angular.module('wpZestApp')
 									controller.setupPreview();
 								});
 						});
-						
 
 						angular.element(window).on('resize', cmUtil.debounce(controller.setupPreview, 100));
+						
+						scope.$on('$routeChangeSuccess', function(event, current) {
+							handleRouteChange(current);
+						});
 					};
 
 					cmProjects.all().then(function(projects) {
@@ -133,7 +142,9 @@ angular.module('wpZestApp')
 						$timeout(function() {
 							elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
 							elTitles      = angular.element(element[0].querySelectorAll('.projects-link'));
+
 							attachHandlers();
+							handleRouteChange($route.current);
 						});
 					});
 				}
@@ -146,10 +157,10 @@ angular.module('wpZestApp')
 			require: ['^cmProjects','^cmHeader'], // Array = multiple requires, ? = optional, ^ = check parent elements
 			restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 			template: '<div><div class="projects-preview-wrap">' +
-				'<div ng-repeat="project in projects">' +
-					'<img class="projects-preview-thumb projects-thumb--{{project.postName}}" ng-src="{{project.thumbnail.medium}}" alt="">' +
-				'</div>' +
-			'</div></div>',
+					'<div ng-repeat="project in projects">' +
+						'<img class="projects-preview-thumb projects-thumb--{{project.postName}}" ng-src="{{project.thumbnail.medium}}" alt="">' +
+					'</div>' +
+				'</div></div>',
 			transclude: true,
 			replace: true,
 			link: function(scope, element, attrs, controllers) {
