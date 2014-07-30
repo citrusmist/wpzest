@@ -56,6 +56,11 @@ body {
       @include translate3d(0, -86%, 0);
     }
   }
+
+  .projects-link--isCurrent {
+    color: $cm-white;
+    text-decoration: line-through;
+  }
 }
 
 .header-wrap {

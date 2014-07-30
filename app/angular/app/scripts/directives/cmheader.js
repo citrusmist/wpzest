@@ -130,10 +130,6 @@ angular.module('wpZestApp')
 				controller.toggleState   = toggleState;
 				controller.getStateClass = getStateClass;
 
-				scope.$on('$routeChangeSuccess', function(event, current) {
-					handleRouteChange(current);
-				});
-
 				$rootElement.on('click', function(evt) {
 
 					if(!controller.isActive()) {
@@ -173,6 +169,10 @@ angular.module('wpZestApp')
 				});
 
 				angular.element(window).on('scroll', cmUtil.debounce(controller.showHide, 200));
+
+				scope.$on('$routeChangeSuccess', function(event, current) {
+					handleRouteChange(current);
+				});
 
 				handleRouteChange($route.current);
 			}
