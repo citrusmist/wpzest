@@ -53,6 +53,13 @@
     font-size: 1.25rem;
     font-weight: 200;
     line-height: 1.35; //27px
+
+    .w4,
+    .wr5 {
+      p {
+        line-height: 1.25; //25px
+      }
+    }
   }
 
   .header {
@@ -95,7 +102,7 @@
       @include gs-span(w, 5);
     }
 
-    .profile,
+    .header-profile,
     .header-logomark,
     .header-logotype {
       opacity: 0;
@@ -292,7 +299,7 @@
     @include gs-span(w, 5);
   }
 
-  .profile {
+  .header-profile {
     position: absolute;
     top: 5.625%;
     margin-top: 0;
@@ -446,6 +453,13 @@
     font-size: 21px;
     font-size: 1.3125rem;
     line-height: 1.33333333333333; //28px 
+
+    .w4,
+    .wr5 {
+      p {
+        line-height: 1.23809523809523; //26px
+      }
+    }
   }
 
   .project-body {
@@ -494,6 +508,10 @@
     font-size: 4.5rem;
   }
 
+  .header-toggle {
+    top: 2.1875rem;
+  }
+
   .project-title-decoration {
     margin-bottom: 4px;
   }
@@ -503,6 +521,13 @@
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.36363636363636; //30px 
+
+    .w4,
+    .wr5 {
+      p {
+        line-height: 1.27272727272727; //28px
+      }
+    }
   }
 
   .project {
@@ -593,11 +618,18 @@
   
   .project-body {
     p:last-of-type {
-      margin-bottom: 1.3333333333333; //30px
+      margin-bottom: 1.3333333333333; //32px
     }
 
     p + .project-figure {
       margin-top: 1.3333333333333; 
+    }
+
+    .w4,
+    .wr5 {
+      p {
+        line-height: 1.25;
+      }
     }
   }
 
@@ -632,6 +664,14 @@
 @media only screen and (min-height: 53em) {
   .projects-item .projects-title {
     margin-bottom: 0.5em;
+  }
+
+  .header-logomark2,
+  .header-logomark,
+  .header-logotype,
+  .projects-preview,
+  .nav-appendix {
+    bottom: 2.5%;
   }
 }
 
