@@ -23,9 +23,22 @@ angular.module('wpZestApp')
 				var prevScrollY     = window.scrollY;
 				
 
-				var determineState = function(currentRoute) {
+				var handleRouteChange = function(currentRoute) {
 
 					var initialState  = controller.state;
+
+					determineState(currentRoute);
+
+					if( initialState !== controller.state ) {
+						changeState(initialState);
+					}
+
+					if(controller.state === 'secondary') {
+						controller.deactivate();
+					}
+				};
+
+				var determineState = function(currentRoute) {
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
 						controller.state = 'primary';
@@ -34,12 +47,7 @@ angular.module('wpZestApp')
 						controller.state = 'secondary';
 						// $animate.addClass(element, controller.getStateClass('secondary'));
 					}
-
-					if( initialState !== controller.state ) {
-						changeState(initialState);
-					}
 				};
-
 
 				var changeState = function(oldState) {
 
@@ -54,10 +62,6 @@ angular.module('wpZestApp')
 							assignStateClass();
 						}
 					}, callbackDelay);
-
-					if(controller.isActive()) {
-						controller.deactivate();
-					}
 				};
 
 				var activate = function() {
@@ -127,7 +131,7 @@ angular.module('wpZestApp')
 				controller.getStateClass = getStateClass;
 
 				scope.$on('$routeChangeSuccess', function(event, current) {
-					determineState(current);
+					handleRouteChange(current);
 				});
 
 				$rootElement.on('click', function(evt) {
@@ -170,7 +174,7 @@ angular.module('wpZestApp')
 
 				angular.element(window).on('scroll', cmUtil.debounce(controller.showHide, 200));
 
-				determineState($route.current);
+				handleRouteChange($route.current);
 			}
 		};
 	})
