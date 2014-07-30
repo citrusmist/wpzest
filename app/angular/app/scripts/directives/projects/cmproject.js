@@ -23,7 +23,7 @@ angular.module('wpZestApp')
 
 				var generateWebsiteLink = function() {
 					var markup = '<span class="project-title-decoration caption">' +
-						'<a class="project-title-link" href="' + scope.project.website + '">Visit Website</a>' +
+							'<a class="project-title-link" href="' + scope.project.website + '">Visit Website</a>' +
 						'</span>';
 
 					elTitleDecoration.prepend(markup);
