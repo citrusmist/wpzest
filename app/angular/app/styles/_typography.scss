@@ -26,6 +26,13 @@ h3, .h3 {
 
 }
 
+h6, 
+.h6 {
+  font-weight: 200;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
 a {
   color: $cm-purple;
   text-decoration: none;
@@ -50,8 +57,12 @@ a {
   line-height: 1.14285714285714;
 }
 
-.header .caption {
-  font-weight: 300;
+.header {
+  h6,
+  .h6,
+  .caption {
+    font-weight: 300;
+  }
 }
 
 .outdent {
