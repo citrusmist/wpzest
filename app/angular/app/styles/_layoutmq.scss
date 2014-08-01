@@ -438,6 +438,10 @@
       @include experimental-value(bottom, calc(100% + .42857142857142em));
     }
   }
+
+  .page--profile {
+    padding-top: 8.859375em;
+  }
 }
 
 
@@ -574,6 +578,59 @@
       @include experimental-value(bottom, calc(100% + 1em));
     }
   }
+  
+
+  .page {
+    padding-bottom: 5.90625em;
+  }
+
+  .page--profile {
+    padding-top: 10.9375em;
+
+    h1,
+    .h1 {
+      line-height: 1.08620689655172;
+    }
+  }
+
+
+  .profile-intro {
+    margin-bottom: 5.3030303030303em;
+
+  }
+
+  .profile-value {
+    margin-bottom: 5.3030303030303em;
+  }
+
+  .profile-services-title {
+    margin-bottom: .68181818181818em;
+  }
+
+  .profile-services-item {
+    margin-top: .0.22727272727272em;
+  }
+
+  .profile-services {
+    .h6 {
+      margin-top: 1.36363636363636;
+    }   
+  }
+
+
+  .profile-clients {
+    margin-top: 5.3030303030303em;
+    margin-bottom: 5.3030303030303em;
+
+    p {
+      margin-bottom: 1.36363636363636;
+    }
+  }
+
+  .profile-clients-logos {
+    max-width: 970px;
+  }
+
 }
 
 @media only screen and (min-width: 103em) {
@@ -647,6 +704,7 @@
       @include experimental-value(left, calc(100% + 1.125em));
     }
   }
+
 }
 
 @media only screen and (min-width: 94em) and (min-height:50em) { 

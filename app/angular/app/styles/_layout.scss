@@ -16,6 +16,12 @@ body {
   min-height: 100%; 
 }
 
+figure {
+  img {
+    width: 100%;
+  }
+}
+
 .header {
   min-height: 100%;
   position: relative;
@@ -329,4 +335,76 @@ body {
 
 .project-figure-caption {
   margin-top: .30555555555555em;
+}
+
+
+.page {
+  padding-bottom: 5.90625em;
+}
+
+.page--profile {
+
+  padding-top: 7em;
+
+  h1,
+  .h1 {
+    line-height: 1.08620689655172;
+  }
+}
+
+
+.profile-intro {
+
+  margin-bottom: 3em;
+  // margin-bottom: 3.9375em;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .outdent {
+    margin-bottom: 0.33333333333333em;
+  }
+}
+
+.profile-value {
+  margin-bottom: 3em;
+  // margin-bottom: 3.9375em;
+  p {
+    margin: 0;
+  }
+}
+
+.profile-services-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile-services-item {
+  margin-top: .16666666666666665em;
+}
+
+.profile-services {
+  .h6 {
+    margin-top: 1.33333333333333;
+    margin-bottom: 0;
+  }   
+}
+
+
+.profile-clients {
+  margin-top: 3em;
+  // margin-top: 3.9375em;
+  margin-bottom: 3em;
+  // margin-bottom: 3.9375em;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1.33333333333;
+  }
+}
+
+.profile-clients-logos {
+  max-width: 780px;
 }
