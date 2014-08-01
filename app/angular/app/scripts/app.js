@@ -11,6 +11,10 @@ angular.module('wpZestApp', ['ngRoute', 'ngSanitize', 'ngAnimate'])
         templateUrl: 'views/projects/project.html',
         controller: 'ProjectsProjectCtrl'
       })
+      .when('/:pageName', {
+        templateUrl: 'views/page.html',
+        controller: 'PageCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
