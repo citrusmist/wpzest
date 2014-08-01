@@ -18,6 +18,7 @@ angular.module('wpZestApp')
 					this.hidePreview       = false;
 					this.calcHeight        = false;
 					this.setupPreview      = false;
+					this.elCurrentThumb    = false;
 				},
 				transclude: false,
 				replace: true,
@@ -33,7 +34,7 @@ angular.module('wpZestApp')
 
 					var showProject = function(elTitle) {
 
-						var elThumb = angular.element(
+						controller.elCurrentThumb = angular.element(
 							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
 						);
 
@@ -49,9 +50,9 @@ angular.module('wpZestApp')
 
 							if(controller.isPreviewActive === false) {
 								element.addClass('projects--isActive');
-								controller.showPreview(elThumb);
+								controller.showPreview();
 							} else {
-								controller.slideIntoView(elThumb);
+								controller.slideIntoView();
 							}
 						}, 200);
 					};
@@ -70,6 +71,7 @@ angular.module('wpZestApp')
 	
 							element.removeClass('projects--isActive');
 							controller.hidePreview();
+							controller.elCurrentThumb = false;
 						}, 400);
 					};
 
@@ -157,21 +159,22 @@ angular.module('wpZestApp')
 
 				console.log(controllers);
 
+				var elHeader      = angular.element(document.querySelectorAll('.header'));
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
 				// var elThumbs      = angular.element(element[0].querySelectorAll('.projects-preview.thumb'));
 				var styleRules    = null;
 
 
-				var slideIntoView = function(elThumb) {
+				var slideIntoView = function() {
 
-					var distanceY = elThumb[0].offsetTop;
+					var distanceY = controller.elCurrentThumb[0].offsetTop;
 
 					elPreviewWrap.css(
 						cmTransition.getPrefixed('transform', 'translateY(-' + distanceY + 'px)')
 					);
 				};
 
-				var showPreview = function(elThumb) {
+				var showPreview = function() {
 
 					controller.isPreviewActive = true;
 
@@ -187,8 +190,8 @@ angular.module('wpZestApp')
 						// console.log(evt);
 
 						//If the mouse hasn't moved from the title before the transition finished
-						controller.slideIntoView(elThumb);
-						elPreviewWrap[0].offsetTop;
+						controller.slideIntoView(controller.elCurrentThumb);
+						cmUtil.forceElRedraw(elPreviewWrap);
 						elPreviewWrap.css(cmTransition.getPrefixed('transition-duration', ''));
 
 						element.addClass('projects-preview--isActive');
@@ -217,7 +220,7 @@ angular.module('wpZestApp')
 
 					//README: assuming that width is a percentage value
 					var previewWidth  = parseInt(styleRules.style.width, 10);
-					var viewportWidth = angular.element(window).width();
+					var viewportWidth = elHeader.width();
 					var previewHeight = (viewportWidth * (previewWidth / 100)) / controller.thumbRatio;
 
 					return previewHeight;
@@ -225,7 +228,7 @@ angular.module('wpZestApp')
 
 				var setupPreview = function() {
 
-					if(cmMqState.get().indexOf('narrow') !== -1) {
+					if(cmMqState.is('narrow')) {
 						controller.isPreviewDisabled = true;
 						return;
 					}

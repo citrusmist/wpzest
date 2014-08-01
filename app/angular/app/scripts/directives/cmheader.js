@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmHeader', function($route, $rootElement, cmTransition) {
+	.directive('cmHeader', function($route, $rootElement, $timeout, cmTransition, cmMqState, cmUtil) {
 		return {
 			scope: {},
 			templateUrl: 'views/cmHeader.html',
@@ -16,31 +16,47 @@ angular.module('wpZestApp')
 				this.getStateClass = function() {};
 			},
 			link: function postLink(scope, element, attrs, controller) {
+				
+				var elBody          = angular.element(document.querySelectorAll('body'));
+				var elToggle        = angular.element(element[0].querySelectorAll('.header-wrap'));
+				var needsStateClass = false;
+				var prevScrollY     = window.scrollY;
+				
 
 				var determineState = function(currentRoute) {
 
-					var initialState = controller.state;
+					var initialState  = controller.state;
 
 					if(currentRoute.$$route.controller === 'MainCtrl') {
-						
-						element.addClass(controller.getStateClass('primary'));
-						element.removeClass(controller.getStateClass('secondary'));
-						// $animate.removeClass(element, controller.getStateClass('secondary'));
 						controller.state = 'primary';
+						// $animate.removeClass(element, controller.getStateClass('secondary'));
 					} else {
-						element.removeClass(controller.getStateClass('primary'));
-						// element.addClass(controller.getStateClass('secondary'));
-						// $animate.addClass(element, controller.getStateClass('secondary'));
 						controller.state = 'secondary';
+						// $animate.addClass(element, controller.getStateClass('secondary'));
 					}
+
+					if( initialState !== controller.state ) {
+						changeState(initialState);
+					}
+				};
+
+
+				var changeState = function(oldState) {
+
+					var callbackDelay = (controller.state === 'primary') ? 0 : 1500;
+
+					needsStateClass = true;
+
+					element.removeClass(controller.getStateClass(oldState));
+
+					$timeout(function() {
+						if(needsStateClass) {
+							assignStateClass();
+						}
+					}, callbackDelay);
 
 					if(controller.isActive()) {
 						controller.deactivate();
-					}
-
-					if(initialState !== controller.state) {
-						console.log('broadcasting');
-						scope.$broadcast('headerStateChange', controller.state);
 					}
 				};
 
@@ -77,8 +93,35 @@ angular.module('wpZestApp')
 					}
 				};
 
+				var assignStateClass = function() {
+					element.addClass(controller.getStateClass());
+					element.removeClass('header--isHidden'); //just in case
+					needsStateClass = false;
+
+					scope.$broadcast('headerStateChange', controller.state);
+				};
+
+				var showHide = function() {
+
+					if(!cmMqState.is('narrow') ||
+						controller.state !== 'secondary' ||
+						controller.isActive()) {
+						return;
+					}
+
+					if(window.scrollY > prevScrollY) {
+						element.addClass('header--isHidden');
+					} else if (prevScrollY > window.scrollY) {
+						element.removeClass('header--isHidden');
+					}
+
+					prevScrollY = window.scrollY;
+				};
+
+				//Controller API
 				controller.activate      = activate;
 				controller.deactivate    = deactivate;
+				controller.showHide      = showHide;
 				controller.isActive      = isActive;
 				controller.toggleState   = toggleState;
 				controller.getStateClass = getStateClass;
@@ -101,15 +144,31 @@ angular.module('wpZestApp')
 				});
 
 				element.on(cmTransition.transitionEvent, function(evt) {
+
+					var elTest      = null;
 					
 					//only execute if event has been triggered by header itself
-					if(evt.target !== element[0]) {
+					//or if the viewport is narrow the header-wrap
+					if(cmMqState.is('narrow')) {
+						elTest = elToggle[0];
+					} else {
+						elTest = element[0];
+					}
+
+					if(evt.target !== elTest) {
 						return true;
 					}
-					console.log(evt);
-					element.addClass(controller.getStateClass());
 
+					console.log(evt);
+					assignStateClass();
+
+					if(controller.state === 'secondary' && cmMqState.is('narrow')) {
+						window.scrollTo(0,0);
+						prevScrollY = 0;
+					}
 				});
+
+				angular.element(window).on('scroll', cmUtil.debounce(controller.showHide, 200));
 
 				determineState($route.current);
 			}

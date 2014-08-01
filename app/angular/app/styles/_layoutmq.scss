@@ -1,4 +1,22 @@
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 27em) {
+
+  h1, .h1 {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+
+  .project-hero-img {
+    margin-top: -1.45em;
+  }
+
+  .project-title-decoration {
+    position: static;
+    margin-bottom: 2px;
+    @include rotateZ(0);
+  }
+}
+
+@media only screen and (min-width: 769px) { 
   
   #mqOutput:after { 
     content: "medium";
@@ -9,21 +27,41 @@
     position: absolute;
   }
 
+  h1, .h1 {
+    font-size: 58px;
+    font-size: 3.625rem;
+  }
+
   h2, .h2 {
     font-size: 40px;
     font-size: 2.5rem;
   }
 
+  .caption,
+  .project-figure-caption {
+    line-height: 1.07142857142857;
+  }
+
+  .longform,
+  .project-body {
+    // font-size: 21px;
+    // font-size: 1.312
+    // line-height: 1.28571428571428; //27px
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.35; //27px
+  }
+
   .header {
-    // left: 0%;
-    // z-index: 100;
-    // position: absolute;
-    // position: fixed;
-
+    background: $cm-green;
+    left: 0;
     padding: 0;
+    position: fixed;
+    z-index: 1000;
 
+    @include single-transition(transform);
     @include translate3d(-94.2878%, 0, 0);
-    @include single-transition();
 
     .header-wrap {
       height: inherit;
@@ -47,6 +85,10 @@
     
     max-width: $max-width;
 
+    .header-identity {
+      position: static;
+    }
+
     .projects-list {
       @include gs-span(w, 5);
     }
@@ -60,6 +102,10 @@
     .header-toggle,
     .header-logomark2 {
       opacity: 1;
+    }
+
+    .header-toggle {
+      padding-top: 0;
     }
 
     .nav-appendix {
@@ -80,12 +126,37 @@
 
     &.header--isActive {
       @include translate3d(-26.1820666%, 0, 0);
+
+      .header-wrap {
+        @include transform(none);
+      }
+
+      & + .content {
+        // position: absolute;
+      }
+    }
+
+    &.header--isHidden {
+      .header-identity {
+        @include transform(none);
+      }
     }
   }
 
+  .header-wrap {
+    position: static;
+    background: transparent;
+    padding: 0;
+    @include transform(none);
+    overflow-y: auto;
+  }
+
   .header-toggle {
+    left: auto;
     right: 2.2em;
     top: 1.25rem;
+    width: auto;
+    height: auto;
 
     @include transform-origin(top, right);
     @include rotateZ(-90deg);
@@ -93,8 +164,12 @@
   
   .header-identity {
     position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
   }
 
+  // .header-logomark2,
   .header-logomark2,
   .header-logomark,
   .header-logotype {
@@ -112,7 +187,9 @@
 
   .header-logomark-wrap {
     width: 100%;
+    float: none;
     max-width: 191px;
+    padding-bottom: 0;
   }
 
   .header-logotype-wrap {
@@ -125,19 +202,21 @@
     z-index: 1;
     
     @include single-transition();
-    
-    .header-logomark2-img {
-      padding: 0 0 0 18%;
-      width: 75%;
-    }
+  }
+
+  .header-logomark2-img {
+    padding: 0 0 0 19%;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
   }
 
   .projects {
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
+    // height: 100%;
+    // left: 0;
+    // top: 0;
+    // position: absolute;
+    // width: 100%;
   }
 
   .projects--isActive {
@@ -184,11 +263,11 @@
   }
 
   .projects-list {
-    position: relative;
+    position: absolute;
     top: 17%;
     z-index: 200;
     
-    @include gs-span(w, 2, 5);
+    @include gs-span(wr, 2, 4);
   }
 
   .projects-discipline {
@@ -205,23 +284,21 @@
   }
 
   .nav-appendix {
-    margin: 0;
     @extend %btmalign;
+    margin: 0;
     position: absolute;
     @include gs-span(w, 5);
   }
 
   .profile {
-    position: relative;
-    top: 4.625%;
+    position: absolute;
+    top: 5.625%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .content {
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    position: absolute;
-    width: 100%;
+    top: 0;
     max-width: $max-width;
 
     &.ng-enter {
@@ -248,19 +325,23 @@
     padding: 1.25em 0 2.5em;
   }
 
-  .project-summary {
-    &:before {
-      content: '__';
-      display: inline;
-    }
-  }
-
   .project-header-wrap {
-    float: right;
+
+    //TODO: use mixin for this as this now just copied from et3 class
+    margin-left: 67.77777333%;
+    width: 32.22222667%;
+    display: block;
+    float: left;
+    clear: none;
+    margin-right: -100%;
   }
 
   .project-header-section {
     float: left;
+  }
+
+  .project-hero-img {
+    margin-top: -1.75em;
   }
 
   .project-header-controls {
@@ -290,60 +371,10 @@
     margin-top: 1.875rem;
   }
 
-  .project-title-wrap {
-    display: inline-block;
-  }
-
-  .project-title-decoration {
-    display: block;
-    margin-bottom: 2px;
-
-    &:before {
-      content: '';
-      display: inline-block;
-      border-bottom: 1px solid $cm-gray--dark;
-      margin-left: -20px;
-      width: 66.666%;
-    }
-  }
-
-  .project-title-text {
-    margin: 0;
-    position: relative;
-    z-index: 100;
-  }
-
   .project-body {
-
     p {
-      margin-top: 0;
-      margin-bottom: 0;
       text-indent: 2em;
     }
-
-    p:last-of-type {
-      margin-bottom: 1.35em;
-    }
-
-    p:first-of-type {
-      text-indent: 0;
-    }
-
-    p + .project-figure {
-      margin-top: 1.35em; 
-    }
-
-    .project-figure {
-      margin-bottom: 1.35em; //27px
-    }
-  }
-
-
-  .project-hero-img {
-    display: block;
-    margin-top: -1.75em;
-    position: relative;
-    z-index: 0;
   }
 
   .project-credits {
@@ -352,11 +383,6 @@
 
   .project-figure {
     margin-bottom: 1.6875em; //27px
-    position: relative;
-
-    img {
-      width: 100%;
-    }
   }
 
   .project-figure-caption {
@@ -408,7 +434,6 @@
 
 
 @media only screen and (min-width: 81em) {
-
   
   #mqOutput:after { 
     content: "wide";
@@ -494,10 +519,6 @@
 
   .project-figure { 
     margin-bottom: 1.875em; //30px
-  }
-
-  .project-title {
-    margin-top: 2.5em;  
   }
 
   .project-hero-img {
@@ -609,6 +630,25 @@
 @media only screen and (min-height: 53em) {
   .projects-item .projects-title {
     margin-bottom: 0.5em;
+  }
+}
+
+@media only screen
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio : 1.5),
+  only screen 
+  and (orientation : portrait)
+  and (min-device-pixel-ratio : 1.5) {
+  
+  .longform,
+  .project-body {
+    font-weight: 300;
+  }
+
+
+  .caption,
+  .project-figure-caption {
+    font-weight: 300;
   }
 }
 

@@ -5,8 +5,8 @@ body {
 
 h1, .h1 {
   font-family: "ff-spinoza-web-pro", serif;
-  font-size: 58px;
-  font-size: 3.625rem;
+  font-size: 42px;
+  font-size: 2.625rem;
   line-height: 1.07758620689655;
   font-weight: normal;
   letter-spacing: -0.25px;
@@ -31,27 +31,23 @@ a {
   text-decoration: none;
 }
 
-%longform {
+.longform,
+.project-body {
   // font-size: 21px;
   // font-size: 1.312
   // line-height: 1.28571428571428; //27px
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 200;
-  line-height: 1.35; //27px
+  line-height: 1.2222222; //22px
 }
 
-.longform,
-.project-body {
-  @extend %longform;
-}
-  
 .caption,
 .project-figure-caption {
   font-weight: 200;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.07142857142857;
+  line-height: 1.14285714285714;
 }
 
 .header .caption {

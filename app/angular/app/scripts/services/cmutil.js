@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .factory('cmUtil', function () {
+  .factory('cmUtil', function ($timeout) {
 
     var now = Date.now || function() {
       return new Date().getTime();
@@ -79,6 +79,36 @@ angular.module('wpZestApp')
       return ruleDefinition;
     };
 
+    var forceElRedraw = function(element, webkit, sledgehammer) {
+
+      var prevValue;
+
+      webkit       = webkit || false;
+      sledgehammer = sledgehammer || false;
+
+      if(element.hasOwnProperty('scope')) {
+        element = element[0];
+      }
+
+      //Force element redraw browser doesn't overoptimise and bundle transitions together
+      element.offsetTop; 
+
+      if(webkit) {
+        prevValue = element.style.webkitTransform;
+
+        //README seems to cause problems with absolutely positioned elements
+        element.style.webkitTransform = 'scale(1)';
+        element.style.webkitTransform = prevValue;
+      }
+
+      if(sledgehammer) {
+        console.log('forcing redraw');
+        var n = document.createTextNode(' ');
+        element.appendChild(n);
+        $timeout(function(){n.parentNode.removeChild(n);});
+      }
+    };
+
     var getNaturalImageDimensions = function(image) {
 
       var width  = null;
@@ -111,6 +141,7 @@ angular.module('wpZestApp')
       now: now,
       debounce: debounce,
       getStyleRules: getStyleRules,
+      forceElRedraw: forceElRedraw,
       getNaturalImageDimensions: getNaturalImageDimensions,
     };
   });

@@ -1,3 +1,7 @@
+* {
+  @include experimental(box-sizing, border-box); 
+}
+
 #mqOutput:after {
   content: 'narrow';
   display: none;
@@ -13,41 +17,104 @@ body {
 }
 
 .header {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+
+.header--isPrimary {
+
+  .header-wrap{
+    @include transform(none);
+  }
+}
+
+.header--isSecondary {
+  
+  .header-identity {
+    position: fixed;
+    @include single-transition();
+  }
+
+  .header-logotype {
+    opacity: 0;
+  }
+
+  .header-toggle {
+    padding-top: .5em;
+    opacity: 1;
+  }
+
+  &.header--isActive {
+    .header-wrap {
+      @include translate3d(0, 0, 0);
+    }
+  }
+
+  &.header--isHidden {
+    .header-identity {
+      @include translate3d(0, -86%, 0);
+    }
+  }
+}
+
+.header-wrap {
+  position: fixed;
+  z-index: 200;
   background: $cm-green;
   left: 0%;
   top: 0%;
   position: absolute;
   position: fixed;
   height: 100%;
-  width: 100%;
-  padding-top: .5em;
   padding-bottom: 2em;
-  padding-left:  .5em ;
-  padding-right: .5em;
-  z-index: 100;
+  width: 100%;
+  @include single-transition();
+  @include translate3d(0, -200%, 0);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.header-wrap,
+.header-identity {
+  padding-top: .5em;
+  // padding-left: .5em;
+  // padding-right: .5em;
 }
 
 .header-identity {
-  position: relative;
-}
-
-.header-logotype {
+  background: $cm-green;
   left: 0;
-  bottom: 0;
   top: 0;
-  width: 28%;
   position: absolute;
+  width: 100%;
+  z-index: 300;
 }
 
-.header-logomark {
-  width: 16.5%;
+.header-logotype-wrap {
+  float: left;
+  width: 28%;
+  max-width: 111px;
+}
+
+.header-logomark-wrap {
+  width: 15.5%;
   float: right;
+  max-width: 58px;
+  padding-bottom: .5em;
 }
 
 .header-toggle {
   cursor: pointer;
   opacity: 0;
   position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
   @include single-transition();
 }
 
@@ -56,8 +123,14 @@ body {
   opacity: 0;
 }
 
+.header-logotype-img,
+.header-logomark-img,
+.header-logomark2-img {
+  display: block;
+}
+
 .profile {
-  margin-top: 1.75em;
+  margin-top: 5em;
   margin-bottom: 1.75em;
 }
 
@@ -109,7 +182,6 @@ body {
   @extend %underscore;
 }
 
-
 //This rule is here so the JS can find it, should be within the media query
 .projects--isActive {
   .projects-preview {
@@ -134,3 +206,127 @@ body {
   }
 }
 
+.content {
+  background: $cm-white;
+  // overflow: hidden;
+  // position: relative;
+  // z-index: 0;
+  // top: 51px;
+  // position: absolute;
+  width: 100%;
+}
+
+.project {
+  padding: 4.5em 0 2em 0;
+}
+
+.project-header-wrap {
+  //TODO: use mt3 mixin
+  margin-left: 33.07691385%;
+  width: 66.92308615%;
+  display: block;
+  float: left;
+  clear: none;
+  margin-right: -100%;
+}
+
+.project-credits {
+  margin-top: 0;
+  margin-bottom: 1.1428571428571428em;
+
+  dd {
+    margin-left: 1.5714285714285714em;
+  }
+}
+
+.project-summary {
+  &:before {
+    content: '__';
+    display: inline;
+  }
+}
+
+.project-figure {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-title {
+  margin-top: 2.5em;
+  position: relative;
+  z-index: 100;
+}
+
+.project-title-wrap {
+  display: inline-block;
+}
+
+.project-title-decoration {
+  position: absolute;
+  top: -4.3725em;
+  display: block;
+  margin-bottom: 2px;
+
+  @include transform-origin(top, left);
+  @include rotateZ(-90deg);
+
+  &:before {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid $cm-gray--dark;
+    margin-left: -20px;
+    width: 66.666%;
+  }
+}
+
+.project-title-text {
+  margin: 0;
+  // position: relative;
+  // z-index: 100;
+}
+
+.project-hero {
+  position: relative;
+  z-index: 0;
+}
+
+.project-hero-img {
+  display: block;
+  margin-top: -1.2em;
+}
+
+.project-body {
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 1.222222222222em;
+  }
+
+  p:last-of-type {
+    margin-bottom: 1.35em;
+  }
+
+  p:first-of-type {
+    text-indent: 0;
+  }
+
+  p + .project-figure {
+    margin-top: 1.22222222222222222em; 
+  }
+
+  .project-figure {
+    margin-bottom: 1.222222222222222em; //27px
+  }
+}
+
+.project-figure {
+  margin-bottom: 1.375em; //22px
+}
+
+.project-figure-caption {
+  margin-top: .30555555555555em;
+}
