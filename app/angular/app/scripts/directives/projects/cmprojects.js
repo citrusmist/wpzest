@@ -108,20 +108,21 @@ angular.module('wpZestApp')
 
 						elTitles.on('click',function(evt) {
 							
+							console.log('clicking away');
+
 							var elTitle = angular.element(evt.target);
-
-							if(controller.isPreviewDisabled === true ) {
-								return;
-							}
-
-							element.removeClass('projects--isActive');
-							controller.hidePreview();
-
-							console.log(elTitle);
 
 							if(elTitle.hasClass('projects-link--isCurrent')) {
 								headerController.deactivate();
 							}
+
+							if(controller.isPreviewDisabled === false ) {
+								element.removeClass('projects--isActive');
+								controller.hidePreview();
+							}
+
+							console.log(elTitle);
+
 						});
 						
 						$timeout(function(){
