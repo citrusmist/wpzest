@@ -107,6 +107,8 @@ angular.module('wpZestApp')
 
 				var showHide = function() {
 
+					console.log('showHide');
+
 					if(!cmMqState.is('narrow') ||
 						controller.state !== 'secondary' ||
 						controller.isActive()) {
@@ -168,7 +170,8 @@ angular.module('wpZestApp')
 					}
 				});
 
-				angular.element(window).on('scroll', cmUtil.debounce(controller.showHide, 200));
+				// angular.element(window).on('scroll', cmUtil.throttle(controller.showHide, 200));
+				angular.element(window).on('touchmove', cmUtil.throttle(controller.showHide, 200));
 
 				scope.$on('$routeChangeSuccess', function(event, current) {
 					handleRouteChange(current);
