@@ -7,6 +7,47 @@ angular.module('wpZestApp')
       return new Date().getTime();
     };
 
+
+    var throttle = function(func, wait, options) {
+
+      var context, args, result;
+      var timeout = null;
+      var previous = 0;
+      options || (options = {});
+
+      var later = function() {
+        previous = options.leading === false ? 0 : now();
+        timeout = null;
+        result = func.apply(context, args);
+        context = args = null;
+      };
+
+      return function() {
+
+        var fNow = now();
+
+        if (!previous && options.leading === false) {
+          previous = fNow;
+        }
+
+        var remaining = wait - (fNow - previous);
+        context = this;
+        args = arguments;
+
+        if (remaining <= 0) {
+          clearTimeout(timeout);
+          timeout = null;
+          previous = fNow;
+          result = func.apply(context, args);
+          context = args = null;
+        } else if (!timeout && options.trailing !== false) {
+          timeout = setTimeout(later, remaining);
+        }
+
+        return result;
+      };
+    };
+
     var debounce = function(func, wait, immediate) {
 
       var timeout, args, context, timestamp, result;
@@ -140,6 +181,7 @@ angular.module('wpZestApp')
     return {
       now: now,
       debounce: debounce,
+      throttle: throttle,
       getStyleRules: getStyleRules,
       forceElRedraw: forceElRedraw,
       getNaturalImageDimensions: getNaturalImageDimensions,

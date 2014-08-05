@@ -39,7 +39,7 @@ figure {
   
   .header-identity {
     position: fixed;
-    @include single-transition();
+    @include single-transition(all, 0.16s);
   }
 
   .header-logotype {
@@ -76,10 +76,10 @@ figure {
   height: 100%;
   padding-bottom: 2em;
   width: 100%;
-  @include single-transition();
-  @include translate3d(0, -200%, 0);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  @include single-transition();
+  @include translate3d(0, -200%, 0);
 }
 
 
