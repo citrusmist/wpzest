@@ -129,6 +129,21 @@ figure {
   opacity: 0;
 }
 
+.logomark--link {
+  cursor: pointer;
+
+  &:hover {
+    .logomark-line {
+      fill: $cm-purple;
+    }  
+  }
+}
+
+.logomark-line {
+  fill: $cm-gray--dark;
+  @include single-transition();
+}
+
 .header-logotype-img,
 .header-logomark-img,
 .header-logomark2-img {

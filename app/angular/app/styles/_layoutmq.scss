@@ -217,19 +217,24 @@
   }
 
   .header-logomark2 {
-    display: block;
     z-index: 1;
     
     @include single-transition();
   }
 
   .header-logomark2-img {
+    bottom: 0;
+    position: absolute;
     padding: 0 0 0 19%;
     width: 90%;
-    position: absolute;
-    bottom: 0;
+    // padding: 0 0 0 19%;
+    // width: 90%;
+    // position: relative;
+    // bottom: 0;
+    // z-index: 1000;
+    // pointer-events: none;
   }
-
+  
   .projects {
     // height: 100%;
     // left: 0;
