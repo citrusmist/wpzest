@@ -76,7 +76,7 @@ angular.module('wpZestApp')
 						if(scope.project.credits[i].url === '') {
 							markup += scope.project.credits[i].text;
 						} else {
-							markup += '<a href="' + scope.project.credits.url + '">' + scope.project.credits[i].text + '</a>';
+							markup += '<a href="' + scope.project.credits[i].url + '">' + scope.project.credits[i].text + '</a>';
 						}
 
 						markup += '</dd>';
