@@ -68,7 +68,7 @@ angular.module('wpZestApp')
 
 					for (var i = 0; i < scope.project.credits.length; i++) {
 
-						console.log(scope.project.credits[i]);
+						//console.log(scope.project.credits[i]);
 
 						markup += '<dt>' + scope.project.credits[i].label + '</dt>';
 						markup += '<dd>';

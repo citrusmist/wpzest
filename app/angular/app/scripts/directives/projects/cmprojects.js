@@ -28,9 +28,9 @@ angular.module('wpZestApp')
 					var controller = controllers[0];
 					var headerController = controllers[1];
 
-					console.log(controllers);
+					//console.log(controllers);
 
-					console.log(scope);
+					//console.log(scope);
 					scope.projects = {};
 					scope.currentProjectName = '';
 
@@ -46,7 +46,7 @@ angular.module('wpZestApp')
 						);
 
 						if(leaveTimeout !== false) {
-							// console.log('cancel leave timeout');
+							// //console.log('cancel leave timeout');
 							$timeout.cancel(leaveTimeout);
 							leaveTimeout = false;
 						}
@@ -67,7 +67,7 @@ angular.module('wpZestApp')
 					var hideProject = function() {
 													
 						if(enterTimeout !== false) {
-							// console.log('cancel enter timeout');
+							// //console.log('cancel enter timeout');
 							$timeout.cancel(enterTimeout);
 							enterTimeout = false;
 						}
@@ -108,7 +108,7 @@ angular.module('wpZestApp')
 
 						elTitles.on('click',function(evt) {
 							
-							console.log('clicking away');
+							//console.log('clicking away');
 
 							var elTitle = angular.element(evt.target);
 
@@ -121,7 +121,7 @@ angular.module('wpZestApp')
 								controller.hidePreview();
 							}
 
-							console.log(elTitle);
+							//console.log(elTitle);
 
 						});
 						
@@ -137,7 +137,7 @@ angular.module('wpZestApp')
 
 									dim = cmUtil.getNaturalImageDimensions(image.img);
 									controller.thumbRatio = dim.width / dim.height;
-									console.log(controller.thumbRatio);
+									//console.log(controller.thumbRatio);
 									controller.setupPreview();
 								});
 						});
@@ -151,7 +151,7 @@ angular.module('wpZestApp')
 
 					cmProjects.all().then(function(projects) {
 						scope.projects = projects;
-						console.log(scope.projects);
+						//console.log(scope.projects);
 
 						$timeout(function() {
 							elPreview     = angular.element(element[0].querySelectorAll('.projects-preview'));
@@ -182,7 +182,7 @@ angular.module('wpZestApp')
 				var controller       = controllers[0];
 				var headerController = controllers[1];
 
-				// console.log(controllers);
+				// //console.log(controllers);
 
 				var elHeader      = angular.element(document.querySelectorAll('.header'));
 				var elPreviewWrap = angular.element(element[0].querySelectorAll('.projects-preview-wrap'));
@@ -212,7 +212,7 @@ angular.module('wpZestApp')
 							return true;
 						}
 
-						// console.log(evt);
+						// //console.log(evt);
 
 						//If the mouse hasn't moved from the title before the transition finished
 						controller.slideIntoView(controller.elCurrentThumb);
@@ -235,7 +235,7 @@ angular.module('wpZestApp')
 					var selector = '.projects--isActive .projects-preview';
 
 					prefix     = headerController.getStateClass();
-					console.log(prefix);
+					//console.log(prefix);
 					selector   = (prefix === '') ? selector : '.' + prefix + ' ' + selector;
 					styleRules = cmUtil.getStyleRules(selector);
 
@@ -261,7 +261,7 @@ angular.module('wpZestApp')
 					controller.isPreviewDisabled = false;
 
 					// headerState = headerState || '';
-					console.log('setting up preview');
+					//console.log('setting up preview');
 					// element.css('height', controller.calcHeight());
 					var height = controller.calcHeight();
 					styleRules.style.height = height + 'px';

@@ -143,7 +143,7 @@ angular.module('wpZestApp')
       }
 
       if(sledgehammer) {
-        console.log('forcing redraw');
+        //console.log('forcing redraw');
         var n = document.createTextNode(' ');
         element.appendChild(n);
         $timeout(function(){n.parentNode.removeChild(n);});
@@ -167,7 +167,7 @@ angular.module('wpZestApp')
         // HTML5 browsers
         width  = image.naturalWidth;
         height = image.naturalHeight;
-        console.log(image.naturalHeight);
+        //console.log(image.naturalHeight);
       }
 
       return {

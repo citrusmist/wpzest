@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmHeader', function($route, $rootElement, $timeout, cmTransition, cmMqState, cmUtil) {
+	.directive('cmHeader', function($route, $rootElement, $rootScope, $timeout, cmTransition, cmMqState, cmUtil) {
 		return {
 			scope: {},
 			templateUrl: 'views/cmHeader.html',
@@ -107,7 +107,7 @@ angular.module('wpZestApp')
 
 				var showHide = function() {
 
-					console.log('showHide');
+					//console.log('showHide');
 
 					if(!cmMqState.is('narrow') ||
 						controller.state !== 'secondary' ||
@@ -161,13 +161,8 @@ angular.module('wpZestApp')
 						return true;
 					}
 
-					console.log(evt);
+					//console.log(evt);
 					assignStateClass();
-
-					if(controller.state === 'secondary' && cmMqState.is('narrow')) {
-						window.scrollTo(0,0);
-						prevScrollY = 0;
-					}
 				});
 
 				// angular.element(window).on('scroll', cmUtil.throttle(controller.showHide, 200));
@@ -175,6 +170,11 @@ angular.module('wpZestApp')
 
 				scope.$on('$routeChangeSuccess', function(event, current) {
 					handleRouteChange(current);
+				});
+
+				$rootScope.$on('$viewContentLoaded', function() {
+					window.scrollTo(0,0);
+					prevScrollY = 0;
 				});
 
 				handleRouteChange($route.current);
