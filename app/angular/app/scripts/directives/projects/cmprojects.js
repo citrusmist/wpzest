@@ -42,7 +42,7 @@ angular.module('wpZestApp')
 					var showProject = function(elTitle) {
 
 						controller.elCurrentThumb = angular.element(
-							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('#/project/', ''))
+							elPreview[0].querySelectorAll('.projects-thumb--' + elTitle.attr('href').replace('/project/', ''))
 						);
 
 						if(leaveTimeout !== false) {
