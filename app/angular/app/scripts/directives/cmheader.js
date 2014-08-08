@@ -22,7 +22,6 @@ angular.module('wpZestApp')
 				var needsStateClass = false;
 				var prevScrollY     = window.scrollY;
 				
-
 				var handleRouteChange = function(currentRoute) {
 
 					var initialState  = controller.state;
@@ -190,11 +189,9 @@ angular.module('wpZestApp')
 			restrict: 'E',
 			require: '^cmHeader',
 			link: function postLink(scope, element, attrs, controller) {
-
 				element.on('click', function() {
 					controller.toggleState();
 				});
-				
 			}
 		};
 	});

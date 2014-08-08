@@ -194,7 +194,7 @@
   .header-logotype {
     @extend %btmalign;
   }
-  
+
   // .header-logomark{
   //   svg {
   //     max-height: none;
@@ -359,12 +359,15 @@
   .project-header-wrap {
 
     //TODO: use mixin for this as this now just copied from et3 class
-    margin-left: 67.77777333%;
+    // margin-left: 67.77777333%;
+    // margin-right: -100%;
+    margin-left: 0;
+    margin-right: 0;
     width: 32.22222667%;
     display: block;
-    float: left;
+    float: right;
     clear: none;
-    margin-right: -100%;
+    min-width: 269px;
   }
 
   .project-header-section {
