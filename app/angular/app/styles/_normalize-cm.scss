@@ -1,0 +1,6 @@
+//Workaround the webkit bug which adds extra padding to the bottom of 
+//svg when resized in browser
+
+svg:not(:root) {
+  max-height: 100%;
+}

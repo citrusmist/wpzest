@@ -110,6 +110,8 @@ figure {
   float: right;
   max-width: 58px;
   padding-bottom: .5em;
+  position: relative;
+  z-index: 200;
 }
 
 .header-toggle {
@@ -128,6 +130,7 @@ figure {
   display: none;
   opacity: 0;
 }
+
 
 .logomark--link {
   cursor: pointer;

@@ -194,6 +194,12 @@
   .header-logotype {
     @extend %btmalign;
   }
+  
+  // .header-logomark{
+  //   svg {
+  //     max-height: none;
+  //   }
+  // }
 
   .header-logotype {
     top: auto;
@@ -209,6 +215,7 @@
     float: none;
     max-width: 191px;
     padding-bottom: 0;
+    position: static;
   }
 
   .header-logotype-wrap {
