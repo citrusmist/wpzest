@@ -117,6 +117,9 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
+              modRewrite([
+                '!\\.html|\\images|\\.js|\\.css|\\.png|\\.jpg|\\.woff|\\.ttf|\\.svg /index.html [L]'
+              ]),
               mountFolder(connect, yeomanConfig.dist)
             ];
           }
@@ -221,9 +224,15 @@ module.exports = function (grunt) {
     },
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      css:  ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      json: ['<%= yeoman.dist %>/data/{,*/}*.json'],
       options: {
-        dirs: ['<%= yeoman.dist %>']
+        dirs: ['<%= yeoman.dist %>'],
+        patterns: {
+          json: [
+            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JSON to reference our revved images']
+          ]
+        }
       }
     },
     imagemin: {
@@ -275,7 +284,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html'],
+          src: ['*.html', 'views/*.html', 'views/*/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -293,7 +302,8 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'data/*'
           ]
         }, {
           expand: true,
