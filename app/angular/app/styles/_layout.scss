@@ -238,6 +238,24 @@ figure {
   // top: 51px;
   // position: absolute;
   width: 100%;
+
+  &.ng-enter {
+    opacity: 0;
+    @include single-transition($default-transition-property, .32s);
+  }
+
+  &.ng-enter.ng-enter-active {
+    opacity: 1;
+  }
+
+  &.ng-leave {
+    // opacity: 1;
+    @include single-transition($default-transition-property, .32s);
+  }
+
+  &.ng-leave.ng-leave-active {
+    opacity: 0;
+  }
 }
 
 .project {

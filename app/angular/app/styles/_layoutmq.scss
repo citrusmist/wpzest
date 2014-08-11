@@ -41,7 +41,7 @@
     }
   }
 
-  .header-profilre-cta {
+  .header-profile-cta {
     display: block;
     margin-top: 1.71428571428571em;
   }
@@ -346,19 +346,10 @@
       opacity: 0;
       @include single-transition($default-transition-property, .64s, linear, .48s);
     }
-
-    &.ng-enter.ng-enter-active {
-      opacity: 1;
-    }
-
+    
     &.ng-leave {
       // opacity: 1;
-      // @include single-transition();
       @include single-transition($default-transition-property, .64s, linear, .16s);
-    }
-
-    &.ng-leave.ng-leave-active {
-      opacity: 0;
     }
   }
 
@@ -608,7 +599,9 @@
   }
 
   .project-figure-caption {
-  
+    
+    width: 118px;
+
     &.caption--keeplayout {
       &.caption--belowright { 
         margin-top: .71428571428571em;
