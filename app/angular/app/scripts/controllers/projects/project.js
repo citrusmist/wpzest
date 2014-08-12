@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .controller('ProjectsProjectCtrl', function ($scope, $routeParams, $sce, cmProjects) {
+  .controller('ProjectsProjectCtrl', ['$scope', '$routeParams', '$sce', 'cmProjects', function ($scope, $routeParams, $sce, cmProjects) {
 		$scope.projectName = $routeParams.projectName;
-  });
+  }]);

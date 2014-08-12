@@ -1,54 +1,54 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmProject', function ($timeout, $sce, $q, cmProjects) {
-		return {
-			scope: {
-				projectName: '@'
-			},
-			templateUrl: 'views/projects/cmProject.html',
-			restrict: 'E',
-			controller: function() {
-
-				this.project = $q.defer();
-
-				this.getProject = function() {
-					return this.project.promise;
-				};
-			},
-			replace: true,
-			link: function postLink(scope, element, attrs, controller) {
-
-				var elTitleDecoration = angular.element(element[0].querySelectorAll('.project-title-wrap'));
-
-				var generateWebsiteLink = function() {
-					var markup = '<span class="project-title-decoration caption">' +
-							'<a class="project-title-link" href="' + scope.project.website + '">Visit Website</a>' +
-						'</span>';
-
-					elTitleDecoration.prepend(markup);
-				};
-
-				scope.trustAsHtml = function(html) {
-					return $sce.trustAsHtml(html);
-				};
-
-				$timeout(function() {
-					cmProjects.findByName(scope.projectName).then(function(project) {
-						controller.project.resolve(project);
+	.directive('cmProject', ['$timeout', '$sce', '$q', 'cmProjects', function ($timeout, $sce, $q, cmProjects) {
+			return {
+				scope: {
+					projectName: '@'
+				},
+				templateUrl: 'views/projects/cmProject.html',
+				restrict: 'E',
+				controller: function() {
+	
+					this.project = $q.defer();
+	
+					this.getProject = function() {
+						return this.project.promise;
+					};
+				},
+				replace: true,
+				link: function postLink(scope, element, attrs, controller) {
+	
+					var elTitleDecoration = angular.element(element[0].querySelectorAll('.project-title-wrap'));
+	
+					var generateWebsiteLink = function() {
+						var markup = '<span class="project-title-decoration caption">' +
+								'<a class="project-title-link" href="' + scope.project.website + '">Visit Website</a>' +
+							'</span>';
+	
+						elTitleDecoration.prepend(markup);
+					};
+	
+					scope.trustAsHtml = function(html) {
+						return $sce.trustAsHtml(html);
+					};
+	
+					$timeout(function() {
+						cmProjects.findByName(scope.projectName).then(function(project) {
+							controller.project.resolve(project);
+						});
 					});
-				});
-
-				controller.getProject().then(function(project) {
-					scope.project = project;
-
-					if(project.website !== '') {
-						generateWebsiteLink();
-					}
-				});
-			}
-		};
-	})
+	
+					controller.getProject().then(function(project) {
+						scope.project = project;
+	
+						if(project.website !== '') {
+							generateWebsiteLink();
+						}
+					});
+				}
+			};
+		}])
 	.directive('cmProjectCredits', [function(){
 		// Runs during compile
 		return {

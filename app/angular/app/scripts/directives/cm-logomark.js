@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmLogomark', function ($location, $timeout) {
+	.directive('cmLogomark', ['$location', '$timeout', function ($location, $timeout) {
 		return {
 			templateUrl: 'views/cmLogomark.html',
 			restrict: 'E',
@@ -24,4 +24,4 @@ angular.module('wpZestApp')
 				});
 			}
 		};
-	});
+	}]);

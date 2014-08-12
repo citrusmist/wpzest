@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('wpZestApp')
-	.directive('cmProjects', ['$timeout', '$route', 'cmUtil', 'cmProjects' , function($timeout, $route, cmUtil, cmProjects) {
+	.directive('cmProjects', ['$timeout', '$route', 'cmUtil', 'cmProjects', function($timeout, $route, cmUtil, cmProjects) {
 	
 			return {
 				scope: {},

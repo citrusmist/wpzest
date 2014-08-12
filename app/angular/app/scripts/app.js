@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('wpZestApp', ['ngRoute', 'ngSanitize', 'ngAnimate'])
-	.config(function ($routeProvider, $locationProvider) {
-
+	.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+	
 		$routeProvider
 			.when('/', {
 				templateUrl: 'views/main.html',
@@ -21,4 +21,4 @@ angular.module('wpZestApp', ['ngRoute', 'ngSanitize', 'ngAnimate'])
 			});
 
 		$locationProvider.html5Mode(true).hashPrefix('!');
-	});
+	}]);

@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .factory('cmUtil', function ($timeout) {
-
+  .factory('cmUtil', ['$timeout', function ($timeout) {
+  
     var now = Date.now || function() {
       return new Date().getTime();
     };
@@ -186,4 +186,4 @@ angular.module('wpZestApp')
       forceElRedraw: forceElRedraw,
       getNaturalImageDimensions: getNaturalImageDimensions,
     };
-  });
+  }]);
