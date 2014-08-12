@@ -223,14 +223,84 @@ module.exports = function (grunt) {
       }
     },
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/{,*/,views/*/}*.html'],
       css:  ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       json: ['<%= yeoman.dist %>/data/{,*/}*.json'],
       options: {
-        assetsDirs: ['<%= yeoman.dist %>'],
+        assetsDirs: '<%= yeoman.dist %>',
         patterns: {
           json: [
-            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JSON to reference our revved images']
+            [/(images\\?\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JSON to reference our revved images']
+          ],
+          css: [
+            [
+              /(images\\?\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm,
+              'Update the CSS to reference our revved images'
+            ],
+            [
+              /(?:src=|url\(\s*)['"]?([^'"\)(\?|#)]+)['"]?\s*\)?/gm,
+              'Update the CSS to reference our revved images'
+            ]
+          ],
+          html: [
+            [
+              /<script.+src=['"]([^"']+)["']/gm,
+              'Update the HTML to reference our concat/min/revved script files'
+            ],
+            [
+              /<link[^\>]+href=['"]([^"']+)["']/gm,
+              'Update the HTML with the new css filenames'
+            ],
+            [
+              /<img[^\>]*[^\>\S]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new img filenames'
+            ],
+            [
+              /<object[^\>]*[^\>\S]+data=['"]([^"']+)["']/gm,
+              'Update the HTML with the new object filenames'
+            ],
+            [
+              /<video[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new video filenames'
+            ],
+            [
+              /<video[^\>]+poster=['"]([^"']+)["']/gm,
+              'Update the HTML with the new poster filenames'
+            ],
+            [
+              /<source[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new source filenames'
+            ],
+            [
+              /data-main\s*=['"]([^"']+)['"]/gm,
+              'Update the HTML with data-main tags',
+              function (m) {
+                return m.match(/\.js$/) ? m : m + '.js';
+              },
+              function (m) {
+                return m.replace('.js', '');
+              }
+            ],
+            [
+              /data-(?!main).[^=]+=['"]([^'"]+)['"]/gm,
+              'Update the HTML with data-* tags'
+            ],
+            [
+              /url\(\s*['"]?([^"'\)]+)["']?\s*\)/gm,
+              'Update the HTML with background imgs, case there is some inline style'
+            ],
+            [
+              /<a[^\>]+href=['"]([^"']+)["']/gm,
+              'Update the HTML with anchors images'
+            ],
+            [
+              /<input[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with reference in input'
+            ],
+            [
+              /<meta[^\>]+content=['"]([^"']+)["']/gm,
+              'Update the HTML with the new img filenames in meta tags'
+            ]
           ]
         }
       }
