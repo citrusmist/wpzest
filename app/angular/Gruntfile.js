@@ -227,7 +227,7 @@ module.exports = function (grunt) {
       css:  ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       json: ['<%= yeoman.dist %>/data/{,*/}*.json'],
       options: {
-        dirs: ['<%= yeoman.dist %>'],
+        assetsDirs: ['<%= yeoman.dist %>'],
         patterns: {
           json: [
             [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JSON to reference our revved images']
