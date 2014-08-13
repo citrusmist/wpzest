@@ -29,6 +29,19 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     yeoman: yeomanConfig,
+    credentials: function() {
+
+      if (grunt.file.exists('.credentials.json')) {
+        return grunt.file.readJSON('.credentials.json');  // Read the file
+      }
+
+      return {  // Use values if there is no file called .credentials.json
+        AwsAccessKeyId: 'not set',
+        AwsSecretAccessKey: 'not set',
+        GoogleAnalyticsKey: 'UA-8697059-6',
+        GoogleAnalyticsHost: 'citrus-mist.com'
+      };
+    },
     watch: {
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
@@ -411,6 +424,28 @@ module.exports = function (grunt) {
         'htmlmin'
       ]
     },
+    replace: {
+      // Only add Analytics tracking when doing production build
+      // Could add different credentials for test if required
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'GOOGLE_ANALYTICS_KEY',    // replace @@GOOGLE_ANALYTICS_KEY
+              replacement: '<%= credentials().GoogleAnalyticsKey %>'
+            },
+            {
+              match: 'GOOGLE_ANALYTICS_HOST',   // replace @@GOOGLE_ANALYTICS_HOST
+              replacement: '<%= credentials().GoogleAnalyticsHost %>'
+            }
+          ],
+          force: true
+        },
+        files: [
+          {expand: true, flatten: true, src: ['<%= yeoman.dist %>/index.html'], dest: '<%= yeoman.dist %>'}
+        ]
+      }
+    },
     karma: {
       unit: {
         configFile: 'karma.conf.js',
@@ -486,6 +521,7 @@ module.exports = function (grunt) {
     'autoprefixer',
     'concat',
     'copy:dist',
+    'replace:dist',
     'cdnify',
     'ngmin',
     'cssmin',
