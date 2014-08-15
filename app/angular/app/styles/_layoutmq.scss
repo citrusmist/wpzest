@@ -220,12 +220,35 @@
     z-index: 1;
   }
 
-  .header-logomark-wrap {
+  .header-logomark-wrap,
+  .header-logomark2-wrap {
     width: 100%;
     float: none;
     max-width: 191px;
-    padding-bottom: 0;
-    position: static;
+    position: relative;
+
+    //IE alignment hack
+
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    padding-bottom: 64.3993447150729%; //viewBox height/width
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+    }
+  }
+
+  .header-logomark2-wrap {
+    padding-left: 19%;
+
+    svg {
+      left: auto;
+      width: 74%;
+    }
   }
 
   .header-logotype-wrap {
@@ -239,18 +262,18 @@
     @include single-transition();
   }
 
-  .header-logomark2-img {
-    bottom: 0;
-    position: absolute;
-    padding: 0 0 0 19%;
-    width: 90%;
+  // .header-logomark2-img {
+    // bottom: 0;
+    // position: absolute;
+    // padding: 0 0 0 19%;
+    // width: 90%;
     // padding: 0 0 0 19%;
     // width: 90%;
     // position: relative;
     // bottom: 0;
     // z-index: 1000;
     // pointer-events: none;
-  }
+  // }
   
   .projects {
     // height: 100%;
