@@ -9,6 +9,8 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  <meta name="fragment" content="!" />
+  <base href="/">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   
   <script type="text/javascript" src="//use.typekit.net/pwz6qkc.js"></script>
@@ -43,7 +45,7 @@
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-     ga('create', 'UA-XXXXX-X');
+     ga('create', '@@GOOGLE_ANALYTICS_KEY', '@@GOOGLE_ANALYTICS_HOST');
      ga('send', 'pageview');
   </script>
 
@@ -78,6 +80,7 @@
     <script src="scripts/directives/projects/cmproject.js"></script>
     <script src="scripts/services/cmPages.js"></script>
     <script src="scripts/controllers/page.js"></script>
+    <script src="scripts/directives/cm-logomark.js"></script>
     <!-- endbuild -->
 
     <script src="https://get.gridsetapp.com/25503/overlay/"></script>

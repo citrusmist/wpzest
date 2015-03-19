@@ -16,6 +16,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) { 
+  .header-profile {
+    max-width: 354px;
+  }
+}
+
 @media only screen and (min-width: 769px) { 
   
   #mqOutput:after { 
@@ -25,6 +31,19 @@
   %btmalign {
     bottom: 4%;
     position: absolute;
+  }
+
+  .header-profile {
+    max-width: 335px;
+
+    p {
+      margin-bottom: 1.14285714285714em;
+    }
+  }
+
+  .header-profile-cta {
+    display: block;
+    margin-top: 1.71428571428571em;
   }
 
   h1, 
@@ -69,7 +88,7 @@
     position: fixed;
     z-index: 1000;
 
-    @include single-transition(transform);
+    @include single-transition(transform, .8s);
     @include translate3d(-94.2878%, 0, 0);
 
     .header-wrap {
@@ -111,6 +130,7 @@
     .header-toggle,
     .header-logomark2 {
       opacity: 1;
+      @include single-transition(all, .16s);
     }
 
     .header-toggle {
@@ -185,6 +205,12 @@
     @extend %btmalign;
   }
 
+  // .header-logomark{
+  //   svg {
+  //     max-height: none;
+  //   }
+  // }
+
   .header-logotype {
     top: auto;
   }
@@ -194,11 +220,35 @@
     z-index: 1;
   }
 
-  .header-logomark-wrap {
+  .header-logomark-wrap,
+  .header-logomark2-wrap {
     width: 100%;
     float: none;
     max-width: 191px;
-    padding-bottom: 0;
+    position: relative;
+
+    //IE alignment hack
+
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    padding-bottom: 64.3993447150729%; //viewBox height/width
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+    }
+  }
+
+  .header-logomark2-wrap {
+    padding-left: 19%;
+
+    svg {
+      left: auto;
+      width: 74%;
+    }
   }
 
   .header-logotype-wrap {
@@ -207,19 +257,24 @@
   }
 
   .header-logomark2 {
-    display: block;
     z-index: 1;
     
     @include single-transition();
   }
 
-  .header-logomark2-img {
-    padding: 0 0 0 19%;
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-  }
-
+  // .header-logomark2-img {
+    // bottom: 0;
+    // position: absolute;
+    // padding: 0 0 0 19%;
+    // width: 90%;
+    // padding: 0 0 0 19%;
+    // width: 90%;
+    // position: relative;
+    // bottom: 0;
+    // z-index: 1000;
+    // pointer-events: none;
+  // }
+  
   .projects {
     // height: 100%;
     // left: 0;
@@ -263,7 +318,7 @@
   .projects-preview-wrap {
     opacity: 0;
     position: relative;
-    @include single-transition();
+    @include single-transition(all, .64s);
   }
 
   .projects-preview-thumb {
@@ -312,21 +367,12 @@
 
     &.ng-enter {
       opacity: 0;
-      @include single-transition($default-transition-property, $default-transition-duration, linear, 1s);
-    }
-
-    &.ng-enter.ng-enter-active {
-      opacity: 1;
+      @include single-transition($default-transition-property, .64s, linear, .48s);
     }
 
     &.ng-leave {
       // opacity: 1;
-      // @include single-transition();
-      @include single-transition($default-transition-property, $default-transition-duration, linear, $default-transition-delay);
-    }
-
-    &.ng-leave.ng-leave-active {
-      opacity: 0;
+      @include single-transition($default-transition-property, .64s, linear, .16s);
     }
   }
 
@@ -337,12 +383,15 @@
   .project-header-wrap {
 
     //TODO: use mixin for this as this now just copied from et3 class
-    margin-left: 67.77777333%;
+    // margin-left: 67.77777333%;
+    // margin-right: -100%;
+    margin-left: 0;
+    margin-right: 0;
     width: 32.22222667%;
     display: block;
-    float: left;
+    float: right;
     clear: none;
-    margin-right: -100%;
+    min-width: 269px;
   }
 
   .project-header-section {
@@ -452,6 +501,11 @@
     content: "wide";
   }
 
+  .caption,
+  .project-figure-caption {
+    line-height: 1.21428571428571; //17px
+  }
+
   .longform,
   .project-body {
     font-size: 21px;
@@ -476,31 +530,51 @@
     }
   }
 
+  .header-profile {
+    p {
+      margin-bottom: 1.21428571428571em;
+    }
+  }
+
+  .header-profile-cta {
+    margin-top: 1.82142857142856em;
+  }
+
   .project-figure { 
     margin-bottom: 1.75em; //28px
   }
 
-  .caption,
-  .project-figure-caption {
-    line-height: 1.14285714285714; //16px
-  }
-
-  // .project-figure-caption {
   
-  //   &.caption--keeplayout {
-  //     &.caption--belowright { 
-  //       margin-top: .71428571428571em;
-  //     }
-  //   }
 
-  //   &.caption--belowright { 
-  //     @include experimental-value(top, calc(100% + 1em));
-  //   }
+  .project-figure-caption {
+  
+    &.caption--keeplayout {
+      
+      &.caption--belowright { 
+        margin-top: .64285714285714em;
+      }
+    }
 
-  //   &.caption--aboveleft { 
-  //     @include experimental-value(bottom, calc(100% + 1em));
-  //   }
-  // }
+    &.caption--topleft { 
+      @include experimental-value(right, calc(100% + 1em));
+    }
+
+    &.caption--bottomright { 
+      @include experimental-value(left, calc(100% + .64285714285714em));
+    }
+
+    &.caption--belowright { 
+      @include experimental-value(top, calc(100% + .64285714285714em));
+    }
+
+    &.caption--aboveleft { 
+      @include experimental-value(bottom, calc(100% + .64285714285714em));
+    }
+
+    &.caption--aboveright { 
+      @include experimental-value(bottom, calc(100% + .64285714285714em));
+    }
+  }
 }
 
 //Type adjustments for screens wider > 1568px and taller > 800px (root em = 16px)
@@ -534,6 +608,16 @@
     }
   }
 
+  .header-profile {
+    p {
+      margin-bottom: 1.125em;
+    }
+  }
+
+  .header-profile-cta {
+    margin-top: 1.6875em;
+  }
+
   .project {
     padding: 2.1875em 0 3.75em;
   }
@@ -563,19 +647,29 @@
   }
 
   .project-figure-caption {
-  
+    
+    width: 118px;
+
     &.caption--keeplayout {
       &.caption--belowright { 
-        margin-top: .71428571428571em;
+        margin-top: .5625em;
       }
     }
 
+    &.caption--bottomright { 
+      @include experimental-value(left, calc(100% + .5625em));
+    }
+
     &.caption--belowright { 
-      @include experimental-value(top, calc(100% + 1em));
+      @include experimental-value(top, calc(100% + .5625em));
+    }
+
+    &.caption--aboveright { 
+      @include experimental-value(bottom, calc(100% + .5625em));
     }
 
     &.caption--aboveleft { 
-      @include experimental-value(bottom, calc(100% + 1em));
+      @include experimental-value(bottom, calc(100% + .5625em));
     }
   }
   
@@ -665,6 +759,10 @@
   //   line-height: 1.1875;
   // }
   
+  .caption,
+  .project-figure-caption {
+    line-height: 1.1875; //16/19px
+  }
 
   .longform,
   .project-body {
@@ -674,6 +772,7 @@
   }
   
   .project-body {
+
     p:last-of-type {
       margin-bottom: 1.3333333333333; //32px
     }
@@ -694,6 +793,16 @@
     margin-bottom: 2em; //32px
   }
 
+  .header-profile {
+    p {
+      margin-bottom: 1.1875em;
+    }
+  }
+
+  .header-profile-cta {
+    margin-top: 1.78125em;
+  }
+
   .project-figure-caption { 
 
     &.caption--topleft { 
@@ -702,6 +811,14 @@
 
     &.caption--bottomright { 
       @include experimental-value(left, calc(100% + 1.125em));
+    }
+
+    &.caption--belowright { 
+      @include experimental-value(top, calc(100% + .75em));
+    }
+
+    &.caption--aboveleft { 
+      @include experimental-value(bottom, calc(100% + .75em));
     }
   }
 
@@ -720,8 +837,17 @@
 }
 
 @media only screen and (min-height: 53em) {
+
+  .header-profile {
+    top: 8%;
+  }
+
+  .projects-list {
+    top: 18.75%;
+  }
+
   .projects-item .projects-title {
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
   }
 
   .header-logomark2,

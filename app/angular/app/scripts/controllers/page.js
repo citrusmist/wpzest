@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('wpZestApp')
-  .controller('PageCtrl', function ($scope, $routeParams, $sce, cmPages) {
-		
+	.controller('PageCtrl', ['$scope', '$routeParams', '$sce', 'cmPages', function ($scope, $routeParams, $sce, cmPages) {
+			
 		$scope.page = null;
 
 		$scope.trustAsHtml = function(html) {
@@ -12,4 +12,4 @@ angular.module('wpZestApp')
 		cmPages.findByName($routeParams.pageName).then(function(page) {
 			$scope.page = page;
 		});
-  });
+	}]);

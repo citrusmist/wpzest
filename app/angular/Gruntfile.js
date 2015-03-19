@@ -5,6 +5,7 @@ var lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT });
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
+var modRewrite = require('connect-modrewrite');
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -28,6 +29,19 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     yeoman: yeomanConfig,
+    credentials: function() {
+
+      if (grunt.file.exists('.credentials.json')) {
+        return grunt.file.readJSON('.credentials.json');  // Read the file
+      }
+
+      return {  // Use values if there is no file called .credentials.json
+        AwsAccessKeyId: 'not set',
+        AwsSecretAccessKey: 'not set',
+        GoogleAnalyticsKey: 'UA-8697059-6',
+        GoogleAnalyticsHost: 'citrus-mist.com'
+      };
+    },
     watch: {
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
@@ -79,6 +93,9 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
+              modRewrite([
+                '!\\.html|\\images|\\.js|\\.css|\\.png|\\.jpg|\\.woff|\\.ttf|\\.svg /index.html [L]'
+              ]),
               lrSnippet,
               mountFolder(connect, '.tmp'),
               mountFolder(connect, yeomanConfig.app)
@@ -113,6 +130,9 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
+              modRewrite([
+                '!\\.html|\\images|\\.js|\\.css|\\.png|\\.jpg|\\.woff|\\.ttf|\\.svg /index.html [L]'
+              ]),
               mountFolder(connect, yeomanConfig.dist)
             ];
           }
@@ -216,10 +236,86 @@ module.exports = function (grunt) {
       }
     },
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      html: ['<%= yeoman.dist %>/{,*/,views/*/}*.html'],
+      css:  ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      json: ['<%= yeoman.dist %>/data/{,*/}*.json'],
       options: {
-        dirs: ['<%= yeoman.dist %>']
+        assetsDirs: '<%= yeoman.dist %>',
+        patterns: {
+          json: [
+            [/(images\\?\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JSON to reference our revved images']
+          ],
+          css: [
+            [
+              /(images\\?\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm,
+              'Update the CSS to reference our revved images'
+            ],
+            [
+              /(?:src=|url\(\s*)['"]?([^'"\)(\?|#)]+)['"]?\s*\)?/gm,
+              'Update the CSS to reference our revved images'
+            ]
+          ],
+          html: [
+            [
+              /<script.+src=['"]([^"']+)["']/gm,
+              'Update the HTML to reference our concat/min/revved script files'
+            ],
+            [
+              /<link[^\>]+href=['"]([^"']+)["']/gm,
+              'Update the HTML with the new css filenames'
+            ],
+            [
+              /<img[^\>]*[^\>\S]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new img filenames'
+            ],
+            [
+              /<object[^\>]*[^\>\S]+data=['"]([^"']+)["']/gm,
+              'Update the HTML with the new object filenames'
+            ],
+            [
+              /<video[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new video filenames'
+            ],
+            [
+              /<video[^\>]+poster=['"]([^"']+)["']/gm,
+              'Update the HTML with the new poster filenames'
+            ],
+            [
+              /<source[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with the new source filenames'
+            ],
+            [
+              /data-main\s*=['"]([^"']+)['"]/gm,
+              'Update the HTML with data-main tags',
+              function (m) {
+                return m.match(/\.js$/) ? m : m + '.js';
+              },
+              function (m) {
+                return m.replace('.js', '');
+              }
+            ],
+            [
+              /data-(?!main).[^=]+=['"]([^'"]+)['"]/gm,
+              'Update the HTML with data-* tags'
+            ],
+            [
+              /url\(\s*['"]?([^"'\)]+)["']?\s*\)/gm,
+              'Update the HTML with background imgs, case there is some inline style'
+            ],
+            [
+              /<a[^\>]+href=['"]([^"']+)["']/gm,
+              'Update the HTML with anchors images'
+            ],
+            [
+              /<input[^\>]+src=['"]([^"']+)["']/gm,
+              'Update the HTML with reference in input'
+            ],
+            [
+              /<meta[^\>]+content=['"]([^"']+)["']/gm,
+              'Update the HTML with the new img filenames in meta tags'
+            ]
+          ]
+        }
       }
     },
     imagemin: {
@@ -271,7 +367,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html'],
+          src: ['*.html', 'views/*.html', 'views/*/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -289,7 +385,8 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'data/*'
           ]
         }, {
           expand: true,
@@ -326,6 +423,28 @@ module.exports = function (grunt) {
         'svgmin',
         'htmlmin'
       ]
+    },
+    replace: {
+      // Only add Analytics tracking when doing production build
+      // Could add different credentials for test if required
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: 'GOOGLE_ANALYTICS_KEY',    // replace @@GOOGLE_ANALYTICS_KEY
+              replacement: '<%= credentials().GoogleAnalyticsKey %>'
+            },
+            {
+              match: 'GOOGLE_ANALYTICS_HOST',   // replace @@GOOGLE_ANALYTICS_HOST
+              replacement: '<%= credentials().GoogleAnalyticsHost %>'
+            }
+          ],
+          force: true
+        },
+        files: [
+          {expand: true, flatten: true, src: ['<%= yeoman.dist %>/index.html'], dest: '<%= yeoman.dist %>'}
+        ]
+      }
     },
     karma: {
       unit: {
@@ -402,6 +521,7 @@ module.exports = function (grunt) {
     'autoprefixer',
     'concat',
     'copy:dist',
+    'replace:dist',
     'cdnify',
     'ngmin',
     'cssmin',

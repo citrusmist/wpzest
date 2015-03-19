@@ -4,6 +4,10 @@
 	transition: all 1s;
 }
 
+.logo {
+	cursor: pointer;
+}
+
 .logo:hover .logo-mark {
 	fill: #5b46d6;
 }
