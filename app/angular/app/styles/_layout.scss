@@ -45,7 +45,6 @@ figure {
   
   .header-identity {
     position: fixed;
-    @include translate3d(0, 0, 0);
     @include single-transition(all, 0.16s);
   }
 
@@ -95,6 +94,10 @@ figure {
   padding-top: .5em;
   // padding-left: .5em;
   // padding-right: .5em;
+}
+
+.header-wrap-scroll {
+  height: calc(100% + 1px);
 }
 
 .header-identity {
