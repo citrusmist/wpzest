@@ -101,8 +101,8 @@
 
     .projects--isActive {
       .projects-preview {
+        margin-left: calc(#{gs-marginleft('w', 5, false, true)} - #{$preview-padding}px); 
         width: #{gs-width('w', 5, false, false, true)};
-        @include experimental-value(margin-left, calc(#{gs-marginleft('w', 5, false, true)} - #{$preview-padding}px)); 
       }
     }
   }
@@ -148,8 +148,8 @@
 
     .projects--isActive {
       .projects-preview {
+        margin-left: calc(#{gs-marginleft('et', 2, false, true)} + 26.1820666% - #{$preview-padding}px); 
         width: #{gs-width('et', 2, false, false, true)};
-        @include experimental-value(margin-left, calc(#{gs-marginleft('et', 2, false, true)} + 26.1820666% - #{$preview-padding}px)); 
       }
     }
 
@@ -459,32 +459,32 @@
 
     &.caption--topleft { 
       right: 100%;
+      right: calc(100% + 1em);
       top: 0;
-      @include experimental-value(right, calc(100% + 1em));
     }
 
     &.caption--bottomright { 
       bottom: 0;
+      left: calc(100% + .42857142857142em);
       left: 100%;
-      @include experimental-value(left, calc(100% + .42857142857142em));
     }
 
     &.caption--belowright { 
       right: 0;
+      top: calc(100% + .42857142857142em);
       top: 100%;
-      @include experimental-value(top, calc(100% + .42857142857142em));
     }
 
     &.caption--aboveleft { 
       bottom: 101%;
+      bottom: calc(100% + .42857142857142em);
       left: 0;
-      @include experimental-value(bottom, calc(100% + .42857142857142em));
     }
 
     &.caption--aboveright { 
       bottom: 101%;
+      bottom: calc(100% + .42857142857142em);
       right: 0;
-      @include experimental-value(bottom, calc(100% + .42857142857142em));
     }
   }
 
@@ -556,23 +556,23 @@
     }
 
     &.caption--topleft { 
-      @include experimental-value(right, calc(100% + 1em));
+      right: calc(100% + 1em);
     }
 
     &.caption--bottomright { 
-      @include experimental-value(left, calc(100% + .64285714285714em));
+      left: calc(100% + .64285714285714em);
     }
 
     &.caption--belowright { 
-      @include experimental-value(top, calc(100% + .64285714285714em));
+      top: calc(100% + .64285714285714em);
     }
 
     &.caption--aboveleft { 
-      @include experimental-value(bottom, calc(100% + .64285714285714em));
+      bottom: calc(100% + .64285714285714em);
     }
 
     &.caption--aboveright { 
-      @include experimental-value(bottom, calc(100% + .64285714285714em));
+      bottom: calc(100% + .64285714285714em);
     }
   }
 }
@@ -657,19 +657,19 @@
     }
 
     &.caption--bottomright { 
-      @include experimental-value(left, calc(100% + .5625em));
+      left: calc(100% + .5625em);
     }
 
     &.caption--belowright { 
-      @include experimental-value(top, calc(100% + .5625em));
+      top: calc(100% + .5625em);
     }
 
     &.caption--aboveright { 
-      @include experimental-value(bottom, calc(100% + .5625em));
+      bottom: calc(100% + .5625em);
     }
 
     &.caption--aboveleft { 
-      @include experimental-value(bottom, calc(100% + .5625em));
+      bottom: calc(100% + .5625em);
     }
   }
   
@@ -806,19 +806,19 @@
   .project-figure-caption { 
 
     &.caption--topleft { 
-      @include experimental-value(right, calc(100% + 1em));
+      right: calc(100% + 1em);
     }
 
     &.caption--bottomright { 
-      @include experimental-value(left, calc(100% + 1.125em));
+      left: calc(100% + 1.125em);
     }
 
     &.caption--belowright { 
-      @include experimental-value(top, calc(100% + .75em));
+      top: calc(100% + .75em);
     }
 
     &.caption--aboveleft { 
-      @include experimental-value(bottom, calc(100% + .75em));
+      bottom: calc(100% + .75em);
     }
   }
 

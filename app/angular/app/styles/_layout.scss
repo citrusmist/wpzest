@@ -1,5 +1,11 @@
-* {
-  @include experimental(box-sizing, border-box); 
+html {
+  box-sizing: border-box; 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 #mqOutput:after {
@@ -39,6 +45,7 @@ figure {
   
   .header-identity {
     position: fixed;
+    @include translate3d(0, 0, 0);
     @include single-transition(all, 0.16s);
   }
 
