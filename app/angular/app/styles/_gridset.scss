@@ -194,11 +194,14 @@
 @mixin gs-media($prefix, $type: false){
 
   @if $prefix == w {
-    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 1280px) { @content; } }
+    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 769px) { @content; } }
     @else { @content; }
   }
   @else if $prefix == wr {
-    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 1280px) { @content; } }
+    @if ($type == min) or ($type == min-max) { @media only screen and (min-width: 769px) { @content; } }
+    @else { @content; }
+  } @else if $prefix == et {
+    @if ($type == max) or ($type == min-max) { @media only screen and (max-width: 768px) { @content; } }
     @else { @content; }
   }
 
