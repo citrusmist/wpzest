@@ -17,12 +17,34 @@
 }
 
 @media only screen and (max-width: 768px) { 
+
+  .mt-hide {
+    display: none;
+  }
+
+  .mt-show {
+    display: block !important;
+  }
+
+
   .header-profile {
     max-width: 354px;
+  }
+
+  .header-identity {
+    @include gs-pad(et, padinfull);
   }
 }
 
 @media only screen and (min-width: 769px) { 
+
+  .w-hide {
+    display: none;
+  }
+
+  .w-show {
+    display: block !important;
+  }
   
   #mqOutput:after { 
     content: "medium";
@@ -35,6 +57,8 @@
 
   .header-profile {
     max-width: 335px;
+    @include gs-span(wr, 5);
+    clear: left;
 
     p {
       margin-bottom: 1.14285714285714em;
@@ -104,6 +128,10 @@
         margin-left: calc(#{gs-marginleft('w', 5, false, true)} - #{$preview-padding}px); 
         width: #{gs-width('w', 5, false, false, true)};
       }
+    }
+
+    .header-logotype {
+      @include gs-span(w, 2, 3);
     }
   }
 
@@ -218,13 +246,18 @@
   .header-logomark {
     top: auto;
     z-index: 1;
+    @include gs-span(wr, 5);
+  }
+
+  .header-logomark2 {
+    @include gs-span(w, 6);
   }
 
   .header-logomark-wrap,
   .header-logomark2-wrap {
     width: 100%;
     float: none;
-    max-width: 191px;
+    max-width: 178px;
     position: relative;
 
     //IE alignment hack
@@ -385,17 +418,24 @@
     //TODO: use mixin for this as this now just copied from et3 class
     // margin-left: 67.77777333%;
     // margin-right: -100%;
-    margin-left: 0;
-    margin-right: 0;
-    width: 32.22222667%;
-    display: block;
-    float: right;
-    clear: none;
+
+    // margin-left: 0;
+    // margin-right: 0;
+    // width: 32.22222667%;
+    // display: block;
+    // float: right;
     min-width: 269px;
+    @include gs-span(et, 3);
+    clear: none;
   }
 
   .project-header-section {
     float: left;
+  }
+
+  .project-hero {
+    width: gs-width(w, 3, 5, false, true);
+    margin-left: gs-marginleft(w, 3, false, true);
   }
 
   .project-hero-img {
@@ -427,12 +467,39 @@
     // margin-top: 2.8125rem;
     margin-top: 1.875em;
     margin-top: 1.875rem;
+    width: gs-width(wr, 4, 5, false, true);
+    margin-left: gs-marginleft(wr, 4, false, true);
   }
 
   .project-body {
     p {
       text-indent: 2em;
     }
+  }
+
+  .project-body-l {
+    width: gs-width(wr, 4, 4, false, true);
+    margin-left: gs-marginleft(wr, 4, false, true);
+  }
+
+  .project-body-r {
+    width: gs-width(w, 5, 5, false, true);
+    margin-left: gs-marginleft(w, 5, false, true);
+  }
+
+  .project-body-lnarrow {
+    @include gs-span (w, 4);
+    clear: left;
+
+  }
+
+  .project-body-lnarrow + .project-body-r {
+    clear: none;
+  }
+
+  .project-body-fw {
+    width: gs-width(w, 4, 5, false, true);
+    margin-left: gs-marginleft(w, 4, false, true);
   }
 
   .project-credits {
@@ -447,6 +514,7 @@
     
     position: absolute;
     width: 103px;
+    margin-left: 0;
 
     &.caption--keeplayout {
       position: static;
@@ -465,14 +533,14 @@
 
     &.caption--bottomright { 
       bottom: 0;
-      left: calc(100% + .42857142857142em);
       left: 100%;
+      left: calc(100% + .42857142857142em);
     }
 
     &.caption--belowright { 
       right: 0;
-      top: calc(100% + .42857142857142em);
       top: 100%;
+      top: calc(100% + .42857142857142em);
     }
 
     &.caption--aboveleft { 
@@ -490,7 +558,47 @@
 
   .page--profile {
     padding-top: 8.859375em;
+
+    @include gs-span(w, all);
+    @include gs-pad(w, padinfull);
   }
+
+  .profile-intro {
+    @include gs-span(w, 5);
+  }
+
+  .profile-value {
+    @include gs-span(wr, 4);
+  }
+
+
+  .profile-services-title {
+    @include gs-span(wr, 4);
+  }
+
+  .profile-services-content {
+    @include gs-span(w, 5);
+  }
+
+  .profile-clients {
+    @include gs-span(w, all);
+  }
+
+  .profile-clients-content {
+    @include gs-span(wr, 4);
+    clear: left;
+  }
+
+  .profile-cta {
+    @include gs-span(w, 5);
+  }
+
+  .profile-clients-logos {
+    max-width: 780px;
+    @include gs-span(w, 4, 5);
+    clear: left;
+  }
+
 }
 
 
@@ -695,6 +803,7 @@
 
   .profile-value {
     margin-bottom: 5.3030303030303em;
+
   }
 
   .profile-services-title {
