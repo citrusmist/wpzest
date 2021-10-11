@@ -2,6 +2,7 @@
 'use strict';
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({ port: LIVERELOAD_PORT });
+var serveStatic = require('serve-static');  
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -93,12 +94,12 @@ module.exports = function (grunt) {
         options: {
           middleware: function (connect) {
             return [
+              lrSnippet,
               modRewrite([
                 '!\\.html|\\images|\\.js|\\.css|\\.png|\\.jpg|\\.woff|\\.ttf|\\.svg /index.html [L]'
               ]),
-              lrSnippet,
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, yeomanConfig.app)
+              serveStatic('.tmp'),
+              serveStatic(yeomanConfig.app)
             ];
           }
         }
