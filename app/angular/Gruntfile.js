@@ -473,13 +473,19 @@ module.exports = function (grunt) {
       }
     },
     uglify: {
-      dist: {
-        files: {
-          '<%= yeoman.dist %>/scripts/scripts.js': [
-            '<%= yeoman.dist %>/scripts/scripts.js'
-          ]
-        }
-      }
+      options: {
+        mangle: false
+      },
+      // By default, your `index.html` <!-- Usemin Block --> will take care of
+      // minification. This option is pre-configured if you do not wish to use
+      // Usemin blocks.
+      // dist: {
+      //   files: {
+      //     '<%= yeoman.dist %>/scripts/scripts.js': [
+      //       '<%= yeoman.dist %>/scripts/scripts.js'
+      //     ]
+      //   }
+      // }
     }
   });
 
@@ -523,7 +529,7 @@ module.exports = function (grunt) {
     'concat',
     'copy:dist',
     'replace:dist',
-    'cdnify',
+    'cdnify', 
     'ngmin',
     'cssmin',
     'uglify',
