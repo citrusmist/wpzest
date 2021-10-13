@@ -392,6 +392,7 @@ figure {
 }
 
 .project-body-l,
+.project-body-lnarrow,
 .project-body-r,
 .caption--bottomright {
   @include gs-span(et, 2, 3);
